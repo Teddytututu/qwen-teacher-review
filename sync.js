@@ -5,7 +5,7 @@ let state;try{state=JSON.parse(localStorage.getItem(KEY)||"null")}catch{}
 state=state||{client_id:crypto.randomUUID(),pending:[],seen:[],confirmed:0,receipts:[]};let busy=false,error="";
 const token=()=>sessionStorage.getItem(TOKEN)||"";
 function load(){try{return JSON.parse(localStorage.getItem(KEY))||state}catch{return state}}
-function display(){const el=document.getElementById("sync-status");if(!el)return;el.textContent=busy?"正在保存到 GitHub…":error||(!token()?"连接 GitHub 后，每5次自动保存":`GitHub已保存 ${state.confirmed} 次 · 待保存 ${state.pending.length}/5`);el.dataset.state=error?"retry":busy?"saving":"saved";const b=document.getElementById("connect-github");if(b)b.textContent=token()?"GitHub 已连接":"连接 GitHub"}
+function display(){const el=document.getElementById("sync-status");if(!el)return;el.textContent=busy?"正在保存到 GitHub…":error||(!token()?(state.pending.length>=5?`本机已保存 ${state.pending.length} 次 · GitHub 写入待授权`:`默认保存至 GitHub · 本机待同步 ${state.pending.length} 次`):`GitHub已保存 ${state.confirmed} 次 · 待保存 ${state.pending.length}/5`);el.dataset.state=error?"retry":busy?"saving":"saved";const b=document.getElementById("connect-github");if(b)b.textContent=token()?"GitHub 已授权":"GitHub 保存设置"}
 function persist(){localStorage.setItem(KEY,JSON.stringify(state));display()}
 function fingerprint(x){return [x.source_uid,x.updated_at,x.choice,...x.versions.map(v=>v.native_sha256)].join("|")}
 function enqueue(x){return navigator.locks.request(KEY+":state",()=>{state=load();const f=fingerprint(x);if(state.seen.includes(f))return;state.seen.push(f);state.pending.push({...x,event_id:crypto.randomUUID()});persist();if(state.pending.length>=5)setTimeout(()=>flush(),0)})}
