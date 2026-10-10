@@ -1,9 +1,13 @@
-# Qwen teacher image review
+# Qwen image review
 
-500 reference/old-result pairs, with incremental replacements from the148-image rerun.
+A static GitHub Pages tool: tap the preferred cartoon or choose both redo. Secondary controls are collected under More.
 
-Choose **original**, **rerun**, or **both redo**. Choices save in the current browser; export JSON/CSV for backup and import JSON on another device. Each decision identifies the source UID, original SHA256, compared result hashes and selected generation version. New image versions have independent review records; previous choices stay in export history.
+## Durable autosave
 
-Public image display copies use EXIF display orientation, a1280px bounding box and WebP quality93. Original sources and native results remain in the local dataset. Per-image authors, source links and licenses are included in `ATTRIBUTIONS.json` and the image details panel; display copies retain their corresponding source license. Individual source licenses govern the images.
+Connect a fine-grained GitHub token restricted to this repository with Contents read/write. The token is stored in the current tab session; published files and annotation exports contain image/choice data and receipts. Connection is checked with a real write to the annotations branch. Each five actions are stored in an immutable JSON batch on that branch and verified by reading it back. Failed or interrupted uploads remain in the browser queue and retry idempotently. Web Locks coordinate multiple tabs.
 
-GitHub Pages serves this static review tool. Local annotation files contain the human review and may be re-imported.
+The annotations branch stores data independently of the main Pages branch. Batch storage and serving use GitHub; the annotation workflow operates from the browser. New source/rerun display-image updates use the existing local publishing task.
+
+Original source UID, source SHA256, compared native result hashes, choice and timestamp accompany every record. Previous comparison versions remain in export history. Verification batches have a separate folder and is_test marker.
+
+500 source/old-result pairs and incremental148 reruns. Display copies use EXIF display orientation, bounding box1280px and WebP93; original files remain in the project archive. Source authors, source links and per-image licenses are in ATTRIBUTIONS.json.
