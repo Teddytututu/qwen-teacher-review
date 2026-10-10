@@ -1,7 +1,36 @@
 <!doctype html>
-<html lang="zh-Hans"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>卡通图 · 人工选图</title><link rel="stylesheet" href="style.css?v=direct-pick-2"></head>
-<body><header><div><span class="eyebrow">QWEN / HUMAN REVIEW</span><h1>选一张更好的卡通图</h1></div><div class="tools"><button id="refresh">更新图片</button><button id="import">导入标注</button><input id="file" type="file" accept="application/json" hidden><button id="json">导出 JSON</button><button id="csv">导出 CSV</button></div></header>
-<div class="toolbar"><label>范围 <select id="scope"><option value="redo">148张重做清单</option><option value="all">全部500张</option></select></label><label>查看 <select id="filter"><option value="all">全部</option><option value="pending">待选择</option><option value="done">已选择</option></select></label><label class="search">搜索编号 <input id="search" type="search" placeholder="round_2_008"></label><span id="progress" role="status"></span></div>
-<main><nav class="navigator"><button id="prev">← 上一张</button><div><h2 id="id">正在读取图片清单</h2><span id="position"></span></div><button id="next">下一张 →</button></nav>
-<div id="images" class="images"></div><div id="choices" class="choices"><button data-choice="redo"><kbd>3</kbd> 都不行，重做</button></div><div class="selection"><span id="selection"></span><label><input id="advance" type="checkbox" checked> 选完自动下一张</label></div><p id="save" role="status">选择自动保存在当前浏览器。导出文件可保存备份，并在另一台设备导入。</p><details><summary>图片来源与许可</summary><div id="credit"></div><a href="ATTRIBUTIONS.json" target="_blank" rel="noopener">完整来源与署名清单</a></details><div id="empty" hidden>这组图片已选完，可以切换范围或导出标注。</div></main>
-<footer><span id="freshness"></span><span>点击卡通图直接选择 · 放大按钮查看细节 · 数字1/2/3选择 · ← / →切换</span></footer><dialog id="zoom"><form method="dialog"><button aria-label="关闭大图">关闭 ×</button></form><img id="zoomImage" alt="图片放大对照"></dialog><script src="app.js?v=direct-pick-2"></script></body></html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f4f3ef">
+<title>卡通图 · 人工选图</title><link rel="stylesheet" href="style.css?v=github-save-5">
+</head>
+<body>
+<header class="page-header">
+<h1>选你喜欢的图</h1>
+<div class="header-actions">
+<div class="status-stack"><span id="progress" role="status"></span><span id="sync-status" role="status" aria-live="polite">每5次选择保存到 GitHub</span></div>
+<button id="connect-github" class="connect-button">连接 GitHub</button><details class="review-menu"><summary>更多 <span aria-hidden="true">⌄</span></summary>
+<div class="menu-panel">
+<div class="toolbar">
+<label>范围 <select id="scope"><option value="redo">148张重做清单</option><option value="all">全部500张</option></select></label>
+<label>查看 <select id="filter"><option value="all">全部</option><option value="pending">待选择</option><option value="done">已选择</option></select></label>
+<label class="search">搜索编号 <input id="search" type="search" placeholder="round_2_008"></label>
+<label class="advance-option"><input id="advance" type="checkbox" checked> 选完自动下一张</label>
+</div>
+<div class="tools"><button id="refresh">更新图片</button><button id="import">导入标注</button><input id="file" type="file" accept="application/json" hidden><button id="json">导出 JSON</button><button id="csv">导出 CSV</button><button id="sync-now">立即同步</button></div>
+<p id="save" role="status">选择自动保存在当前浏览器，导出文件可备份。</p>
+<details class="credits"><summary>图片来源与许可</summary><div id="credit"></div><a href="ATTRIBUTIONS.json" target="_blank" rel="noopener">完整来源与署名清单</a></details>
+<p id="freshness" class="freshness"></p>
+</div></details>
+</div></header>
+<main>
+<nav class="navigator" aria-label="图片切换"><button id="prev" aria-label="上一张">← 上一张</button><div class="image-counter"><h2 id="id">正在读取图片清单</h2><span id="position"></span></div><button id="next" aria-label="下一张">下一张 →</button></nav>
+<div id="images" class="images"></div>
+<div id="choices" class="choices"><button data-choice="redo"><kbd>3</kbd> 都不行，重做</button></div>
+<div class="selection"><span id="selection"></span><span class="keyboard-hint">1 / 2 选图 · 3 重做 · ← / → 切换</span></div>
+<div id="empty" hidden>这组图片已选完，可在“更多”切换范围或导出标注。</div>
+</main>
+<dialog id="zoom"><form method="dialog"><button aria-label="关闭大图">关闭 ×</button></form><img id="zoomImage" alt="图片放大对照"></dialog>
+<dialog id="auth-dialog" class="auth-dialog"><form method="dialog"><button aria-label="关闭授权窗口">关闭 ×</button></form><h2>连接 GitHub 保存标注</h2><p>标注直接存入你的公开仓库。每5次选择自动保存，电脑关机后数据继续保留。</p><ol><li><a href="https://github.com/settings/personal-access-tokens/new?name=Qwen-review-annotations&amp;target_name=Teddytututu&amp;expires_in=30&amp;contents=write" target="_blank" rel="noopener">创建标注专用令牌</a></li><li>Repository access选择Only select repositories，再选qwen-teacher-review。</li><li>Contents权限选择Read and write，复制生成的令牌填到下方。</li></ol><label for="auth-token">专用令牌</label><input id="auth-token" type="password" autocomplete="off" spellcheck="false" placeholder="github_pat_…"><p class="auth-note">令牌保存在当前标签页会话，标注文件和网页代码仅包含图片与选择数据。</p><p id="auth-notice" role="status"></p><div class="auth-actions"><button id="auth-save">连接并保存</button><button id="auth-disconnect">断开授权</button></div></dialog><script src="sync.js?v=github-save-5"></script><script src="app.js?v=github-save-5"></script>
+</body></html>
+
