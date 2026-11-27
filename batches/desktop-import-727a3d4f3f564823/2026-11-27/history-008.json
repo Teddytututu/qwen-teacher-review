@@ -1,0 +1,196 @@
+{
+  "schema_version": 2,
+  "dataset_id": "chen-source500-43511a891ae2516d",
+  "source_manifest_sha256": "43511a891ae2516ddda0a5819516d93d758adcb18f9b8e94d8c65bef880b99d2",
+  "client_id": "desktop-import-727a3d4f3f564823",
+  "batch_id": "history-008",
+  "created_at": "2026-11-27T10:25:30.522Z",
+  "is_test": false,
+  "entries": [
+    {
+      "schema_version": 2,
+      "event_id": "f20c68e3-6a8b-4b2b-99be-88691666f779",
+      "dataset_id": "chen-source500-43511a891ae2516d",
+      "source_manifest_sha256": "43511a891ae2516ddda0a5819516d93d758adcb18f9b8e94d8c65bef880b99d2",
+      "source_uid": "round_2/087",
+      "source_sha256": "346a93cc1c6b084c7845f5e4ed592418b888c94bf5de2c942d8d8e90c899ab04",
+      "versions": [
+        {
+          "key": "new",
+          "native_sha256": "900c5c01ed497fb9d0b72dd9f6e7372ceaf7fd8eb44366b15d1b83806535130d",
+          "generation_version": "redo-v5-20261010",
+          "config_sha256": "cbb40422155e5b0cba67724c364dc77df0ae8543f2ee93cba5c6198406ac324b"
+        },
+        {
+          "key": "old",
+          "native_sha256": "dd65af71c43fb99ba15b0d9bdd137245c557193bb04312cf6a93041b761ff6f8",
+          "generation_version": "original-500",
+          "config_sha256": "35d37ef6616b7eedd94e9089c1ce96b4229be60d0b5835de0d0520e3cc0094f4"
+        }
+      ],
+      "choice": "new",
+      "updated_at": "2026-11-27T10:10:57.561Z",
+      "client_id": "e55568bd-c6a1-4ccc-87ce-3bcbbbf8c736",
+      "parents": [],
+      "selected_native_sha256": "900c5c01ed497fb9d0b72dd9f6e7372ceaf7fd8eb44366b15d1b83806535130d",
+      "selected_generation_version": "redo-v5-20261010",
+      "is_test": false,
+      "legacy": false,
+      "id": "round_2_087",
+      "source_id": "commons-27795036",
+      "split": "train",
+      "license": "Public domain",
+      "attribution": "Jean Bungartz",
+      "review_method": "human comparison: old/new/both redo",
+      "comparison_key": "[2,\"chen-source500-43511a891ae2516d\",\"round_2/087\",\"346a93cc1c6b084c7845f5e4ed592418b888c94bf5de2c942d8d8e90c899ab04\",[[\"new\",\"900c5c01ed497fb9d0b72dd9f6e7372ceaf7fd8eb44366b15d1b83806535130d\"],[\"old\",\"dd65af71c43fb99ba15b0d9bdd137245c557193bb04312cf6a93041b761ff6f8\"]]]"
+    },
+    {
+      "schema_version": 2,
+      "event_id": "aae0e1ba-b25d-44a2-b805-8645f0b5e589",
+      "dataset_id": "chen-source500-43511a891ae2516d",
+      "source_manifest_sha256": "43511a891ae2516ddda0a5819516d93d758adcb18f9b8e94d8c65bef880b99d2",
+      "source_uid": "round_2/088",
+      "source_sha256": "c627703da26b6d3b22716823dbc07c0dea350e59238b8339f034fdb075c1ca4c",
+      "versions": [
+        {
+          "key": "new",
+          "native_sha256": "47fd815dee4b06222f458ac23a4beda4768f225bb6df4e20acfc1b4916e4948e",
+          "generation_version": "redo-v5-20261010",
+          "config_sha256": "81f8e0571ff60b7826b95f6d8e5148290fa99f9ee7da193b81a05a35b40d967c"
+        },
+        {
+          "key": "old",
+          "native_sha256": "3b7a633c4c30024951498895e2ffa8110b8807b3040270eec917aa27bbb2ad0a",
+          "generation_version": "original-500",
+          "config_sha256": "35d37ef6616b7eedd94e9089c1ce96b4229be60d0b5835de0d0520e3cc0094f4"
+        }
+      ],
+      "choice": "redo",
+      "updated_at": "2026-11-27T10:11:09.223Z",
+      "client_id": "e55568bd-c6a1-4ccc-87ce-3bcbbbf8c736",
+      "parents": [],
+      "selected_native_sha256": null,
+      "selected_generation_version": null,
+      "is_test": false,
+      "legacy": false,
+      "id": "round_2_088",
+      "source_id": "commons-23522419",
+      "split": "train",
+      "license": "CC BY-SA 3.0",
+      "attribution": "Rabenbunt",
+      "review_method": "human comparison: old/new/both redo",
+      "comparison_key": "[2,\"chen-source500-43511a891ae2516d\",\"round_2/088\",\"c627703da26b6d3b22716823dbc07c0dea350e59238b8339f034fdb075c1ca4c\",[[\"new\",\"47fd815dee4b06222f458ac23a4beda4768f225bb6df4e20acfc1b4916e4948e\"],[\"old\",\"3b7a633c4c30024951498895e2ffa8110b8807b3040270eec917aa27bbb2ad0a\"]]]"
+    },
+    {
+      "schema_version": 2,
+      "event_id": "a65e0ff3-d039-40eb-bd5d-dda8424abba2",
+      "dataset_id": "chen-source500-43511a891ae2516d",
+      "source_manifest_sha256": "43511a891ae2516ddda0a5819516d93d758adcb18f9b8e94d8c65bef880b99d2",
+      "source_uid": "round_2/100",
+      "source_sha256": "3b082dfdd858db54e82c36f1a51f258bba15fb0824f899b9161836831afeeab4",
+      "versions": [
+        {
+          "key": "new",
+          "native_sha256": "af3e77e021b97c02195e5aa6b0bb9901ec7c3fa46ce5880cae1a918395aac5a8",
+          "generation_version": "redo-v5-20261010",
+          "config_sha256": "cbb40422155e5b0cba67724c364dc77df0ae8543f2ee93cba5c6198406ac324b"
+        },
+        {
+          "key": "old",
+          "native_sha256": "641429b1df64865a13b94a09e0022fc1d80d50a22d2865a522b1ef5e02a136a9",
+          "generation_version": "original-500",
+          "config_sha256": "35d37ef6616b7eedd94e9089c1ce96b4229be60d0b5835de0d0520e3cc0094f4"
+        }
+      ],
+      "choice": "redo",
+      "updated_at": "2026-11-27T10:11:15.540Z",
+      "client_id": "e55568bd-c6a1-4ccc-87ce-3bcbbbf8c736",
+      "parents": [],
+      "selected_native_sha256": null,
+      "selected_generation_version": null,
+      "is_test": false,
+      "legacy": false,
+      "id": "round_2_100",
+      "source_id": "commons-125777488",
+      "split": "train",
+      "license": "CC BY-SA 4.0",
+      "attribution": "RagdollSnufkin",
+      "review_method": "human comparison: old/new/both redo",
+      "comparison_key": "[2,\"chen-source500-43511a891ae2516d\",\"round_2/100\",\"3b082dfdd858db54e82c36f1a51f258bba15fb0824f899b9161836831afeeab4\",[[\"new\",\"af3e77e021b97c02195e5aa6b0bb9901ec7c3fa46ce5880cae1a918395aac5a8\"],[\"old\",\"641429b1df64865a13b94a09e0022fc1d80d50a22d2865a522b1ef5e02a136a9\"]]]"
+    },
+    {
+      "schema_version": 2,
+      "event_id": "1cded18c-c760-405b-bdaa-3869a04c108a",
+      "dataset_id": "chen-source500-43511a891ae2516d",
+      "source_manifest_sha256": "43511a891ae2516ddda0a5819516d93d758adcb18f9b8e94d8c65bef880b99d2",
+      "source_uid": "round_2/105",
+      "source_sha256": "eed7aa2b65fcfe5c5ce2207ff3bae06ee7da6f5f98559a415fea8d9aa087ba06",
+      "versions": [
+        {
+          "key": "new",
+          "native_sha256": "1e71664d073809320c3b1f9b1566f6fec6f348d79cf6a9652bd053db1a0b8b2b",
+          "generation_version": "redo-v5-20261010",
+          "config_sha256": "81f8e0571ff60b7826b95f6d8e5148290fa99f9ee7da193b81a05a35b40d967c"
+        },
+        {
+          "key": "old",
+          "native_sha256": "62273066e2cb65f6b0be34ed393fc6dcc0a034cb2fd074e61dc9b2b28a464e9d",
+          "generation_version": "original-500",
+          "config_sha256": "35d37ef6616b7eedd94e9089c1ce96b4229be60d0b5835de0d0520e3cc0094f4"
+        }
+      ],
+      "choice": "new",
+      "updated_at": "2026-11-27T10:11:23.056Z",
+      "client_id": "e55568bd-c6a1-4ccc-87ce-3bcbbbf8c736",
+      "parents": [],
+      "selected_native_sha256": "1e71664d073809320c3b1f9b1566f6fec6f348d79cf6a9652bd053db1a0b8b2b",
+      "selected_generation_version": "redo-v5-20261010",
+      "is_test": false,
+      "legacy": false,
+      "id": "round_2_105",
+      "source_id": "commons-105370452",
+      "split": "train",
+      "license": "CC BY 2.0",
+      "attribution": "greg westfall from Fort Worth, Texas, USA",
+      "review_method": "human comparison: old/new/both redo",
+      "comparison_key": "[2,\"chen-source500-43511a891ae2516d\",\"round_2/105\",\"eed7aa2b65fcfe5c5ce2207ff3bae06ee7da6f5f98559a415fea8d9aa087ba06\",[[\"new\",\"1e71664d073809320c3b1f9b1566f6fec6f348d79cf6a9652bd053db1a0b8b2b\"],[\"old\",\"62273066e2cb65f6b0be34ed393fc6dcc0a034cb2fd074e61dc9b2b28a464e9d\"]]]"
+    },
+    {
+      "schema_version": 2,
+      "event_id": "bd3853c1-b4f0-4e9f-8d9d-ea61b5c6302a",
+      "dataset_id": "chen-source500-43511a891ae2516d",
+      "source_manifest_sha256": "43511a891ae2516ddda0a5819516d93d758adcb18f9b8e94d8c65bef880b99d2",
+      "source_uid": "round_2/108",
+      "source_sha256": "1477b4edcd07a890a4e886637775e849a9eafed434f0665c3b5bf3a784ffabc9",
+      "versions": [
+        {
+          "key": "new",
+          "native_sha256": "5d49318e6d0002b30160fc57330a89e600bfec90c6cb44a0dc19268696ad9263",
+          "generation_version": "redo-v5-20261010",
+          "config_sha256": "cbb40422155e5b0cba67724c364dc77df0ae8543f2ee93cba5c6198406ac324b"
+        },
+        {
+          "key": "old",
+          "native_sha256": "a789466195cacac7213c36b6eeeb74284c750dcdf044fa6b02ca6cbdfbf2b929",
+          "generation_version": "original-500",
+          "config_sha256": "35d37ef6616b7eedd94e9089c1ce96b4229be60d0b5835de0d0520e3cc0094f4"
+        }
+      ],
+      "choice": "new",
+      "updated_at": "2026-11-27T10:11:26.205Z",
+      "client_id": "e55568bd-c6a1-4ccc-87ce-3bcbbbf8c736",
+      "parents": [],
+      "selected_native_sha256": "5d49318e6d0002b30160fc57330a89e600bfec90c6cb44a0dc19268696ad9263",
+      "selected_generation_version": "redo-v5-20261010",
+      "is_test": false,
+      "legacy": false,
+      "id": "round_2_108",
+      "source_id": "commons-35007741",
+      "split": "train",
+      "license": "CC BY 2.0",
+      "attribution": "Elma from Reykjavík",
+      "review_method": "human comparison: old/new/both redo",
+      "comparison_key": "[2,\"chen-source500-43511a891ae2516d\",\"round_2/108\",\"1477b4edcd07a890a4e886637775e849a9eafed434f0665c3b5bf3a784ffabc9\",[[\"new\",\"5d49318e6d0002b30160fc57330a89e600bfec90c6cb44a0dc19268696ad9263\"],[\"old\",\"a789466195cacac7213c36b6eeeb74284c750dcdf044fa6b02ca6cbdfbf2b929\"]]]"
+    }
+  ]
+}

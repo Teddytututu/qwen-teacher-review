@@ -1,0 +1,1157 @@
+[
+  {
+    "id": "round_2_012",
+    "event_id": "97a0c985-93c6-4b7c-b965-f0194d4177a3",
+    "source_uid": "round_2/012",
+    "source_id": "commons-27004945",
+    "source_sha256": "37792d56e9695aacebb41e63822a743b23a022fe267548a816eee58aac6bc9fa",
+    "source_manifest_sha256": "43511a891ae2516ddda0a5819516d93d758adcb18f9b8e94d8c65bef880b99d2",
+    "split": "train",
+    "license": "CC BY-SA 3.0",
+    "attribution": "FASTILY",
+    "choice": "redo",
+    "status": "redo",
+    "selected_native_sha256": null,
+    "selected_generation_version": null,
+    "compared_versions": [
+      {
+        "key": "new",
+        "native_sha256": "e5f0a0f381dc315b458b1d547cad552def4308c5184c8c8d6c185a9ed16b9e30",
+        "generation_version": "redo-v5-20261010",
+        "config_sha256": "cbb40422155e5b0cba67724c364dc77df0ae8543f2ee93cba5c6198406ac324b"
+      },
+      {
+        "key": "old",
+        "native_sha256": "489f96f2b8f7cee4d4959e86431fdb349c825d7a7805e8be5b97147b96cb7be4",
+        "generation_version": "original-500",
+        "config_sha256": "35d37ef6616b7eedd94e9089c1ce96b4229be60d0b5835de0d0520e3cc0094f4"
+      }
+    ],
+    "updated_at": "2026-11-27T09:35:12.973Z",
+    "comparison_key": "[2,\"chen-source500-43511a891ae2516d\",\"round_2/012\",\"37792d56e9695aacebb41e63822a743b23a022fe267548a816eee58aac6bc9fa\",[[\"new\",\"e5f0a0f381dc315b458b1d547cad552def4308c5184c8c8d6c185a9ed16b9e30\"],[\"old\",\"489f96f2b8f7cee4d4959e86431fdb349c825d7a7805e8be5b97147b96cb7be4\"]]]",
+    "legacy": false,
+    "relation_to_1162": "other_compared",
+    "qualified_native_sha256": "e5f0a0f381dc315b458b1d547cad552def4308c5184c8c8d6c185a9ed16b9e30",
+    "qualified_generation_version": "redo-v5-20261010"
+  },
+  {
+    "id": "round_2_028",
+    "event_id": "8df8c336-2d28-4f09-9d72-5d7863609f6e",
+    "source_uid": "round_2/028",
+    "source_id": "commons-36408186",
+    "source_sha256": "5e041a625ace1f91e3d2563cbaf474db5d78c011da97d3ff56dc93c81ee76deb",
+    "source_manifest_sha256": "43511a891ae2516ddda0a5819516d93d758adcb18f9b8e94d8c65bef880b99d2",
+    "split": "train",
+    "license": "CC BY-SA 2.0",
+    "attribution": "Bob Adams from George, South Africa",
+    "choice": "redo",
+    "status": "redo",
+    "selected_native_sha256": null,
+    "selected_generation_version": null,
+    "compared_versions": [
+      {
+        "key": "new",
+        "native_sha256": "09b645318c81a31c21eb7ef3651949e2871563bc9eea42ebe125c38d61468e57",
+        "generation_version": "redo-v5-20261010",
+        "config_sha256": "81f8e0571ff60b7826b95f6d8e5148290fa99f9ee7da193b81a05a35b40d967c"
+      },
+      {
+        "key": "old",
+        "native_sha256": "e38dc7a4d1f267849b502f406e31a78c779f109e0971f3c7fb02381461653887",
+        "generation_version": "original-500",
+        "config_sha256": "35d37ef6616b7eedd94e9089c1ce96b4229be60d0b5835de0d0520e3cc0094f4"
+      }
+    ],
+    "updated_at": "2026-11-27T09:35:16.753Z",
+    "comparison_key": "[2,\"chen-source500-43511a891ae2516d\",\"round_2/028\",\"5e041a625ace1f91e3d2563cbaf474db5d78c011da97d3ff56dc93c81ee76deb\",[[\"new\",\"09b645318c81a31c21eb7ef3651949e2871563bc9eea42ebe125c38d61468e57\"],[\"old\",\"e38dc7a4d1f267849b502f406e31a78c779f109e0971f3c7fb02381461653887\"]]]",
+    "legacy": false,
+    "relation_to_1162": "later_unseen_version",
+    "qualified_native_sha256": "3ff9fc52a94779cb205ff8265d3944a16604ced85382bf5a2b699c75b4fe7946",
+    "qualified_generation_version": "iterate-round02-source-traced-20261011"
+  },
+  {
+    "id": "round_2_042",
+    "event_id": "9d43cbdb-4bd0-4c9a-9385-7a182ba7255b",
+    "source_uid": "round_2/042",
+    "source_id": "commons-6754669",
+    "source_sha256": "45c47172cdd03b250673f94eb45a033812f8381f3b11f088d4aef088e5cd67b7",
+    "source_manifest_sha256": "43511a891ae2516ddda0a5819516d93d758adcb18f9b8e94d8c65bef880b99d2",
+    "split": "train",
+    "license": "Public domain",
+    "attribution": "SloMo2639",
+    "choice": "redo",
+    "status": "redo",
+    "selected_native_sha256": null,
+    "selected_generation_version": null,
+    "compared_versions": [
+      {
+        "key": "new",
+        "native_sha256": "77ce94ea6445f2e4bda126f7f13430ec53fdb5ca2a27a190f1e1fac9b1dfc242",
+        "generation_version": "redo-v5-20261010",
+        "config_sha256": "cbb40422155e5b0cba67724c364dc77df0ae8543f2ee93cba5c6198406ac324b"
+      },
+      {
+        "key": "old",
+        "native_sha256": "432a529ce9d0d2b809a7acc77e9861e795fc10fb8af9df93361311e266fd7235",
+        "generation_version": "original-500",
+        "config_sha256": "35d37ef6616b7eedd94e9089c1ce96b4229be60d0b5835de0d0520e3cc0094f4"
+      }
+    ],
+    "updated_at": "2026-11-27T09:35:30.535Z",
+    "comparison_key": "[2,\"chen-source500-43511a891ae2516d\",\"round_2/042\",\"45c47172cdd03b250673f94eb45a033812f8381f3b11f088d4aef088e5cd67b7\",[[\"new\",\"77ce94ea6445f2e4bda126f7f13430ec53fdb5ca2a27a190f1e1fac9b1dfc242\"],[\"old\",\"432a529ce9d0d2b809a7acc77e9861e795fc10fb8af9df93361311e266fd7235\"]]]",
+    "legacy": false,
+    "relation_to_1162": "later_unseen_version",
+    "qualified_native_sha256": "465cf21447dc8baf857a842ef2841a694b862d0a76de0b4abce85cbd9294c9d6",
+    "qualified_generation_version": "iterate-round01-source-traced-20261011"
+  },
+  {
+    "id": "round_2_048",
+    "event_id": "5e8b09b2-9553-4033-b758-56222577f2c2",
+    "source_uid": "round_2/048",
+    "source_id": "commons-342167",
+    "source_sha256": "4f29e053c8fe4416660686390c84294e8340ad4ae89644e5b9ac7bfd41be2325",
+    "source_manifest_sha256": "43511a891ae2516ddda0a5819516d93d758adcb18f9b8e94d8c65bef880b99d2",
+    "split": "train",
+    "license": "CC BY 2.0",
+    "attribution": "Jürgen from Sandesneben, Germany",
+    "choice": "redo",
+    "status": "redo",
+    "selected_native_sha256": null,
+    "selected_generation_version": null,
+    "compared_versions": [
+      {
+        "key": "new",
+        "native_sha256": "046a842fb1c9595f03f7eecf9c9ce99bd8d149470c00fe3bcd8783e0d261bf08",
+        "generation_version": "redo-v5-20261010",
+        "config_sha256": "81f8e0571ff60b7826b95f6d8e5148290fa99f9ee7da193b81a05a35b40d967c"
+      },
+      {
+        "key": "old",
+        "native_sha256": "440216e431f1d24da73d30c9248182864510fd00847cfa77fe64c3fde9929ed9",
+        "generation_version": "original-500",
+        "config_sha256": "35d37ef6616b7eedd94e9089c1ce96b4229be60d0b5835de0d0520e3cc0094f4"
+      }
+    ],
+    "updated_at": "2026-11-27T09:36:47.935Z",
+    "comparison_key": "[2,\"chen-source500-43511a891ae2516d\",\"round_2/048\",\"4f29e053c8fe4416660686390c84294e8340ad4ae89644e5b9ac7bfd41be2325\",[[\"new\",\"046a842fb1c9595f03f7eecf9c9ce99bd8d149470c00fe3bcd8783e0d261bf08\"],[\"old\",\"440216e431f1d24da73d30c9248182864510fd00847cfa77fe64c3fde9929ed9\"]]]",
+    "legacy": false,
+    "relation_to_1162": "other_compared",
+    "qualified_native_sha256": "046a842fb1c9595f03f7eecf9c9ce99bd8d149470c00fe3bcd8783e0d261bf08",
+    "qualified_generation_version": "redo-v5-20261010"
+  },
+  {
+    "id": "round_2_056",
+    "event_id": "9763e2c3-f6d7-4e30-b746-0bbf499e3697",
+    "source_uid": "round_2/056",
+    "source_id": "commons-88759894",
+    "source_sha256": "c76221a094593431adee538cc22e289dfe29c75e66d6d372dfa2b2b253723972",
+    "source_manifest_sha256": "43511a891ae2516ddda0a5819516d93d758adcb18f9b8e94d8c65bef880b99d2",
+    "split": "train",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Wojciech Kocot",
+    "choice": "redo",
+    "status": "redo",
+    "selected_native_sha256": null,
+    "selected_generation_version": null,
+    "compared_versions": [
+      {
+        "key": "new",
+        "native_sha256": "1ee3a48057d7450a1afc424e771f9c594b312b976bb0ff3a11db3b578e4444c4",
+        "generation_version": "redo-v5-20261010",
+        "config_sha256": "cbb40422155e5b0cba67724c364dc77df0ae8543f2ee93cba5c6198406ac324b"
+      },
+      {
+        "key": "old",
+        "native_sha256": "8948fa3c37988f2dcfd5651747a5af06d9f0c6ba3a08e6a5dc9f103f30f5e5c6",
+        "generation_version": "original-500",
+        "config_sha256": "35d37ef6616b7eedd94e9089c1ce96b4229be60d0b5835de0d0520e3cc0094f4"
+      }
+    ],
+    "updated_at": "2026-11-27T10:10:30.279Z",
+    "comparison_key": "[2,\"chen-source500-43511a891ae2516d\",\"round_2/056\",\"c76221a094593431adee538cc22e289dfe29c75e66d6d372dfa2b2b253723972\",[[\"new\",\"1ee3a48057d7450a1afc424e771f9c594b312b976bb0ff3a11db3b578e4444c4\"],[\"old\",\"8948fa3c37988f2dcfd5651747a5af06d9f0c6ba3a08e6a5dc9f103f30f5e5c6\"]]]",
+    "legacy": false,
+    "relation_to_1162": "later_unseen_version",
+    "qualified_native_sha256": "91b5209fc50a28043a6bda4864497342d2e11e501cf6df9b3cee30871e94961d",
+    "qualified_generation_version": "redo263-source-traced-v2-20261011"
+  },
+  {
+    "id": "round_2_088",
+    "event_id": "aae0e1ba-b25d-44a2-b805-8645f0b5e589",
+    "source_uid": "round_2/088",
+    "source_id": "commons-23522419",
+    "source_sha256": "c627703da26b6d3b22716823dbc07c0dea350e59238b8339f034fdb075c1ca4c",
+    "source_manifest_sha256": "43511a891ae2516ddda0a5819516d93d758adcb18f9b8e94d8c65bef880b99d2",
+    "split": "train",
+    "license": "CC BY-SA 3.0",
+    "attribution": "Rabenbunt",
+    "choice": "redo",
+    "status": "redo",
+    "selected_native_sha256": null,
+    "selected_generation_version": null,
+    "compared_versions": [
+      {
+        "key": "new",
+        "native_sha256": "47fd815dee4b06222f458ac23a4beda4768f225bb6df4e20acfc1b4916e4948e",
+        "generation_version": "redo-v5-20261010",
+        "config_sha256": "81f8e0571ff60b7826b95f6d8e5148290fa99f9ee7da193b81a05a35b40d967c"
+      },
+      {
+        "key": "old",
+        "native_sha256": "3b7a633c4c30024951498895e2ffa8110b8807b3040270eec917aa27bbb2ad0a",
+        "generation_version": "original-500",
+        "config_sha256": "35d37ef6616b7eedd94e9089c1ce96b4229be60d0b5835de0d0520e3cc0094f4"
+      }
+    ],
+    "updated_at": "2026-11-27T10:11:09.223Z",
+    "comparison_key": "[2,\"chen-source500-43511a891ae2516d\",\"round_2/088\",\"c627703da26b6d3b22716823dbc07c0dea350e59238b8339f034fdb075c1ca4c\",[[\"new\",\"47fd815dee4b06222f458ac23a4beda4768f225bb6df4e20acfc1b4916e4948e\"],[\"old\",\"3b7a633c4c30024951498895e2ffa8110b8807b3040270eec917aa27bbb2ad0a\"]]]",
+    "legacy": false,
+    "relation_to_1162": "later_unseen_version",
+    "qualified_native_sha256": "8220202deeaeae1fe5fb7a193c3033d4f1beceb293db76f8672c9481db0866cd",
+    "qualified_generation_version": "redo263-source-traced-v2-20261011"
+  },
+  {
+    "id": "round_2_100",
+    "event_id": "a65e0ff3-d039-40eb-bd5d-dda8424abba2",
+    "source_uid": "round_2/100",
+    "source_id": "commons-125777488",
+    "source_sha256": "3b082dfdd858db54e82c36f1a51f258bba15fb0824f899b9161836831afeeab4",
+    "source_manifest_sha256": "43511a891ae2516ddda0a5819516d93d758adcb18f9b8e94d8c65bef880b99d2",
+    "split": "train",
+    "license": "CC BY-SA 4.0",
+    "attribution": "RagdollSnufkin",
+    "choice": "redo",
+    "status": "redo",
+    "selected_native_sha256": null,
+    "selected_generation_version": null,
+    "compared_versions": [
+      {
+        "key": "new",
+        "native_sha256": "af3e77e021b97c02195e5aa6b0bb9901ec7c3fa46ce5880cae1a918395aac5a8",
+        "generation_version": "redo-v5-20261010",
+        "config_sha256": "cbb40422155e5b0cba67724c364dc77df0ae8543f2ee93cba5c6198406ac324b"
+      },
+      {
+        "key": "old",
+        "native_sha256": "641429b1df64865a13b94a09e0022fc1d80d50a22d2865a522b1ef5e02a136a9",
+        "generation_version": "original-500",
+        "config_sha256": "35d37ef6616b7eedd94e9089c1ce96b4229be60d0b5835de0d0520e3cc0094f4"
+      }
+    ],
+    "updated_at": "2026-11-27T10:11:15.540Z",
+    "comparison_key": "[2,\"chen-source500-43511a891ae2516d\",\"round_2/100\",\"3b082dfdd858db54e82c36f1a51f258bba15fb0824f899b9161836831afeeab4\",[[\"new\",\"af3e77e021b97c02195e5aa6b0bb9901ec7c3fa46ce5880cae1a918395aac5a8\"],[\"old\",\"641429b1df64865a13b94a09e0022fc1d80d50a22d2865a522b1ef5e02a136a9\"]]]",
+    "legacy": false,
+    "relation_to_1162": "absent_from_1162",
+    "qualified_native_sha256": null,
+    "qualified_generation_version": null
+  },
+  {
+    "id": "round_2_117",
+    "event_id": "bbeb3ce0-84ba-4e45-b667-5905ef5b375c",
+    "source_uid": "round_2/117",
+    "source_id": "commons-36472047",
+    "source_sha256": "126a61efb9250d029a469bdca250b73c914308ac778576e40d0cd793dd621f2f",
+    "source_manifest_sha256": "43511a891ae2516ddda0a5819516d93d758adcb18f9b8e94d8c65bef880b99d2",
+    "split": "train",
+    "license": "CC BY 2.0",
+    "attribution": "Lauri Rantala from Espoo, Finland",
+    "choice": "redo",
+    "status": "redo",
+    "selected_native_sha256": null,
+    "selected_generation_version": null,
+    "compared_versions": [
+      {
+        "key": "new",
+        "native_sha256": "b5c4b68403585536173b17c0550b2f7fabea2072ef73f5f705c36b2e3fb0e92c",
+        "generation_version": "redo-v5-20261010",
+        "config_sha256": "81f8e0571ff60b7826b95f6d8e5148290fa99f9ee7da193b81a05a35b40d967c"
+      },
+      {
+        "key": "old",
+        "native_sha256": "bdbaee8a43cfe4cf639b9ea014ee09e384c63779e56a4f8226517cef864d96d2",
+        "generation_version": "original-500",
+        "config_sha256": "35d37ef6616b7eedd94e9089c1ce96b4229be60d0b5835de0d0520e3cc0094f4"
+      }
+    ],
+    "updated_at": "2026-11-27T10:11:41.206Z",
+    "comparison_key": "[2,\"chen-source500-43511a891ae2516d\",\"round_2/117\",\"126a61efb9250d029a469bdca250b73c914308ac778576e40d0cd793dd621f2f\",[[\"new\",\"b5c4b68403585536173b17c0550b2f7fabea2072ef73f5f705c36b2e3fb0e92c\"],[\"old\",\"bdbaee8a43cfe4cf639b9ea014ee09e384c63779e56a4f8226517cef864d96d2\"]]]",
+    "legacy": false,
+    "relation_to_1162": "absent_from_1162",
+    "qualified_native_sha256": null,
+    "qualified_generation_version": null
+  },
+  {
+    "id": "round_2_154",
+    "event_id": "72b65438-ad58-4349-8c90-534179f16d77",
+    "source_uid": "round_2/154",
+    "source_id": "commons-20352161",
+    "source_sha256": "008b75a14177488edf086984cd7ccc2f0b061775d7ad107266c567e0f5cf5979",
+    "source_manifest_sha256": "43511a891ae2516ddda0a5819516d93d758adcb18f9b8e94d8c65bef880b99d2",
+    "split": "train",
+    "license": "CC BY-SA 3.0",
+    "attribution": "Mallowtek",
+    "choice": "redo",
+    "status": "redo",
+    "selected_native_sha256": null,
+    "selected_generation_version": null,
+    "compared_versions": [
+      {
+        "key": "new",
+        "native_sha256": "f536f8adbdda5fa08351712a322efbfa439d2bfd8efcdc9f67dcfeaf00570e3f",
+        "generation_version": "redo-v5-20261010",
+        "config_sha256": "81f8e0571ff60b7826b95f6d8e5148290fa99f9ee7da193b81a05a35b40d967c"
+      },
+      {
+        "key": "old",
+        "native_sha256": "06f1ce6a8599b378eb18b31407b0ee80eb3cd240e7bf538e0e2b2222cdf77688",
+        "generation_version": "original-500",
+        "config_sha256": "35d37ef6616b7eedd94e9089c1ce96b4229be60d0b5835de0d0520e3cc0094f4"
+      }
+    ],
+    "updated_at": "2026-11-27T10:11:57.393Z",
+    "comparison_key": "[2,\"chen-source500-43511a891ae2516d\",\"round_2/154\",\"008b75a14177488edf086984cd7ccc2f0b061775d7ad107266c567e0f5cf5979\",[[\"new\",\"f536f8adbdda5fa08351712a322efbfa439d2bfd8efcdc9f67dcfeaf00570e3f\"],[\"old\",\"06f1ce6a8599b378eb18b31407b0ee80eb3cd240e7bf538e0e2b2222cdf77688\"]]]",
+    "legacy": false,
+    "relation_to_1162": "absent_from_1162",
+    "qualified_native_sha256": null,
+    "qualified_generation_version": null
+  },
+  {
+    "id": "round_2_156",
+    "event_id": "353f4d67-a283-462a-8df7-744ee53cb880",
+    "source_uid": "round_2/156",
+    "source_id": "commons-62059143",
+    "source_sha256": "8a1650eb2902fe2ec8d6f6f1f9f1cd105b16937fb85a86a5c1d207312ab8e02c",
+    "source_manifest_sha256": "43511a891ae2516ddda0a5819516d93d758adcb18f9b8e94d8c65bef880b99d2",
+    "split": "train",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Pereaz",
+    "choice": "redo",
+    "status": "redo",
+    "selected_native_sha256": null,
+    "selected_generation_version": null,
+    "compared_versions": [
+      {
+        "key": "new",
+        "native_sha256": "04f9a5c26b6cba5f33d6d681edbbaa7e8ffc80f28ddd5c378af48bea3ac0410c",
+        "generation_version": "redo-v5-20261010",
+        "config_sha256": "cbb40422155e5b0cba67724c364dc77df0ae8543f2ee93cba5c6198406ac324b"
+      },
+      {
+        "key": "old",
+        "native_sha256": "c01c4a73d630903fdf71fc5b7a8b7d13d1891e531a3a754ebe18dab65a12044e",
+        "generation_version": "original-500",
+        "config_sha256": "35d37ef6616b7eedd94e9089c1ce96b4229be60d0b5835de0d0520e3cc0094f4"
+      }
+    ],
+    "updated_at": "2026-11-27T10:11:59.907Z",
+    "comparison_key": "[2,\"chen-source500-43511a891ae2516d\",\"round_2/156\",\"8a1650eb2902fe2ec8d6f6f1f9f1cd105b16937fb85a86a5c1d207312ab8e02c\",[[\"new\",\"04f9a5c26b6cba5f33d6d681edbbaa7e8ffc80f28ddd5c378af48bea3ac0410c\"],[\"old\",\"c01c4a73d630903fdf71fc5b7a8b7d13d1891e531a3a754ebe18dab65a12044e\"]]]",
+    "legacy": false,
+    "relation_to_1162": "absent_from_1162",
+    "qualified_native_sha256": null,
+    "qualified_generation_version": null
+  },
+  {
+    "id": "round_2_160",
+    "event_id": "77af8197-7654-400d-92f2-82ac19e36338",
+    "source_uid": "round_2/160",
+    "source_id": "commons-107636061",
+    "source_sha256": "5ff6daed8ade0caa2e10c579c49cdec567100eef27c90669ec742833bca131a5",
+    "source_manifest_sha256": "43511a891ae2516ddda0a5819516d93d758adcb18f9b8e94d8c65bef880b99d2",
+    "split": "train",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Tylwyth Eldar",
+    "choice": "redo",
+    "status": "redo",
+    "selected_native_sha256": null,
+    "selected_generation_version": null,
+    "compared_versions": [
+      {
+        "key": "new",
+        "native_sha256": "b2441e72d4e5dc8452fe1196ecf2cded42b136c89266a7446e02cb19e750b480",
+        "generation_version": "redo-v5-20261010",
+        "config_sha256": "81f8e0571ff60b7826b95f6d8e5148290fa99f9ee7da193b81a05a35b40d967c"
+      },
+      {
+        "key": "old",
+        "native_sha256": "c3d92977a7e517819f63664edb55003a337424dfa7ddcd599d00d3623c179e3d",
+        "generation_version": "original-500",
+        "config_sha256": "35d37ef6616b7eedd94e9089c1ce96b4229be60d0b5835de0d0520e3cc0094f4"
+      }
+    ],
+    "updated_at": "2026-11-27T10:12:07.337Z",
+    "comparison_key": "[2,\"chen-source500-43511a891ae2516d\",\"round_2/160\",\"5ff6daed8ade0caa2e10c579c49cdec567100eef27c90669ec742833bca131a5\",[[\"new\",\"b2441e72d4e5dc8452fe1196ecf2cded42b136c89266a7446e02cb19e750b480\"],[\"old\",\"c3d92977a7e517819f63664edb55003a337424dfa7ddcd599d00d3623c179e3d\"]]]",
+    "legacy": false,
+    "relation_to_1162": "later_unseen_version",
+    "qualified_native_sha256": "87df0f84dedeb841d2aab02a6b45d17996840fb24aa7b4036d46111f9f155efd",
+    "qualified_generation_version": "redo263-source-traced-v2-20261011"
+  },
+  {
+    "id": "round_2_171",
+    "event_id": "8f198cae-1758-454a-9bbd-b8d713155705",
+    "source_uid": "round_2/171",
+    "source_id": "commons-161018000",
+    "source_sha256": "0f4c3e52d0b1feeccdc006c2b8a708771224fe1ec977e6ba5b27dd0800e9f5b6",
+    "source_manifest_sha256": "43511a891ae2516ddda0a5819516d93d758adcb18f9b8e94d8c65bef880b99d2",
+    "split": "train",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Oleg Yunakov",
+    "choice": "redo",
+    "status": "redo",
+    "selected_native_sha256": null,
+    "selected_generation_version": null,
+    "compared_versions": [
+      {
+        "key": "new",
+        "native_sha256": "89242f8eb25fade56a3dc943a662e07dfe1dd041ae65f13eaff3858fdfcea34f",
+        "generation_version": "redo-v5-20261010",
+        "config_sha256": "81f8e0571ff60b7826b95f6d8e5148290fa99f9ee7da193b81a05a35b40d967c"
+      },
+      {
+        "key": "old",
+        "native_sha256": "d2610b686f124c8a39c78e1e0494b18010c1f069adb4aba8f5cceab8f689c196",
+        "generation_version": "original-500",
+        "config_sha256": "35d37ef6616b7eedd94e9089c1ce96b4229be60d0b5835de0d0520e3cc0094f4"
+      }
+    ],
+    "updated_at": "2026-11-27T10:12:13.172Z",
+    "comparison_key": "[2,\"chen-source500-43511a891ae2516d\",\"round_2/171\",\"0f4c3e52d0b1feeccdc006c2b8a708771224fe1ec977e6ba5b27dd0800e9f5b6\",[[\"new\",\"89242f8eb25fade56a3dc943a662e07dfe1dd041ae65f13eaff3858fdfcea34f\"],[\"old\",\"d2610b686f124c8a39c78e1e0494b18010c1f069adb4aba8f5cceab8f689c196\"]]]",
+    "legacy": false,
+    "relation_to_1162": "absent_from_1162",
+    "qualified_native_sha256": null,
+    "qualified_generation_version": null
+  },
+  {
+    "id": "round_2_229",
+    "event_id": "6f7bc76f-dd1a-454c-b5fb-26970887a2cc",
+    "source_uid": "round_2/229",
+    "source_id": "commons-6430490",
+    "source_sha256": "c65dd828338875e05fd08bb66150032ec163b356d8c8f36fa6e05b28e46cf076",
+    "source_manifest_sha256": "43511a891ae2516ddda0a5819516d93d758adcb18f9b8e94d8c65bef880b99d2",
+    "split": "train",
+    "license": "Public domain",
+    "attribution": "Adamdalebostock",
+    "choice": "redo",
+    "status": "redo",
+    "selected_native_sha256": null,
+    "selected_generation_version": null,
+    "compared_versions": [
+      {
+        "key": "new",
+        "native_sha256": "1dbd4ce6729806eb50d07b09fc0e87b24cc3c98d09a7e66e756174e4370ff78d",
+        "generation_version": "redo-v5-20261010",
+        "config_sha256": "cbb40422155e5b0cba67724c364dc77df0ae8543f2ee93cba5c6198406ac324b"
+      },
+      {
+        "key": "old",
+        "native_sha256": "c18f408c94ad3040ee3da81c9de662cc1507835587432ee40766c5de4a4bb03e",
+        "generation_version": "original-500",
+        "config_sha256": "35d37ef6616b7eedd94e9089c1ce96b4229be60d0b5835de0d0520e3cc0094f4"
+      }
+    ],
+    "updated_at": "2026-11-27T10:13:29.428Z",
+    "comparison_key": "[2,\"chen-source500-43511a891ae2516d\",\"round_2/229\",\"c65dd828338875e05fd08bb66150032ec163b356d8c8f36fa6e05b28e46cf076\",[[\"new\",\"1dbd4ce6729806eb50d07b09fc0e87b24cc3c98d09a7e66e756174e4370ff78d\"],[\"old\",\"c18f408c94ad3040ee3da81c9de662cc1507835587432ee40766c5de4a4bb03e\"]]]",
+    "legacy": false,
+    "relation_to_1162": "later_unseen_version",
+    "qualified_native_sha256": "b8398196f3c16084d55b79d1a5727c2e8abfe451158202a92a33f269e63c6336",
+    "qualified_generation_version": "iterate-round01-source-traced-20261011"
+  },
+  {
+    "id": "round_2_248",
+    "event_id": "94e21c2b-6e66-4fe4-a396-1161d69b006f",
+    "source_uid": "round_2/248",
+    "source_id": "commons-55809073",
+    "source_sha256": "9e1d3be57f99972e466ca8a85caa6a7b74bfff0bfb9f6f510f62fdfc95a17be3",
+    "source_manifest_sha256": "43511a891ae2516ddda0a5819516d93d758adcb18f9b8e94d8c65bef880b99d2",
+    "split": "train",
+    "license": "CC BY 3.0",
+    "attribution": "Geraldo C F Valadare…",
+    "choice": "redo",
+    "status": "redo",
+    "selected_native_sha256": null,
+    "selected_generation_version": null,
+    "compared_versions": [
+      {
+        "key": "new",
+        "native_sha256": "fa57a6e186ae2b464b50c9a37cacd7d394aab12243cc195822c76010a7fe9acb",
+        "generation_version": "redo-v5-20261010",
+        "config_sha256": "81f8e0571ff60b7826b95f6d8e5148290fa99f9ee7da193b81a05a35b40d967c"
+      },
+      {
+        "key": "old",
+        "native_sha256": "7ae99dd116ba769f7f7298ac01d1d612a719d8db4854a98a3f7abc6aab81270d",
+        "generation_version": "original-500",
+        "config_sha256": "35d37ef6616b7eedd94e9089c1ce96b4229be60d0b5835de0d0520e3cc0094f4"
+      }
+    ],
+    "updated_at": "2026-11-27T10:14:05.777Z",
+    "comparison_key": "[2,\"chen-source500-43511a891ae2516d\",\"round_2/248\",\"9e1d3be57f99972e466ca8a85caa6a7b74bfff0bfb9f6f510f62fdfc95a17be3\",[[\"new\",\"fa57a6e186ae2b464b50c9a37cacd7d394aab12243cc195822c76010a7fe9acb\"],[\"old\",\"7ae99dd116ba769f7f7298ac01d1d612a719d8db4854a98a3f7abc6aab81270d\"]]]",
+    "legacy": false,
+    "relation_to_1162": "absent_from_1162",
+    "qualified_native_sha256": null,
+    "qualified_generation_version": null
+  },
+  {
+    "id": "round_3_009",
+    "event_id": "23d10968-650e-4c51-b483-e2017ee6fea7",
+    "source_uid": "round_3/009",
+    "source_id": "commons-52579698",
+    "source_sha256": "85ce2d290dfe6f7a6183797d2204e203bd9f9aa4b939874137fa2dbd2d7ee05f",
+    "source_manifest_sha256": "43511a891ae2516ddda0a5819516d93d758adcb18f9b8e94d8c65bef880b99d2",
+    "split": "train",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Gzen92",
+    "choice": "redo",
+    "status": "redo",
+    "selected_native_sha256": null,
+    "selected_generation_version": null,
+    "compared_versions": [
+      {
+        "key": "new",
+        "native_sha256": "740b27105ab91cf5af1b175cc4290ab49effa619c4962b0eaf36a08aae4c56b0",
+        "generation_version": "redo-v5-20261010",
+        "config_sha256": "81f8e0571ff60b7826b95f6d8e5148290fa99f9ee7da193b81a05a35b40d967c"
+      },
+      {
+        "key": "old",
+        "native_sha256": "d57724c586ca48f5c0c49d0371c6c0e51cca0f784259923a61fc1279b5045e37",
+        "generation_version": "original-500",
+        "config_sha256": "35d37ef6616b7eedd94e9089c1ce96b4229be60d0b5835de0d0520e3cc0094f4"
+      }
+    ],
+    "updated_at": "2026-11-27T10:14:16.555Z",
+    "comparison_key": "[2,\"chen-source500-43511a891ae2516d\",\"round_3/009\",\"85ce2d290dfe6f7a6183797d2204e203bd9f9aa4b939874137fa2dbd2d7ee05f\",[[\"new\",\"740b27105ab91cf5af1b175cc4290ab49effa619c4962b0eaf36a08aae4c56b0\"],[\"old\",\"d57724c586ca48f5c0c49d0371c6c0e51cca0f784259923a61fc1279b5045e37\"]]]",
+    "legacy": false,
+    "relation_to_1162": "absent_from_1162",
+    "qualified_native_sha256": null,
+    "qualified_generation_version": null
+  },
+  {
+    "id": "round_3_036",
+    "event_id": "0c3a66fd-1c9b-4003-b3cc-3acfccf34ef2",
+    "source_uid": "round_3/036",
+    "source_id": "commons-27669704",
+    "source_sha256": "e9fe4d11bad2058bbdb6159dde1506022710649d6e66fe2ee6c99aa02efddc27",
+    "source_manifest_sha256": "43511a891ae2516ddda0a5819516d93d758adcb18f9b8e94d8c65bef880b99d2",
+    "split": "train",
+    "license": "CC BY-SA 3.0",
+    "attribution": "Luciano Bernardi",
+    "choice": "redo",
+    "status": "redo",
+    "selected_native_sha256": null,
+    "selected_generation_version": null,
+    "compared_versions": [
+      {
+        "key": "new",
+        "native_sha256": "bb102126b9e1cf8ff399a4f7985e68608190bcbc1e431705f43e4e868fdc651c",
+        "generation_version": "redo-v5-20261010",
+        "config_sha256": "cbb40422155e5b0cba67724c364dc77df0ae8543f2ee93cba5c6198406ac324b"
+      },
+      {
+        "key": "old",
+        "native_sha256": "2e5e1e1003202c3832c9fe877cc077ed7edcabfff381c14b259ad2e4530c31a9",
+        "generation_version": "original-500",
+        "config_sha256": "35d37ef6616b7eedd94e9089c1ce96b4229be60d0b5835de0d0520e3cc0094f4"
+      }
+    ],
+    "updated_at": "2026-11-27T10:14:41.701Z",
+    "comparison_key": "[2,\"chen-source500-43511a891ae2516d\",\"round_3/036\",\"e9fe4d11bad2058bbdb6159dde1506022710649d6e66fe2ee6c99aa02efddc27\",[[\"new\",\"bb102126b9e1cf8ff399a4f7985e68608190bcbc1e431705f43e4e868fdc651c\"],[\"old\",\"2e5e1e1003202c3832c9fe877cc077ed7edcabfff381c14b259ad2e4530c31a9\"]]]",
+    "legacy": false,
+    "relation_to_1162": "absent_from_1162",
+    "qualified_native_sha256": null,
+    "qualified_generation_version": null
+  },
+  {
+    "id": "round_3_061",
+    "event_id": "ed0679a7-0c20-43f5-a658-7e97979e5bf9",
+    "source_uid": "round_3/061",
+    "source_id": "commons-18135969",
+    "source_sha256": "913f3ab7ef46ce0a38a25a7b0b7c328c3b1328b687d784021be3dd0fab438ce0",
+    "source_manifest_sha256": "43511a891ae2516ddda0a5819516d93d758adcb18f9b8e94d8c65bef880b99d2",
+    "split": "train",
+    "license": "CC BY-SA 2.0",
+    "attribution": "Ian Barbour from Cape Town, South Africa",
+    "choice": "redo",
+    "status": "redo",
+    "selected_native_sha256": null,
+    "selected_generation_version": null,
+    "compared_versions": [
+      {
+        "key": "new",
+        "native_sha256": "68db6b0ac6b8029c1880eb8a47019f1f45ad7f6c11e3c69b09335d9e0c2e35c7",
+        "generation_version": "redo-v5-20261010",
+        "config_sha256": "cbb40422155e5b0cba67724c364dc77df0ae8543f2ee93cba5c6198406ac324b"
+      },
+      {
+        "key": "old",
+        "native_sha256": "29133ed22de26f4603628e36584843febe3d3c3d01ff7046b4474a807826b97c",
+        "generation_version": "original-500",
+        "config_sha256": "35d37ef6616b7eedd94e9089c1ce96b4229be60d0b5835de0d0520e3cc0094f4"
+      }
+    ],
+    "updated_at": "2026-11-27T10:15:35.704Z",
+    "comparison_key": "[2,\"chen-source500-43511a891ae2516d\",\"round_3/061\",\"913f3ab7ef46ce0a38a25a7b0b7c328c3b1328b687d784021be3dd0fab438ce0\",[[\"new\",\"68db6b0ac6b8029c1880eb8a47019f1f45ad7f6c11e3c69b09335d9e0c2e35c7\"],[\"old\",\"29133ed22de26f4603628e36584843febe3d3c3d01ff7046b4474a807826b97c\"]]]",
+    "legacy": false,
+    "relation_to_1162": "absent_from_1162",
+    "qualified_native_sha256": null,
+    "qualified_generation_version": null
+  },
+  {
+    "id": "round_3_072",
+    "event_id": "8ba72755-18ea-4a88-83ed-30695a0006ea",
+    "source_uid": "round_3/072",
+    "source_id": "commons-129913602",
+    "source_sha256": "a0f302a2bd265e77864e31eb20295d7d7daffb68d1a75ec14819f0552ffe5a2f",
+    "source_manifest_sha256": "43511a891ae2516ddda0a5819516d93d758adcb18f9b8e94d8c65bef880b99d2",
+    "split": "train",
+    "license": "CC0",
+    "attribution": "Lo",
+    "choice": "redo",
+    "status": "redo",
+    "selected_native_sha256": null,
+    "selected_generation_version": null,
+    "compared_versions": [
+      {
+        "key": "new",
+        "native_sha256": "3c01ea805c58723c62b2cfa446cee59b3fe1d33b4d03c8ffff2ac8eb01364356",
+        "generation_version": "redo-v5-20261010",
+        "config_sha256": "81f8e0571ff60b7826b95f6d8e5148290fa99f9ee7da193b81a05a35b40d967c"
+      },
+      {
+        "key": "old",
+        "native_sha256": "f9e1cf5798eaece9071ae3d45a6138da7a0bc0686e9f2fb6473f74e06b9c9862",
+        "generation_version": "original-500",
+        "config_sha256": "35d37ef6616b7eedd94e9089c1ce96b4229be60d0b5835de0d0520e3cc0094f4"
+      }
+    ],
+    "updated_at": "2026-11-27T10:15:40.740Z",
+    "comparison_key": "[2,\"chen-source500-43511a891ae2516d\",\"round_3/072\",\"a0f302a2bd265e77864e31eb20295d7d7daffb68d1a75ec14819f0552ffe5a2f\",[[\"new\",\"3c01ea805c58723c62b2cfa446cee59b3fe1d33b4d03c8ffff2ac8eb01364356\"],[\"old\",\"f9e1cf5798eaece9071ae3d45a6138da7a0bc0686e9f2fb6473f74e06b9c9862\"]]]",
+    "legacy": false,
+    "relation_to_1162": "absent_from_1162",
+    "qualified_native_sha256": null,
+    "qualified_generation_version": null
+  },
+  {
+    "id": "round_3_137",
+    "event_id": "a2d3a835-241a-4203-a988-54af03798b24",
+    "source_uid": "round_3/137",
+    "source_id": "commons-5554218",
+    "source_sha256": "2d14f9147a9ecc70314ca07a19c49cf4d2ae70eb10681cfd2aeb2c113f34c500",
+    "source_manifest_sha256": "43511a891ae2516ddda0a5819516d93d758adcb18f9b8e94d8c65bef880b99d2",
+    "split": "train",
+    "license": "CC BY-SA 3.0",
+    "attribution": "Andrey Butko",
+    "choice": "redo",
+    "status": "redo",
+    "selected_native_sha256": null,
+    "selected_generation_version": null,
+    "compared_versions": [
+      {
+        "key": "new",
+        "native_sha256": "7ffb6151d6b506556dc0fb625bdb526015f62926edbd473512b9315d3bf23823",
+        "generation_version": "redo-v5-20261010",
+        "config_sha256": "cbb40422155e5b0cba67724c364dc77df0ae8543f2ee93cba5c6198406ac324b"
+      },
+      {
+        "key": "old",
+        "native_sha256": "09ab2e3f1b496290b804bb13f5de690a7155b0346440cef0ddbcd6c7699e5f4e",
+        "generation_version": "original-500",
+        "config_sha256": "35d37ef6616b7eedd94e9089c1ce96b4229be60d0b5835de0d0520e3cc0094f4"
+      }
+    ],
+    "updated_at": "2026-11-27T10:19:05.935Z",
+    "comparison_key": "[2,\"chen-source500-43511a891ae2516d\",\"round_3/137\",\"2d14f9147a9ecc70314ca07a19c49cf4d2ae70eb10681cfd2aeb2c113f34c500\",[[\"new\",\"7ffb6151d6b506556dc0fb625bdb526015f62926edbd473512b9315d3bf23823\"],[\"old\",\"09ab2e3f1b496290b804bb13f5de690a7155b0346440cef0ddbcd6c7699e5f4e\"]]]",
+    "legacy": false,
+    "relation_to_1162": "later_unseen_version",
+    "qualified_native_sha256": "b189642315215bf2f002ba993a8571db2fe36fae988cb15960be4880ebe3427b",
+    "qualified_generation_version": "iterate-round02-source-traced-20261011"
+  },
+  {
+    "id": "round_3_139",
+    "event_id": "64b7c664-046e-4a1b-9ad0-679cc4849f1c",
+    "source_uid": "round_3/139",
+    "source_id": "commons-124696580",
+    "source_sha256": "d31eb87074f77922ad7f8b0c5ace5ed8c73e246bf1ed5b85475bb289807fdf24",
+    "source_manifest_sha256": "43511a891ae2516ddda0a5819516d93d758adcb18f9b8e94d8c65bef880b99d2",
+    "split": "train",
+    "license": "CC BY 3.0",
+    "attribution": "Dguendel",
+    "choice": "redo",
+    "status": "redo",
+    "selected_native_sha256": null,
+    "selected_generation_version": null,
+    "compared_versions": [
+      {
+        "key": "new",
+        "native_sha256": "8e343505dbb11663feb896e272c565303265bea723a521b97855d53e7865852d",
+        "generation_version": "redo-v5-20261010",
+        "config_sha256": "81f8e0571ff60b7826b95f6d8e5148290fa99f9ee7da193b81a05a35b40d967c"
+      },
+      {
+        "key": "old",
+        "native_sha256": "956ad26ae65012a1e24295cb28c8976ae67f397692638fbf4637bcbd69e7ddb2",
+        "generation_version": "original-500",
+        "config_sha256": "35d37ef6616b7eedd94e9089c1ce96b4229be60d0b5835de0d0520e3cc0094f4"
+      }
+    ],
+    "updated_at": "2026-11-27T10:19:10.333Z",
+    "comparison_key": "[2,\"chen-source500-43511a891ae2516d\",\"round_3/139\",\"d31eb87074f77922ad7f8b0c5ace5ed8c73e246bf1ed5b85475bb289807fdf24\",[[\"new\",\"8e343505dbb11663feb896e272c565303265bea723a521b97855d53e7865852d\"],[\"old\",\"956ad26ae65012a1e24295cb28c8976ae67f397692638fbf4637bcbd69e7ddb2\"]]]",
+    "legacy": false,
+    "relation_to_1162": "absent_from_1162",
+    "qualified_native_sha256": null,
+    "qualified_generation_version": null
+  },
+  {
+    "id": "round_3_162",
+    "event_id": "38e03840-f27b-43a2-a071-c9b4bc53dae2",
+    "source_uid": "round_3/162",
+    "source_id": "commons-130509644",
+    "source_sha256": "7e7f4ebe133ac08bb443fd0ffc5eca865cbab562104de05299c76ea47a142c7a",
+    "source_manifest_sha256": "43511a891ae2516ddda0a5819516d93d758adcb18f9b8e94d8c65bef880b99d2",
+    "split": "train",
+    "license": "CC BY-SA 2.0",
+    "attribution": "Siri Spjelkavik",
+    "choice": "redo",
+    "status": "redo",
+    "selected_native_sha256": null,
+    "selected_generation_version": null,
+    "compared_versions": [
+      {
+        "key": "new",
+        "native_sha256": "6679da9b551296b9a32b6093dd5fda2b59859f8f4e93dfd06843a4812b6fa5c6",
+        "generation_version": "redo-v5-20261010",
+        "config_sha256": "81f8e0571ff60b7826b95f6d8e5148290fa99f9ee7da193b81a05a35b40d967c"
+      },
+      {
+        "key": "old",
+        "native_sha256": "ec9ce2f00f7e24c04530c380879a81be2c27450b4c96de98e023f2425bc27303",
+        "generation_version": "original-500",
+        "config_sha256": "35d37ef6616b7eedd94e9089c1ce96b4229be60d0b5835de0d0520e3cc0094f4"
+      }
+    ],
+    "updated_at": "2026-11-27T10:19:28.624Z",
+    "comparison_key": "[2,\"chen-source500-43511a891ae2516d\",\"round_3/162\",\"7e7f4ebe133ac08bb443fd0ffc5eca865cbab562104de05299c76ea47a142c7a\",[[\"new\",\"6679da9b551296b9a32b6093dd5fda2b59859f8f4e93dfd06843a4812b6fa5c6\"],[\"old\",\"ec9ce2f00f7e24c04530c380879a81be2c27450b4c96de98e023f2425bc27303\"]]]",
+    "legacy": false,
+    "relation_to_1162": "absent_from_1162",
+    "qualified_native_sha256": null,
+    "qualified_generation_version": null
+  },
+  {
+    "id": "round_3_172",
+    "event_id": "17f90c15-7a7d-4fd4-a411-680596900b63",
+    "source_uid": "round_3/172",
+    "source_id": "commons-17921489",
+    "source_sha256": "5c02c334960966581275b6bacd535317a0ffa2f0cf00f25c4c5d0ae18d7d3715",
+    "source_manifest_sha256": "43511a891ae2516ddda0a5819516d93d758adcb18f9b8e94d8c65bef880b99d2",
+    "split": "train",
+    "license": "CC BY-SA 3.0",
+    "attribution": "Bartolomeo1978",
+    "choice": "redo",
+    "status": "redo",
+    "selected_native_sha256": null,
+    "selected_generation_version": null,
+    "compared_versions": [
+      {
+        "key": "new",
+        "native_sha256": "5eae5377f8e1515cc4ac362692b5c5645be26dc32db5b2f1153873ebdd3206a1",
+        "generation_version": "redo-v5-20261010",
+        "config_sha256": "81f8e0571ff60b7826b95f6d8e5148290fa99f9ee7da193b81a05a35b40d967c"
+      },
+      {
+        "key": "old",
+        "native_sha256": "e7b927c26c22d559586e023879b070c13a30ed1a4bd3bfc77bf7ad1650a7f744",
+        "generation_version": "original-500",
+        "config_sha256": "35d37ef6616b7eedd94e9089c1ce96b4229be60d0b5835de0d0520e3cc0094f4"
+      }
+    ],
+    "updated_at": "2026-11-27T10:19:36.718Z",
+    "comparison_key": "[2,\"chen-source500-43511a891ae2516d\",\"round_3/172\",\"5c02c334960966581275b6bacd535317a0ffa2f0cf00f25c4c5d0ae18d7d3715\",[[\"new\",\"5eae5377f8e1515cc4ac362692b5c5645be26dc32db5b2f1153873ebdd3206a1\"],[\"old\",\"e7b927c26c22d559586e023879b070c13a30ed1a4bd3bfc77bf7ad1650a7f744\"]]]",
+    "legacy": false,
+    "relation_to_1162": "later_unseen_version",
+    "qualified_native_sha256": "ee0572e0c7ad7501dd3e130ef7a64d19904e7e90f72012d524416ba87035c31c",
+    "qualified_generation_version": "redo263-source-traced-v2-20261011"
+  },
+  {
+    "id": "round_3_215",
+    "event_id": "05a41510-ca8a-4a0d-b9da-c8470e86ed65",
+    "source_uid": "round_3/215",
+    "source_id": "commons-115854131",
+    "source_sha256": "3e500ccb750c853e2ae8975a21e9ea9056acc187fcf19a6bcdd9e52072c511c2",
+    "source_manifest_sha256": "43511a891ae2516ddda0a5819516d93d758adcb18f9b8e94d8c65bef880b99d2",
+    "split": "train",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Thomon",
+    "choice": "redo",
+    "status": "redo",
+    "selected_native_sha256": null,
+    "selected_generation_version": null,
+    "compared_versions": [
+      {
+        "key": "new",
+        "native_sha256": "c98cee4592ee43022a5b86bce72d9c2c52c4daec3a4c815e4655bf0196d50053",
+        "generation_version": "redo-v5-20261010",
+        "config_sha256": "cbb40422155e5b0cba67724c364dc77df0ae8543f2ee93cba5c6198406ac324b"
+      },
+      {
+        "key": "old",
+        "native_sha256": "fc75635780777bc35f6b2338fe55191c83b046f491723ae51b298da45692f20a",
+        "generation_version": "original-500",
+        "config_sha256": "35d37ef6616b7eedd94e9089c1ce96b4229be60d0b5835de0d0520e3cc0094f4"
+      }
+    ],
+    "updated_at": "2026-11-27T10:20:20.390Z",
+    "comparison_key": "[2,\"chen-source500-43511a891ae2516d\",\"round_3/215\",\"3e500ccb750c853e2ae8975a21e9ea9056acc187fcf19a6bcdd9e52072c511c2\",[[\"new\",\"c98cee4592ee43022a5b86bce72d9c2c52c4daec3a4c815e4655bf0196d50053\"],[\"old\",\"fc75635780777bc35f6b2338fe55191c83b046f491723ae51b298da45692f20a\"]]]",
+    "legacy": false,
+    "relation_to_1162": "later_unseen_version",
+    "qualified_native_sha256": "f900d66de43722f162878af28fc14e455dc74bb41a21de739c2d4595d2638cdc",
+    "qualified_generation_version": "iterate-round04-source-traced-20261011"
+  },
+  {
+    "id": "round_3_244",
+    "event_id": "0e648683-c053-48e1-9c8a-fecf08bb6132",
+    "source_uid": "round_3/244",
+    "source_id": "commons-67380996",
+    "source_sha256": "69db00646d07b65d3b08b4b8b876a4eaceca283507a8b4cf33b5c579fd581482",
+    "source_manifest_sha256": "43511a891ae2516ddda0a5819516d93d758adcb18f9b8e94d8c65bef880b99d2",
+    "split": "train",
+    "license": "CC BY-SA 4.0",
+    "attribution": "ElijahD123",
+    "choice": "redo",
+    "status": "redo",
+    "selected_native_sha256": null,
+    "selected_generation_version": null,
+    "compared_versions": [
+      {
+        "key": "new",
+        "native_sha256": "2858ba88d494d5ed1de874502dcf44afe9dec8965cf2dbacd274624575891192",
+        "generation_version": "redo-v5-20261010",
+        "config_sha256": "cbb40422155e5b0cba67724c364dc77df0ae8543f2ee93cba5c6198406ac324b"
+      },
+      {
+        "key": "old",
+        "native_sha256": "64125681c8ab58031f595eb2b01dcb0116500e0e53bdf6453071f04345a680f9",
+        "generation_version": "original-500",
+        "config_sha256": "35d37ef6616b7eedd94e9089c1ce96b4229be60d0b5835de0d0520e3cc0094f4"
+      }
+    ],
+    "updated_at": "2026-11-27T10:20:54.719Z",
+    "comparison_key": "[2,\"chen-source500-43511a891ae2516d\",\"round_3/244\",\"69db00646d07b65d3b08b4b8b876a4eaceca283507a8b4cf33b5c579fd581482\",[[\"new\",\"2858ba88d494d5ed1de874502dcf44afe9dec8965cf2dbacd274624575891192\"],[\"old\",\"64125681c8ab58031f595eb2b01dcb0116500e0e53bdf6453071f04345a680f9\"]]]",
+    "legacy": false,
+    "relation_to_1162": "later_unseen_version",
+    "qualified_native_sha256": "68890af60dc3361d184cffc6f69e4fefb1a8c0f7733380090805becaf71af410",
+    "qualified_generation_version": "redo263-source-traced-v2-20261011"
+  },
+  {
+    "id": "round_4_023",
+    "event_id": "a0844286-7ea1-494a-8d3f-278f2a02f640",
+    "source_uid": "round_4/023",
+    "source_id": "commons-103741185",
+    "source_sha256": "eae09cf1b773437553d126879b1a29d67dfb4f5de2da2d284b16a288911cf7c1",
+    "source_manifest_sha256": "43511a891ae2516ddda0a5819516d93d758adcb18f9b8e94d8c65bef880b99d2",
+    "split": "train",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Meine Mutter (Erlaubnis liegt vor)",
+    "choice": "redo",
+    "status": "redo",
+    "selected_native_sha256": null,
+    "selected_generation_version": null,
+    "compared_versions": [
+      {
+        "key": "new",
+        "native_sha256": "1237155e3bde9851533dd0d1bdd0d20b1cf9cb3f2b563bf7846ea1a9b60da991",
+        "generation_version": "redo-v5-20261010",
+        "config_sha256": "81f8e0571ff60b7826b95f6d8e5148290fa99f9ee7da193b81a05a35b40d967c"
+      },
+      {
+        "key": "old",
+        "native_sha256": "a3ccd8c274f2d7c48ae7350b3274714c5442f3141c9a5e3ffe6d2056845d7a97",
+        "generation_version": "original-500",
+        "config_sha256": "35d37ef6616b7eedd94e9089c1ce96b4229be60d0b5835de0d0520e3cc0094f4"
+      }
+    ],
+    "updated_at": "2026-11-27T10:21:39.198Z",
+    "comparison_key": "[2,\"chen-source500-43511a891ae2516d\",\"round_4/023\",\"eae09cf1b773437553d126879b1a29d67dfb4f5de2da2d284b16a288911cf7c1\",[[\"new\",\"1237155e3bde9851533dd0d1bdd0d20b1cf9cb3f2b563bf7846ea1a9b60da991\"],[\"old\",\"a3ccd8c274f2d7c48ae7350b3274714c5442f3141c9a5e3ffe6d2056845d7a97\"]]]",
+    "legacy": false,
+    "relation_to_1162": "later_unseen_version",
+    "qualified_native_sha256": "2cda538c397353120c3a096fb0fb6f784a483a380391313861058bf586455324",
+    "qualified_generation_version": "redo263-source-traced-v2-20261011"
+  },
+  {
+    "id": "round_4_026",
+    "event_id": "918bc559-5afc-4908-b80d-68526daa5cc6",
+    "source_uid": "round_4/026",
+    "source_id": "commons-66619296",
+    "source_sha256": "a48059683e36e79afa317888733812f4ead96ce01e88150f0b70f4d38bcac3f2",
+    "source_manifest_sha256": "43511a891ae2516ddda0a5819516d93d758adcb18f9b8e94d8c65bef880b99d2",
+    "split": "train",
+    "license": "CC0",
+    "attribution": "HutchRock",
+    "choice": "redo",
+    "status": "redo",
+    "selected_native_sha256": null,
+    "selected_generation_version": null,
+    "compared_versions": [
+      {
+        "key": "new",
+        "native_sha256": "e262bac734f9290ea93c4390bbda0c9c1ff00c8fb90bdd2db7a24ee419fe1557",
+        "generation_version": "redo-v5-20261010",
+        "config_sha256": "cbb40422155e5b0cba67724c364dc77df0ae8543f2ee93cba5c6198406ac324b"
+      },
+      {
+        "key": "old",
+        "native_sha256": "8192383319a2f2a1c45702e5691da6cc0d89b9e396f3cb6b4ef9cfe6e3c0cb84",
+        "generation_version": "original-500",
+        "config_sha256": "35d37ef6616b7eedd94e9089c1ce96b4229be60d0b5835de0d0520e3cc0094f4"
+      }
+    ],
+    "updated_at": "2026-11-27T10:21:45.002Z",
+    "comparison_key": "[2,\"chen-source500-43511a891ae2516d\",\"round_4/026\",\"a48059683e36e79afa317888733812f4ead96ce01e88150f0b70f4d38bcac3f2\",[[\"new\",\"e262bac734f9290ea93c4390bbda0c9c1ff00c8fb90bdd2db7a24ee419fe1557\"],[\"old\",\"8192383319a2f2a1c45702e5691da6cc0d89b9e396f3cb6b4ef9cfe6e3c0cb84\"]]]",
+    "legacy": false,
+    "relation_to_1162": "absent_from_1162",
+    "qualified_native_sha256": null,
+    "qualified_generation_version": null
+  },
+  {
+    "id": "round_4_042",
+    "event_id": "4baac844-1f4c-4a4b-9b31-12a6b5a4a8ca",
+    "source_uid": "round_4/042",
+    "source_id": "commons-114536230",
+    "source_sha256": "3ecf6e545d6667226aaabd532e5324126f5fe0fb8181b6fe80e2a76f70f405ae",
+    "source_manifest_sha256": "43511a891ae2516ddda0a5819516d93d758adcb18f9b8e94d8c65bef880b99d2",
+    "split": "train",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Creamy2.0",
+    "choice": "redo",
+    "status": "redo",
+    "selected_native_sha256": null,
+    "selected_generation_version": null,
+    "compared_versions": [
+      {
+        "key": "new",
+        "native_sha256": "d8e3783df4c4750f93eae1935b16309a30402c29a3c19eb41b202f235304a706",
+        "generation_version": "redo-v5-20261010",
+        "config_sha256": "cbb40422155e5b0cba67724c364dc77df0ae8543f2ee93cba5c6198406ac324b"
+      },
+      {
+        "key": "old",
+        "native_sha256": "2fdc2b16e202256481943ea614dbf901f2b3f6e4f0faf874fa3fe1f288c97bae",
+        "generation_version": "original-500",
+        "config_sha256": "35d37ef6616b7eedd94e9089c1ce96b4229be60d0b5835de0d0520e3cc0094f4"
+      }
+    ],
+    "updated_at": "2026-11-27T10:22:01.835Z",
+    "comparison_key": "[2,\"chen-source500-43511a891ae2516d\",\"round_4/042\",\"3ecf6e545d6667226aaabd532e5324126f5fe0fb8181b6fe80e2a76f70f405ae\",[[\"new\",\"d8e3783df4c4750f93eae1935b16309a30402c29a3c19eb41b202f235304a706\"],[\"old\",\"2fdc2b16e202256481943ea614dbf901f2b3f6e4f0faf874fa3fe1f288c97bae\"]]]",
+    "legacy": false,
+    "relation_to_1162": "later_unseen_version",
+    "qualified_native_sha256": "c9c4289b6a54d20a9c22e9449e78beb599664c0f329b4dedefbe227c2ec57e19",
+    "qualified_generation_version": "iterate-round03-source-traced-20261011"
+  },
+  {
+    "id": "round_4_059",
+    "event_id": "b1272daa-79c9-48a7-a0e4-2e6cdf21b29c",
+    "source_uid": "round_4/059",
+    "source_id": "commons-82678053",
+    "source_sha256": "bd50baa8fa4f24254bada43194391df61fa3cee749bb876766043e7ac6e9409d",
+    "source_manifest_sha256": "43511a891ae2516ddda0a5819516d93d758adcb18f9b8e94d8c65bef880b99d2",
+    "split": "train",
+    "license": "CC0",
+    "attribution": "Henry Ash",
+    "choice": "redo",
+    "status": "redo",
+    "selected_native_sha256": null,
+    "selected_generation_version": null,
+    "compared_versions": [
+      {
+        "key": "new",
+        "native_sha256": "eb6894662909d9dd18de675f095023e24d66fd9eed3ec9ec80581b71ab938bc9",
+        "generation_version": "redo-v5-20261010",
+        "config_sha256": "81f8e0571ff60b7826b95f6d8e5148290fa99f9ee7da193b81a05a35b40d967c"
+      },
+      {
+        "key": "old",
+        "native_sha256": "e6d52f4fa84b0152e6d670ca459cf7ee04bb441aa8c495c46de5fac75ffa2261",
+        "generation_version": "original-500",
+        "config_sha256": "35d37ef6616b7eedd94e9089c1ce96b4229be60d0b5835de0d0520e3cc0094f4"
+      }
+    ],
+    "updated_at": "2026-11-27T10:22:25.689Z",
+    "comparison_key": "[2,\"chen-source500-43511a891ae2516d\",\"round_4/059\",\"bd50baa8fa4f24254bada43194391df61fa3cee749bb876766043e7ac6e9409d\",[[\"new\",\"eb6894662909d9dd18de675f095023e24d66fd9eed3ec9ec80581b71ab938bc9\"],[\"old\",\"e6d52f4fa84b0152e6d670ca459cf7ee04bb441aa8c495c46de5fac75ffa2261\"]]]",
+    "legacy": false,
+    "relation_to_1162": "absent_from_1162",
+    "qualified_native_sha256": null,
+    "qualified_generation_version": null
+  },
+  {
+    "id": "round_4_139",
+    "event_id": "b029a9ba-95e4-4181-8317-c15cdc9fc384",
+    "source_uid": "round_4/139",
+    "source_id": "commons-19793276",
+    "source_sha256": "5b8cf72a05c77cf146bfcee74051c36faadab77a9ab794b18d015e914b3ae36d",
+    "source_manifest_sha256": "43511a891ae2516ddda0a5819516d93d758adcb18f9b8e94d8c65bef880b99d2",
+    "split": "train",
+    "license": "CC BY-SA 3.0",
+    "attribution": "Hagen Graebner",
+    "choice": "redo",
+    "status": "redo",
+    "selected_native_sha256": null,
+    "selected_generation_version": null,
+    "compared_versions": [
+      {
+        "key": "new",
+        "native_sha256": "fb8ecbd4b004b8a5ada6d7cea6a20a37136b53e8dc01a0ec3a5fc43b0c22797b",
+        "generation_version": "redo-v5-20261010",
+        "config_sha256": "81f8e0571ff60b7826b95f6d8e5148290fa99f9ee7da193b81a05a35b40d967c"
+      },
+      {
+        "key": "old",
+        "native_sha256": "e57c221c0e5782b946baf5e6e2dc0be20cdd4c71e24cee5549f3d0f92dbe685d",
+        "generation_version": "original-500",
+        "config_sha256": "35d37ef6616b7eedd94e9089c1ce96b4229be60d0b5835de0d0520e3cc0094f4"
+      }
+    ],
+    "updated_at": "2026-11-27T10:23:38.640Z",
+    "comparison_key": "[2,\"chen-source500-43511a891ae2516d\",\"round_4/139\",\"5b8cf72a05c77cf146bfcee74051c36faadab77a9ab794b18d015e914b3ae36d\",[[\"new\",\"fb8ecbd4b004b8a5ada6d7cea6a20a37136b53e8dc01a0ec3a5fc43b0c22797b\"],[\"old\",\"e57c221c0e5782b946baf5e6e2dc0be20cdd4c71e24cee5549f3d0f92dbe685d\"]]]",
+    "legacy": false,
+    "relation_to_1162": "later_unseen_version",
+    "qualified_native_sha256": "35cb2987f9de6d8407eb5cd67aa85c3f5a2699759e43eacbb3d5980de399c67b",
+    "qualified_generation_version": "redo263-source-traced-v2-20261011"
+  },
+  {
+    "id": "round_4_151",
+    "event_id": "2c0cae87-58f6-4f67-a6de-aea03b859e91",
+    "source_uid": "round_4/151",
+    "source_id": "commons-139975412",
+    "source_sha256": "c9b652d1a0213502d11e99f50daafbdaf556644a1b0b3321637135a69e612d26",
+    "source_manifest_sha256": "43511a891ae2516ddda0a5819516d93d758adcb18f9b8e94d8c65bef880b99d2",
+    "split": "train",
+    "license": "CC BY 4.0",
+    "attribution": "Dguendel",
+    "choice": "redo",
+    "status": "redo",
+    "selected_native_sha256": null,
+    "selected_generation_version": null,
+    "compared_versions": [
+      {
+        "key": "new",
+        "native_sha256": "1322d6655186e5b424c16b3636d0987241df6c541471108ef4e4d35b11975002",
+        "generation_version": "redo-v5-20261010",
+        "config_sha256": "cbb40422155e5b0cba67724c364dc77df0ae8543f2ee93cba5c6198406ac324b"
+      },
+      {
+        "key": "old",
+        "native_sha256": "dd78a557d5589ecc529cb819e5a25034d007018d86c958da8ec91cd5a850d226",
+        "generation_version": "original-500",
+        "config_sha256": "35d37ef6616b7eedd94e9089c1ce96b4229be60d0b5835de0d0520e3cc0094f4"
+      }
+    ],
+    "updated_at": "2026-11-27T10:23:45.992Z",
+    "comparison_key": "[2,\"chen-source500-43511a891ae2516d\",\"round_4/151\",\"c9b652d1a0213502d11e99f50daafbdaf556644a1b0b3321637135a69e612d26\",[[\"new\",\"1322d6655186e5b424c16b3636d0987241df6c541471108ef4e4d35b11975002\"],[\"old\",\"dd78a557d5589ecc529cb819e5a25034d007018d86c958da8ec91cd5a850d226\"]]]",
+    "legacy": false,
+    "relation_to_1162": "later_unseen_version",
+    "qualified_native_sha256": "5b145ed4714d813ce23cf5ef0078836f255219d9139bf1cdf7ebf74fdab1d253",
+    "qualified_generation_version": "redo263-source-traced-v2-20261011"
+  },
+  {
+    "id": "round_4_171",
+    "event_id": "542cc07b-29b1-4357-8006-de8d2933d09f",
+    "source_uid": "round_4/171",
+    "source_id": "commons-88136961",
+    "source_sha256": "ebd53ef11950731b2604d0c9f9fe506b48175587cc60950b8f6e75bf5a273af8",
+    "source_manifest_sha256": "43511a891ae2516ddda0a5819516d93d758adcb18f9b8e94d8c65bef880b99d2",
+    "split": "train",
+    "license": "CC BY 2.0",
+    "attribution": "Bob Haarmans",
+    "choice": "redo",
+    "status": "redo",
+    "selected_native_sha256": null,
+    "selected_generation_version": null,
+    "compared_versions": [
+      {
+        "key": "new",
+        "native_sha256": "eb69364d9c5c2d123705c209c7fd253ee2355659d4094985d415c1f34ea231bb",
+        "generation_version": "redo-v5-20261010",
+        "config_sha256": "81f8e0571ff60b7826b95f6d8e5148290fa99f9ee7da193b81a05a35b40d967c"
+      },
+      {
+        "key": "old",
+        "native_sha256": "4e32db06e0a47e6c04beaa6a377ca7712764248d17b76efdbc2292a73edc70e5",
+        "generation_version": "original-500",
+        "config_sha256": "35d37ef6616b7eedd94e9089c1ce96b4229be60d0b5835de0d0520e3cc0094f4"
+      }
+    ],
+    "updated_at": "2026-11-27T10:24:04.411Z",
+    "comparison_key": "[2,\"chen-source500-43511a891ae2516d\",\"round_4/171\",\"ebd53ef11950731b2604d0c9f9fe506b48175587cc60950b8f6e75bf5a273af8\",[[\"new\",\"eb69364d9c5c2d123705c209c7fd253ee2355659d4094985d415c1f34ea231bb\"],[\"old\",\"4e32db06e0a47e6c04beaa6a377ca7712764248d17b76efdbc2292a73edc70e5\"]]]",
+    "legacy": false,
+    "relation_to_1162": "absent_from_1162",
+    "qualified_native_sha256": null,
+    "qualified_generation_version": null
+  },
+  {
+    "id": "round_4_179",
+    "event_id": "7778234a-df7f-46d9-9c75-684feff577a6",
+    "source_uid": "round_4/179",
+    "source_id": "commons-10972617",
+    "source_sha256": "c00b0a820a97437757bdcfde4249eeab527c029934d9502baeb4242643b8fc0e",
+    "source_manifest_sha256": "43511a891ae2516ddda0a5819516d93d758adcb18f9b8e94d8c65bef880b99d2",
+    "split": "train",
+    "license": "CC BY-SA 3.0",
+    "attribution": "Techcherry",
+    "choice": "redo",
+    "status": "redo",
+    "selected_native_sha256": null,
+    "selected_generation_version": null,
+    "compared_versions": [
+      {
+        "key": "new",
+        "native_sha256": "ed21924a04222a76f4ad5a157cafde5b1b0a3bf0dfbe49616981e66f7e3d36b4",
+        "generation_version": "redo-v5-20261010",
+        "config_sha256": "81f8e0571ff60b7826b95f6d8e5148290fa99f9ee7da193b81a05a35b40d967c"
+      },
+      {
+        "key": "old",
+        "native_sha256": "ce9bb08204397086cae33cfa69284cd2a2e0a8edea4b35e49b2b29538f3b82e6",
+        "generation_version": "original-500",
+        "config_sha256": "35d37ef6616b7eedd94e9089c1ce96b4229be60d0b5835de0d0520e3cc0094f4"
+      }
+    ],
+    "updated_at": "2026-11-27T10:24:10.418Z",
+    "comparison_key": "[2,\"chen-source500-43511a891ae2516d\",\"round_4/179\",\"c00b0a820a97437757bdcfde4249eeab527c029934d9502baeb4242643b8fc0e\",[[\"new\",\"ed21924a04222a76f4ad5a157cafde5b1b0a3bf0dfbe49616981e66f7e3d36b4\"],[\"old\",\"ce9bb08204397086cae33cfa69284cd2a2e0a8edea4b35e49b2b29538f3b82e6\"]]]",
+    "legacy": false,
+    "relation_to_1162": "absent_from_1162",
+    "qualified_native_sha256": null,
+    "qualified_generation_version": null
+  },
+  {
+    "id": "round_4_233",
+    "event_id": "560af691-3aaa-42a9-bc45-f573228ed8ab",
+    "source_uid": "round_4/233",
+    "source_id": "commons-20675480",
+    "source_sha256": "a929faf559bb26ce54183b8e289a84ced0bd6564a01cd74702e706b4db62d0b4",
+    "source_manifest_sha256": "43511a891ae2516ddda0a5819516d93d758adcb18f9b8e94d8c65bef880b99d2",
+    "split": "train",
+    "license": "CC BY-SA 3.0",
+    "attribution": "ZO CSOP Vlasim",
+    "choice": "redo",
+    "status": "redo",
+    "selected_native_sha256": null,
+    "selected_generation_version": null,
+    "compared_versions": [
+      {
+        "key": "new",
+        "native_sha256": "9d6894435151448846dd0bf17af467443740eaedcb88d942c14d7c3984a011e6",
+        "generation_version": "redo-v5-20261010",
+        "config_sha256": "81f8e0571ff60b7826b95f6d8e5148290fa99f9ee7da193b81a05a35b40d967c"
+      },
+      {
+        "key": "old",
+        "native_sha256": "203c1a0f28d039f5370d1e4385ba855b34aeb57ff4b7ff941bf638de8925dc71",
+        "generation_version": "original-500",
+        "config_sha256": "35d37ef6616b7eedd94e9089c1ce96b4229be60d0b5835de0d0520e3cc0094f4"
+      }
+    ],
+    "updated_at": "2026-11-27T10:25:16.343Z",
+    "comparison_key": "[2,\"chen-source500-43511a891ae2516d\",\"round_4/233\",\"a929faf559bb26ce54183b8e289a84ced0bd6564a01cd74702e706b4db62d0b4\",[[\"new\",\"9d6894435151448846dd0bf17af467443740eaedcb88d942c14d7c3984a011e6\"],[\"old\",\"203c1a0f28d039f5370d1e4385ba855b34aeb57ff4b7ff941bf638de8925dc71\"]]]",
+    "legacy": false,
+    "relation_to_1162": "later_unseen_version",
+    "qualified_native_sha256": "a332d7e2f45a86fd3e4784c92224e11829ef6eec16958f629125e412669941fe",
+    "qualified_generation_version": "iterate-round03-source-traced-20261011"
+  }
+]

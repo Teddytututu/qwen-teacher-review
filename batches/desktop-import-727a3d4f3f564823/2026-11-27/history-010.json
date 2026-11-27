@@ -1,0 +1,196 @@
+{
+  "schema_version": 2,
+  "dataset_id": "chen-source500-43511a891ae2516d",
+  "source_manifest_sha256": "43511a891ae2516ddda0a5819516d93d758adcb18f9b8e94d8c65bef880b99d2",
+  "client_id": "desktop-import-727a3d4f3f564823",
+  "batch_id": "history-010",
+  "created_at": "2026-11-27T10:25:30.522Z",
+  "is_test": false,
+  "entries": [
+    {
+      "schema_version": 2,
+      "event_id": "64572929-b588-4f6f-b142-dfb26656179e",
+      "dataset_id": "chen-source500-43511a891ae2516d",
+      "source_manifest_sha256": "43511a891ae2516ddda0a5819516d93d758adcb18f9b8e94d8c65bef880b99d2",
+      "source_uid": "round_2/149",
+      "source_sha256": "39bf67bdc35fbb8b4c816b95c60fa034f6308411a40a9dfb1bf8072d60c11026",
+      "versions": [
+        {
+          "key": "new",
+          "native_sha256": "5064b399787afcb15106c8fa6b54d70b1314a261b47acbfeb416f9473ecd2f95",
+          "generation_version": "redo-v5-20261010",
+          "config_sha256": "cbb40422155e5b0cba67724c364dc77df0ae8543f2ee93cba5c6198406ac324b"
+        },
+        {
+          "key": "old",
+          "native_sha256": "e1a966d64f4bfab129ae7b7216dcc9553c09caefb50aeb7f97742cbed7e5d1aa",
+          "generation_version": "original-500",
+          "config_sha256": "35d37ef6616b7eedd94e9089c1ce96b4229be60d0b5835de0d0520e3cc0094f4"
+        }
+      ],
+      "choice": "old",
+      "updated_at": "2026-11-27T10:11:54.455Z",
+      "client_id": "e55568bd-c6a1-4ccc-87ce-3bcbbbf8c736",
+      "parents": [],
+      "selected_native_sha256": "e1a966d64f4bfab129ae7b7216dcc9553c09caefb50aeb7f97742cbed7e5d1aa",
+      "selected_generation_version": "original-500",
+      "is_test": false,
+      "legacy": false,
+      "id": "round_2_149",
+      "source_id": "commons-116862397",
+      "split": "train",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Vanourte",
+      "review_method": "human comparison: old/new/both redo",
+      "comparison_key": "[2,\"chen-source500-43511a891ae2516d\",\"round_2/149\",\"39bf67bdc35fbb8b4c816b95c60fa034f6308411a40a9dfb1bf8072d60c11026\",[[\"new\",\"5064b399787afcb15106c8fa6b54d70b1314a261b47acbfeb416f9473ecd2f95\"],[\"old\",\"e1a966d64f4bfab129ae7b7216dcc9553c09caefb50aeb7f97742cbed7e5d1aa\"]]]"
+    },
+    {
+      "schema_version": 2,
+      "event_id": "72b65438-ad58-4349-8c90-534179f16d77",
+      "dataset_id": "chen-source500-43511a891ae2516d",
+      "source_manifest_sha256": "43511a891ae2516ddda0a5819516d93d758adcb18f9b8e94d8c65bef880b99d2",
+      "source_uid": "round_2/154",
+      "source_sha256": "008b75a14177488edf086984cd7ccc2f0b061775d7ad107266c567e0f5cf5979",
+      "versions": [
+        {
+          "key": "new",
+          "native_sha256": "f536f8adbdda5fa08351712a322efbfa439d2bfd8efcdc9f67dcfeaf00570e3f",
+          "generation_version": "redo-v5-20261010",
+          "config_sha256": "81f8e0571ff60b7826b95f6d8e5148290fa99f9ee7da193b81a05a35b40d967c"
+        },
+        {
+          "key": "old",
+          "native_sha256": "06f1ce6a8599b378eb18b31407b0ee80eb3cd240e7bf538e0e2b2222cdf77688",
+          "generation_version": "original-500",
+          "config_sha256": "35d37ef6616b7eedd94e9089c1ce96b4229be60d0b5835de0d0520e3cc0094f4"
+        }
+      ],
+      "choice": "redo",
+      "updated_at": "2026-11-27T10:11:57.393Z",
+      "client_id": "e55568bd-c6a1-4ccc-87ce-3bcbbbf8c736",
+      "parents": [],
+      "selected_native_sha256": null,
+      "selected_generation_version": null,
+      "is_test": false,
+      "legacy": false,
+      "id": "round_2_154",
+      "source_id": "commons-20352161",
+      "split": "train",
+      "license": "CC BY-SA 3.0",
+      "attribution": "Mallowtek",
+      "review_method": "human comparison: old/new/both redo",
+      "comparison_key": "[2,\"chen-source500-43511a891ae2516d\",\"round_2/154\",\"008b75a14177488edf086984cd7ccc2f0b061775d7ad107266c567e0f5cf5979\",[[\"new\",\"f536f8adbdda5fa08351712a322efbfa439d2bfd8efcdc9f67dcfeaf00570e3f\"],[\"old\",\"06f1ce6a8599b378eb18b31407b0ee80eb3cd240e7bf538e0e2b2222cdf77688\"]]]"
+    },
+    {
+      "schema_version": 2,
+      "event_id": "353f4d67-a283-462a-8df7-744ee53cb880",
+      "dataset_id": "chen-source500-43511a891ae2516d",
+      "source_manifest_sha256": "43511a891ae2516ddda0a5819516d93d758adcb18f9b8e94d8c65bef880b99d2",
+      "source_uid": "round_2/156",
+      "source_sha256": "8a1650eb2902fe2ec8d6f6f1f9f1cd105b16937fb85a86a5c1d207312ab8e02c",
+      "versions": [
+        {
+          "key": "new",
+          "native_sha256": "04f9a5c26b6cba5f33d6d681edbbaa7e8ffc80f28ddd5c378af48bea3ac0410c",
+          "generation_version": "redo-v5-20261010",
+          "config_sha256": "cbb40422155e5b0cba67724c364dc77df0ae8543f2ee93cba5c6198406ac324b"
+        },
+        {
+          "key": "old",
+          "native_sha256": "c01c4a73d630903fdf71fc5b7a8b7d13d1891e531a3a754ebe18dab65a12044e",
+          "generation_version": "original-500",
+          "config_sha256": "35d37ef6616b7eedd94e9089c1ce96b4229be60d0b5835de0d0520e3cc0094f4"
+        }
+      ],
+      "choice": "redo",
+      "updated_at": "2026-11-27T10:11:59.907Z",
+      "client_id": "e55568bd-c6a1-4ccc-87ce-3bcbbbf8c736",
+      "parents": [],
+      "selected_native_sha256": null,
+      "selected_generation_version": null,
+      "is_test": false,
+      "legacy": false,
+      "id": "round_2_156",
+      "source_id": "commons-62059143",
+      "split": "train",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Pereaz",
+      "review_method": "human comparison: old/new/both redo",
+      "comparison_key": "[2,\"chen-source500-43511a891ae2516d\",\"round_2/156\",\"8a1650eb2902fe2ec8d6f6f1f9f1cd105b16937fb85a86a5c1d207312ab8e02c\",[[\"new\",\"04f9a5c26b6cba5f33d6d681edbbaa7e8ffc80f28ddd5c378af48bea3ac0410c\"],[\"old\",\"c01c4a73d630903fdf71fc5b7a8b7d13d1891e531a3a754ebe18dab65a12044e\"]]]"
+    },
+    {
+      "schema_version": 2,
+      "event_id": "77af8197-7654-400d-92f2-82ac19e36338",
+      "dataset_id": "chen-source500-43511a891ae2516d",
+      "source_manifest_sha256": "43511a891ae2516ddda0a5819516d93d758adcb18f9b8e94d8c65bef880b99d2",
+      "source_uid": "round_2/160",
+      "source_sha256": "5ff6daed8ade0caa2e10c579c49cdec567100eef27c90669ec742833bca131a5",
+      "versions": [
+        {
+          "key": "new",
+          "native_sha256": "b2441e72d4e5dc8452fe1196ecf2cded42b136c89266a7446e02cb19e750b480",
+          "generation_version": "redo-v5-20261010",
+          "config_sha256": "81f8e0571ff60b7826b95f6d8e5148290fa99f9ee7da193b81a05a35b40d967c"
+        },
+        {
+          "key": "old",
+          "native_sha256": "c3d92977a7e517819f63664edb55003a337424dfa7ddcd599d00d3623c179e3d",
+          "generation_version": "original-500",
+          "config_sha256": "35d37ef6616b7eedd94e9089c1ce96b4229be60d0b5835de0d0520e3cc0094f4"
+        }
+      ],
+      "choice": "redo",
+      "updated_at": "2026-11-27T10:12:07.337Z",
+      "client_id": "e55568bd-c6a1-4ccc-87ce-3bcbbbf8c736",
+      "parents": [],
+      "selected_native_sha256": null,
+      "selected_generation_version": null,
+      "is_test": false,
+      "legacy": false,
+      "id": "round_2_160",
+      "source_id": "commons-107636061",
+      "split": "train",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Tylwyth Eldar",
+      "review_method": "human comparison: old/new/both redo",
+      "comparison_key": "[2,\"chen-source500-43511a891ae2516d\",\"round_2/160\",\"5ff6daed8ade0caa2e10c579c49cdec567100eef27c90669ec742833bca131a5\",[[\"new\",\"b2441e72d4e5dc8452fe1196ecf2cded42b136c89266a7446e02cb19e750b480\"],[\"old\",\"c3d92977a7e517819f63664edb55003a337424dfa7ddcd599d00d3623c179e3d\"]]]"
+    },
+    {
+      "schema_version": 2,
+      "event_id": "492d5e43-a26c-40c0-a2df-e18f20b68a58",
+      "dataset_id": "chen-source500-43511a891ae2516d",
+      "source_manifest_sha256": "43511a891ae2516ddda0a5819516d93d758adcb18f9b8e94d8c65bef880b99d2",
+      "source_uid": "round_2/164",
+      "source_sha256": "245d482ac488ae3d117509188d238a388fe3d8739c144b8d88d4ab6dd3a608d5",
+      "versions": [
+        {
+          "key": "new",
+          "native_sha256": "dd865ee70b966efa38472f6c5d55588504b84029ccbf8a59b302fb51b7f529aa",
+          "generation_version": "redo-v5-20261010",
+          "config_sha256": "cbb40422155e5b0cba67724c364dc77df0ae8543f2ee93cba5c6198406ac324b"
+        },
+        {
+          "key": "old",
+          "native_sha256": "cc06036e80bccf12bf7d42e97c694f87d0be8379f8993edcaf2e20170eeac08a",
+          "generation_version": "original-500",
+          "config_sha256": "35d37ef6616b7eedd94e9089c1ce96b4229be60d0b5835de0d0520e3cc0094f4"
+        }
+      ],
+      "choice": "new",
+      "updated_at": "2026-11-27T10:12:10.409Z",
+      "client_id": "e55568bd-c6a1-4ccc-87ce-3bcbbbf8c736",
+      "parents": [],
+      "selected_native_sha256": "dd865ee70b966efa38472f6c5d55588504b84029ccbf8a59b302fb51b7f529aa",
+      "selected_generation_version": "redo-v5-20261010",
+      "is_test": false,
+      "legacy": false,
+      "id": "round_2_164",
+      "source_id": "commons-2380515",
+      "split": "train",
+      "license": "CC BY 2.0",
+      "attribution": "Ainhoa from Catalunya",
+      "review_method": "human comparison: old/new/both redo",
+      "comparison_key": "[2,\"chen-source500-43511a891ae2516d\",\"round_2/164\",\"245d482ac488ae3d117509188d238a388fe3d8739c144b8d88d4ab6dd3a608d5\",[[\"new\",\"dd865ee70b966efa38472f6c5d55588504b84029ccbf8a59b302fb51b7f529aa\"],[\"old\",\"cc06036e80bccf12bf7d42e97c694f87d0be8379f8993edcaf2e20170eeac08a\"]]]"
+    }
+  ]
+}

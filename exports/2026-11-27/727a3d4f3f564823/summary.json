@@ -1,0 +1,25 @@
+{
+  "sha256": "727a3d4f3f564823f54850f23dd77073695b5731502e362964b135aecf926486",
+  "bytes": 1201888,
+  "dataset_id": "chen-source500-43511a891ae2516d",
+  "decisions": 148,
+  "history": 167,
+  "accepted": 115,
+  "redo": 33,
+  "covered_comparisons": 148,
+  "batches": 34,
+  "relations": {
+    "new:same_selected": 3,
+    "new:other_compared": 1,
+    "redo:other_compared": 2,
+    "redo:later_unseen_version": 15,
+    "old:same_selected": 1,
+    "new:later_unseen_version": 60,
+    "old:later_unseen_version": 25,
+    "redo:absent_from_1162": 16,
+    "old:absent_from_1162": 10,
+    "new:absent_from_1162": 14,
+    "old:other_compared": 1
+  },
+  "artifact_directory": "exports/2026-11-27/727a3d4f3f564823"
+}

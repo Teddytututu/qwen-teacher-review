@@ -1,0 +1,181 @@
+{
+  "schema_version": 2,
+  "dataset_id": "chen-source500-43511a891ae2516d",
+  "source_manifest_sha256": "43511a891ae2516ddda0a5819516d93d758adcb18f9b8e94d8c65bef880b99d2",
+  "client_id": "desktop-import-727a3d4f3f564823",
+  "batch_id": "history-003",
+  "created_at": "2026-11-27T10:25:30.522Z",
+  "is_test": false,
+  "entries": [
+    {
+      "schema_version": 2,
+      "event_id": "legacy-0408934b0be85a68b788c490a91df8d81de308cace914e42ae4f9ebdc785c11d",
+      "dataset_id": "chen-source500-43511a891ae2516d",
+      "source_manifest_sha256": null,
+      "source_uid": "round_2/032",
+      "source_sha256": "13bd8d6c40eb71cc9d5388c47b12622641a8758e36967b58a521ea39fa57eb0d",
+      "versions": [
+        {
+          "key": "new",
+          "native_sha256": "f32d20d2368790186fd698139dba1101c0eb50d72cc47e2f0141d69e71e01bc6",
+          "generation_version": "redo-v5-20261010"
+        },
+        {
+          "key": "old",
+          "native_sha256": "d38005edc49be333f99b181d704fb936ad83ee96f05d15a959bbaefe9541e4a4",
+          "generation_version": null
+        }
+      ],
+      "choice": "new",
+      "updated_at": "2026-10-10T07:07:33.200Z",
+      "client_id": "legacy-unknown",
+      "parents": [],
+      "selected_native_sha256": "f32d20d2368790186fd698139dba1101c0eb50d72cc47e2f0141d69e71e01bc6",
+      "selected_generation_version": "redo-v5-20261010",
+      "is_test": false,
+      "legacy": true,
+      "source_id": "commons-6075212",
+      "split": "train",
+      "license": "CC BY-SA 3.0",
+      "attribution": "Chatsam",
+      "legacy_fingerprint": "round_2/032|2026-10-10T07:07:33.200Z|new|d38005edc49be333f99b181d704fb936ad83ee96f05d15a959bbaefe9541e4a4|f32d20d2368790186fd698139dba1101c0eb50d72cc47e2f0141d69e71e01bc6",
+      "legacy_original_event_id": "c1ed40a8-924e-4d57-9aea-c539bb5df340",
+      "legacy_record_kind": "queue_event",
+      "comparison_key": "[2,\"chen-source500-43511a891ae2516d\",\"round_2/032\",\"13bd8d6c40eb71cc9d5388c47b12622641a8758e36967b58a521ea39fa57eb0d\",[[\"new\",\"f32d20d2368790186fd698139dba1101c0eb50d72cc47e2f0141d69e71e01bc6\"],[\"old\",\"d38005edc49be333f99b181d704fb936ad83ee96f05d15a959bbaefe9541e4a4\"]]]"
+    },
+    {
+      "schema_version": 2,
+      "event_id": "legacy-a4728b7d78a2bcd972b338f7e78f14d174433aea6f84d45883324e3bb95c216a",
+      "dataset_id": "chen-source500-43511a891ae2516d",
+      "source_manifest_sha256": null,
+      "source_uid": "round_2/032",
+      "source_sha256": "13bd8d6c40eb71cc9d5388c47b12622641a8758e36967b58a521ea39fa57eb0d",
+      "versions": [
+        {
+          "key": "new",
+          "native_sha256": "f32d20d2368790186fd698139dba1101c0eb50d72cc47e2f0141d69e71e01bc6",
+          "generation_version": null
+        },
+        {
+          "key": "old",
+          "native_sha256": "d38005edc49be333f99b181d704fb936ad83ee96f05d15a959bbaefe9541e4a4",
+          "generation_version": null
+        }
+      ],
+      "choice": "new",
+      "updated_at": "2026-10-10T07:07:33.200Z",
+      "client_id": "legacy-unknown",
+      "parents": [],
+      "selected_native_sha256": "f32d20d2368790186fd698139dba1101c0eb50d72cc47e2f0141d69e71e01bc6",
+      "selected_generation_version": null,
+      "is_test": false,
+      "legacy": true,
+      "legacy_fingerprint": "round_2/032|2026-10-10T07:07:33.200Z|new|d38005edc49be333f99b181d704fb936ad83ee96f05d15a959bbaefe9541e4a4|f32d20d2368790186fd698139dba1101c0eb50d72cc47e2f0141d69e71e01bc6",
+      "legacy_record_kind": "snapshot",
+      "comparison_key": "[2,\"chen-source500-43511a891ae2516d\",\"round_2/032\",\"13bd8d6c40eb71cc9d5388c47b12622641a8758e36967b58a521ea39fa57eb0d\",[[\"new\",\"f32d20d2368790186fd698139dba1101c0eb50d72cc47e2f0141d69e71e01bc6\"],[\"old\",\"d38005edc49be333f99b181d704fb936ad83ee96f05d15a959bbaefe9541e4a4\"]]]"
+    },
+    {
+      "schema_version": 2,
+      "event_id": "legacy-7264683cf780f691d8ee6b48967dacf617e97d2dd11ed2ef8dac77bd85f4f30b",
+      "dataset_id": "chen-source500-43511a891ae2516d",
+      "source_manifest_sha256": null,
+      "source_uid": "round_2/000",
+      "source_sha256": "518ccc5a26df7b67eaccf72b1cde314cc85b04af5832beeb5fffdd1bf461bde8",
+      "versions": [
+        {
+          "key": "new",
+          "native_sha256": "ea5aaca2c4aa3add832edcbdb0e231d29a8224b87bef35e4ee34d8fccae3e0fa",
+          "generation_version": "redo-v5-20261010"
+        },
+        {
+          "key": "old",
+          "native_sha256": "30ce765eb4aaab4d6734b2c60ab569a887fc97a6ffdf4e1d776dd6d8de3817bc",
+          "generation_version": null
+        }
+      ],
+      "choice": "new",
+      "updated_at": "2026-10-10T14:51:54.495Z",
+      "client_id": "legacy-unknown",
+      "parents": [],
+      "selected_native_sha256": "ea5aaca2c4aa3add832edcbdb0e231d29a8224b87bef35e4ee34d8fccae3e0fa",
+      "selected_generation_version": "redo-v5-20261010",
+      "is_test": false,
+      "legacy": true,
+      "source_id": "commons-45265955",
+      "split": "train",
+      "license": "CC0",
+      "attribution": "Counsellin",
+      "legacy_fingerprint": "round_2/000|2026-10-10T14:51:54.495Z|new|30ce765eb4aaab4d6734b2c60ab569a887fc97a6ffdf4e1d776dd6d8de3817bc|ea5aaca2c4aa3add832edcbdb0e231d29a8224b87bef35e4ee34d8fccae3e0fa",
+      "legacy_original_event_id": "971aeb80-e2a4-4c4d-a948-61feb659226d",
+      "legacy_record_kind": "queue_event",
+      "comparison_key": "[2,\"chen-source500-43511a891ae2516d\",\"round_2/000\",\"518ccc5a26df7b67eaccf72b1cde314cc85b04af5832beeb5fffdd1bf461bde8\",[[\"new\",\"ea5aaca2c4aa3add832edcbdb0e231d29a8224b87bef35e4ee34d8fccae3e0fa\"],[\"old\",\"30ce765eb4aaab4d6734b2c60ab569a887fc97a6ffdf4e1d776dd6d8de3817bc\"]]]"
+    },
+    {
+      "schema_version": 2,
+      "event_id": "legacy-fa6a3ec876066df78b4ef19421657b652b5472b94047d0160bf1139298ca6afb",
+      "dataset_id": "chen-source500-43511a891ae2516d",
+      "source_manifest_sha256": null,
+      "source_uid": "round_2/000",
+      "source_sha256": "518ccc5a26df7b67eaccf72b1cde314cc85b04af5832beeb5fffdd1bf461bde8",
+      "versions": [
+        {
+          "key": "new",
+          "native_sha256": "ea5aaca2c4aa3add832edcbdb0e231d29a8224b87bef35e4ee34d8fccae3e0fa",
+          "generation_version": null
+        },
+        {
+          "key": "old",
+          "native_sha256": "30ce765eb4aaab4d6734b2c60ab569a887fc97a6ffdf4e1d776dd6d8de3817bc",
+          "generation_version": null
+        }
+      ],
+      "choice": "new",
+      "updated_at": "2026-10-10T14:51:54.495Z",
+      "client_id": "legacy-unknown",
+      "parents": [],
+      "selected_native_sha256": "ea5aaca2c4aa3add832edcbdb0e231d29a8224b87bef35e4ee34d8fccae3e0fa",
+      "selected_generation_version": null,
+      "is_test": false,
+      "legacy": true,
+      "legacy_fingerprint": "round_2/000|2026-10-10T14:51:54.495Z|new|30ce765eb4aaab4d6734b2c60ab569a887fc97a6ffdf4e1d776dd6d8de3817bc|ea5aaca2c4aa3add832edcbdb0e231d29a8224b87bef35e4ee34d8fccae3e0fa",
+      "legacy_record_kind": "snapshot",
+      "comparison_key": "[2,\"chen-source500-43511a891ae2516d\",\"round_2/000\",\"518ccc5a26df7b67eaccf72b1cde314cc85b04af5832beeb5fffdd1bf461bde8\",[[\"new\",\"ea5aaca2c4aa3add832edcbdb0e231d29a8224b87bef35e4ee34d8fccae3e0fa\"],[\"old\",\"30ce765eb4aaab4d6734b2c60ab569a887fc97a6ffdf4e1d776dd6d8de3817bc\"]]]"
+    },
+    {
+      "schema_version": 2,
+      "event_id": "legacy-977a651ce142b32333608eb4bbc87aa75f0444b0184fca82dec63c378bee60f0",
+      "dataset_id": "chen-source500-43511a891ae2516d",
+      "source_manifest_sha256": null,
+      "source_uid": "round_2/008",
+      "source_sha256": "9017f666790861abf5ef406ef105b570ea46a30a749b70f8e5af086b84099d65",
+      "versions": [
+        {
+          "key": "new",
+          "native_sha256": "8af961474d59331c76cc5fb49eb2eaa35156f1802c2e217f17b3367df2126802",
+          "generation_version": "redo-v5-20261010"
+        },
+        {
+          "key": "old",
+          "native_sha256": "dbe2e452607b4bad049e656ec1d072eb8b794ab1aa275e3808d643166d6ea0ee",
+          "generation_version": null
+        }
+      ],
+      "choice": "new",
+      "updated_at": "2026-10-10T14:52:13.981Z",
+      "client_id": "legacy-unknown",
+      "parents": [],
+      "selected_native_sha256": "8af961474d59331c76cc5fb49eb2eaa35156f1802c2e217f17b3367df2126802",
+      "selected_generation_version": "redo-v5-20261010",
+      "is_test": false,
+      "legacy": true,
+      "source_id": "commons-113008463",
+      "split": "train",
+      "license": "CC BY-SA 4.0",
+      "attribution": "PPuis",
+      "legacy_fingerprint": "round_2/008|2026-10-10T14:52:13.981Z|new|dbe2e452607b4bad049e656ec1d072eb8b794ab1aa275e3808d643166d6ea0ee|8af961474d59331c76cc5fb49eb2eaa35156f1802c2e217f17b3367df2126802",
+      "legacy_original_event_id": "fb887774-6cb6-466d-9da8-c4fb1c9eb042",
+      "legacy_record_kind": "queue_event",
+      "comparison_key": "[2,\"chen-source500-43511a891ae2516d\",\"round_2/008\",\"9017f666790861abf5ef406ef105b570ea46a30a749b70f8e5af086b84099d65\",[[\"new\",\"8af961474d59331c76cc5fb49eb2eaa35156f1802c2e217f17b3367df2126802\"],[\"old\",\"dbe2e452607b4bad049e656ec1d072eb8b794ab1aa275e3808d643166d6ea0ee\"]]]"
+    }
+  ]
+}
