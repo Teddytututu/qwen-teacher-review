@@ -1,0 +1,518 @@
+[
+  {
+    "path": "verification-batches/33f40b43-d403-4600-adf9-aa1e2ef729a3/2026-10-10/e3a94cfd-6bcb-4a00-8f5b-5c56888f8449.json",
+    "data": {
+      "dataset_id": "chen-source500-43511a891ae2516d",
+      "client_id": "33f40b43-d403-4600-adf9-aa1e2ef729a3",
+      "batch_id": "e3a94cfd-6bcb-4a00-8f5b-5c56888f8449",
+      "created_at": "2026-10-10T05:24:47.268Z",
+      "is_test": true,
+      "entries": [
+        {
+          "source_uid": "round_2/000",
+          "source_sha256": "518ccc5a26df7b67eaccf72b1cde314cc85b04af5832beeb5fffdd1bf461bde8",
+          "versions": [
+            {
+              "key": "old",
+              "native_sha256": "30ce765eb4aaab4d6734b2c60ab569a887fc97a6ffdf4e1d776dd6d8de3817bc"
+            },
+            {
+              "key": "new",
+              "native_sha256": "ea5aaca2c4aa3add832edcbdb0e231d29a8224b87bef35e4ee34d8fccae3e0fa"
+            }
+          ],
+          "choice": "old",
+          "updated_at": "2026-10-10T05:24:47.102Z",
+          "event_id": "13c98376-86c8-4750-bbaa-3ed3badd83b9"
+        },
+        {
+          "source_uid": "round_2/008",
+          "source_sha256": "9017f666790861abf5ef406ef105b570ea46a30a749b70f8e5af086b84099d65",
+          "versions": [
+            {
+              "key": "old",
+              "native_sha256": "dbe2e452607b4bad049e656ec1d072eb8b794ab1aa275e3808d643166d6ea0ee"
+            },
+            {
+              "key": "new",
+              "native_sha256": "8af961474d59331c76cc5fb49eb2eaa35156f1802c2e217f17b3367df2126802"
+            }
+          ],
+          "choice": "old",
+          "updated_at": "2026-10-10T05:24:47.150Z",
+          "event_id": "23708609-3879-4e11-9bfa-d180ee7c5311"
+        },
+        {
+          "source_uid": "round_2/009",
+          "source_sha256": "cc2e5650b0c9cac90eea9ac49e43363d8343b515892b670f529b196a8b11b22c",
+          "versions": [
+            {
+              "key": "old",
+              "native_sha256": "d367ca11093a37154a35281b336262ff433e4fb6bedd7a76ef04e9055ca32171"
+            },
+            {
+              "key": "new",
+              "native_sha256": "b50b99f681a601642c82b3c05102b6c663ba659a9cbf2f22d86ecfed7a0bac89"
+            }
+          ],
+          "choice": "old",
+          "updated_at": "2026-10-10T05:24:47.183Z",
+          "event_id": "40367c0e-e76e-4781-8303-959399a535e6"
+        },
+        {
+          "source_uid": "round_2/012",
+          "source_sha256": "37792d56e9695aacebb41e63822a743b23a022fe267548a816eee58aac6bc9fa",
+          "versions": [
+            {
+              "key": "old",
+              "native_sha256": "489f96f2b8f7cee4d4959e86431fdb349c825d7a7805e8be5b97147b96cb7be4"
+            },
+            {
+              "key": "new",
+              "native_sha256": "e5f0a0f381dc315b458b1d547cad552def4308c5184c8c8d6c185a9ed16b9e30"
+            }
+          ],
+          "choice": "old",
+          "updated_at": "2026-10-10T05:24:47.216Z",
+          "event_id": "3fa67f08-8795-4b92-96e9-c69c51ce11a6"
+        },
+        {
+          "source_uid": "round_2/028",
+          "source_sha256": "5e041a625ace1f91e3d2563cbaf474db5d78c011da97d3ff56dc93c81ee76deb",
+          "versions": [
+            {
+              "key": "old",
+              "native_sha256": "e38dc7a4d1f267849b502f406e31a78c779f109e0971f3c7fb02381461653887"
+            },
+            {
+              "key": "new",
+              "native_sha256": "09b645318c81a31c21eb7ef3651949e2871563bc9eea42ebe125c38d61468e57"
+            }
+          ],
+          "choice": "old",
+          "updated_at": "2026-10-10T05:24:47.252Z",
+          "event_id": "f6bd4651-bb74-4426-ad54-822ee7eadfde"
+        }
+      ]
+    }
+  },
+  {
+    "path": "verification-batches/39d9bc30-4d6b-496e-b70f-9339558f2a74/2026-10-10/b81ca79f-47c6-4a25-81d0-0f2ae8f9b8f1.json",
+    "data": {
+      "dataset_id": "chen-source500-43511a891ae2516d",
+      "client_id": "39d9bc30-4d6b-496e-b70f-9339558f2a74",
+      "batch_id": "b81ca79f-47c6-4a25-81d0-0f2ae8f9b8f1",
+      "created_at": "2026-10-10T05:19:27.629Z",
+      "is_test": true,
+      "entries": [
+        {
+          "source_uid": "round_2/000",
+          "source_sha256": "518ccc5a26df7b67eaccf72b1cde314cc85b04af5832beeb5fffdd1bf461bde8",
+          "versions": [
+            {
+              "key": "old",
+              "native_sha256": "30ce765eb4aaab4d6734b2c60ab569a887fc97a6ffdf4e1d776dd6d8de3817bc"
+            },
+            {
+              "key": "new",
+              "native_sha256": "ea5aaca2c4aa3add832edcbdb0e231d29a8224b87bef35e4ee34d8fccae3e0fa"
+            }
+          ],
+          "choice": "old",
+          "updated_at": "2026-10-10T05:19:27.466Z",
+          "event_id": "dda8cbb1-5acf-4a12-be34-129471e9b71d"
+        },
+        {
+          "source_uid": "round_2/008",
+          "source_sha256": "9017f666790861abf5ef406ef105b570ea46a30a749b70f8e5af086b84099d65",
+          "versions": [
+            {
+              "key": "old",
+              "native_sha256": "dbe2e452607b4bad049e656ec1d072eb8b794ab1aa275e3808d643166d6ea0ee"
+            },
+            {
+              "key": "new",
+              "native_sha256": "8af961474d59331c76cc5fb49eb2eaa35156f1802c2e217f17b3367df2126802"
+            }
+          ],
+          "choice": "old",
+          "updated_at": "2026-10-10T05:19:27.512Z",
+          "event_id": "dd064bd5-6589-4306-8818-e1aec0e36270"
+        },
+        {
+          "source_uid": "round_2/009",
+          "source_sha256": "cc2e5650b0c9cac90eea9ac49e43363d8343b515892b670f529b196a8b11b22c",
+          "versions": [
+            {
+              "key": "old",
+              "native_sha256": "d367ca11093a37154a35281b336262ff433e4fb6bedd7a76ef04e9055ca32171"
+            },
+            {
+              "key": "new",
+              "native_sha256": "b50b99f681a601642c82b3c05102b6c663ba659a9cbf2f22d86ecfed7a0bac89"
+            }
+          ],
+          "choice": "old",
+          "updated_at": "2026-10-10T05:19:27.546Z",
+          "event_id": "ada3c9ed-aa76-4338-8adb-6dc0d89d525d"
+        },
+        {
+          "source_uid": "round_2/012",
+          "source_sha256": "37792d56e9695aacebb41e63822a743b23a022fe267548a816eee58aac6bc9fa",
+          "versions": [
+            {
+              "key": "old",
+              "native_sha256": "489f96f2b8f7cee4d4959e86431fdb349c825d7a7805e8be5b97147b96cb7be4"
+            },
+            {
+              "key": "new",
+              "native_sha256": "e5f0a0f381dc315b458b1d547cad552def4308c5184c8c8d6c185a9ed16b9e30"
+            }
+          ],
+          "choice": "old",
+          "updated_at": "2026-10-10T05:19:27.579Z",
+          "event_id": "5d3473f4-172a-4c67-88de-928f4c8b63b2"
+        },
+        {
+          "source_uid": "round_2/028",
+          "source_sha256": "5e041a625ace1f91e3d2563cbaf474db5d78c011da97d3ff56dc93c81ee76deb",
+          "versions": [
+            {
+              "key": "old",
+              "native_sha256": "e38dc7a4d1f267849b502f406e31a78c779f109e0971f3c7fb02381461653887"
+            },
+            {
+              "key": "new",
+              "native_sha256": "09b645318c81a31c21eb7ef3651949e2871563bc9eea42ebe125c38d61468e57"
+            }
+          ],
+          "choice": "old",
+          "updated_at": "2026-10-10T05:19:27.613Z",
+          "event_id": "a2a043fe-47a0-4870-8647-3433d209f95c"
+        }
+      ]
+    }
+  },
+  {
+    "path": "verification-batches/3d4023eb-221d-4ba0-872e-9c86621fc4ab/2026-10-10/e603a5f1-46ad-4aa3-ab56-4a0a9dbb8dd0.json",
+    "data": {
+      "dataset_id": "chen-source500-43511a891ae2516d",
+      "source_manifest_sha256": "43511a891ae2516ddda0a5819516d93d758adcb18f9b8e94d8c65bef880b99d2",
+      "client_id": "3d4023eb-221d-4ba0-872e-9c86621fc4ab",
+      "batch_id": "e603a5f1-46ad-4aa3-ab56-4a0a9dbb8dd0",
+      "created_at": "2026-10-10T05:28:33.941Z",
+      "is_test": true,
+      "entries": [
+        {
+          "source_uid": "round_2/000",
+          "source_sha256": "518ccc5a26df7b67eaccf72b1cde314cc85b04af5832beeb5fffdd1bf461bde8",
+          "versions": [
+            {
+              "key": "old",
+              "native_sha256": "30ce765eb4aaab4d6734b2c60ab569a887fc97a6ffdf4e1d776dd6d8de3817bc"
+            },
+            {
+              "key": "new",
+              "native_sha256": "ea5aaca2c4aa3add832edcbdb0e231d29a8224b87bef35e4ee34d8fccae3e0fa"
+            }
+          ],
+          "choice": "old",
+          "updated_at": "2026-10-10T05:28:33.744Z",
+          "source_id": "commons-45265955",
+          "split": "train",
+          "license": "CC0",
+          "attribution": "Counsellin",
+          "selected_native_sha256": "30ce765eb4aaab4d6734b2c60ab569a887fc97a6ffdf4e1d776dd6d8de3817bc",
+          "selected_generation_version": "original-500",
+          "event_id": "758d19af-4ddc-4fae-a163-362ad4f00357"
+        },
+        {
+          "source_uid": "round_2/008",
+          "source_sha256": "9017f666790861abf5ef406ef105b570ea46a30a749b70f8e5af086b84099d65",
+          "versions": [
+            {
+              "key": "old",
+              "native_sha256": "dbe2e452607b4bad049e656ec1d072eb8b794ab1aa275e3808d643166d6ea0ee"
+            },
+            {
+              "key": "new",
+              "native_sha256": "8af961474d59331c76cc5fb49eb2eaa35156f1802c2e217f17b3367df2126802"
+            }
+          ],
+          "choice": "old",
+          "updated_at": "2026-10-10T05:28:33.796Z",
+          "source_id": "commons-113008463",
+          "split": "train",
+          "license": "CC BY-SA 4.0",
+          "attribution": "PPuis",
+          "selected_native_sha256": "dbe2e452607b4bad049e656ec1d072eb8b794ab1aa275e3808d643166d6ea0ee",
+          "selected_generation_version": "original-500",
+          "event_id": "181460dd-3444-40af-aad5-022209a64dfa"
+        },
+        {
+          "source_uid": "round_2/009",
+          "source_sha256": "cc2e5650b0c9cac90eea9ac49e43363d8343b515892b670f529b196a8b11b22c",
+          "versions": [
+            {
+              "key": "old",
+              "native_sha256": "d367ca11093a37154a35281b336262ff433e4fb6bedd7a76ef04e9055ca32171"
+            },
+            {
+              "key": "new",
+              "native_sha256": "b50b99f681a601642c82b3c05102b6c663ba659a9cbf2f22d86ecfed7a0bac89"
+            }
+          ],
+          "choice": "old",
+          "updated_at": "2026-10-10T05:28:33.843Z",
+          "source_id": "commons-154647871",
+          "split": "train",
+          "license": "Public domain",
+          "attribution": "Sève, Jacques de (1715-1795). Dessinateur",
+          "selected_native_sha256": "d367ca11093a37154a35281b336262ff433e4fb6bedd7a76ef04e9055ca32171",
+          "selected_generation_version": "original-500",
+          "event_id": "e1c1f530-e16c-4c5f-b67d-2e478d26dbf1"
+        },
+        {
+          "source_uid": "round_2/012",
+          "source_sha256": "37792d56e9695aacebb41e63822a743b23a022fe267548a816eee58aac6bc9fa",
+          "versions": [
+            {
+              "key": "old",
+              "native_sha256": "489f96f2b8f7cee4d4959e86431fdb349c825d7a7805e8be5b97147b96cb7be4"
+            },
+            {
+              "key": "new",
+              "native_sha256": "e5f0a0f381dc315b458b1d547cad552def4308c5184c8c8d6c185a9ed16b9e30"
+            }
+          ],
+          "choice": "old",
+          "updated_at": "2026-10-10T05:28:33.880Z",
+          "source_id": "commons-27004945",
+          "split": "train",
+          "license": "CC BY-SA 3.0",
+          "attribution": "FASTILY",
+          "selected_native_sha256": "489f96f2b8f7cee4d4959e86431fdb349c825d7a7805e8be5b97147b96cb7be4",
+          "selected_generation_version": "original-500",
+          "event_id": "69c0825c-9d22-4044-a018-eeca58c60ca0"
+        },
+        {
+          "source_uid": "round_2/028",
+          "source_sha256": "5e041a625ace1f91e3d2563cbaf474db5d78c011da97d3ff56dc93c81ee76deb",
+          "versions": [
+            {
+              "key": "old",
+              "native_sha256": "e38dc7a4d1f267849b502f406e31a78c779f109e0971f3c7fb02381461653887"
+            },
+            {
+              "key": "new",
+              "native_sha256": "09b645318c81a31c21eb7ef3651949e2871563bc9eea42ebe125c38d61468e57"
+            }
+          ],
+          "choice": "old",
+          "updated_at": "2026-10-10T05:28:33.925Z",
+          "source_id": "commons-36408186",
+          "split": "train",
+          "license": "CC BY-SA 2.0",
+          "attribution": "Bob Adams from George, South Africa",
+          "selected_native_sha256": "e38dc7a4d1f267849b502f406e31a78c779f109e0971f3c7fb02381461653887",
+          "selected_generation_version": "original-500",
+          "event_id": "464bf203-9b7a-4b4b-a56f-8568ffc7a902"
+        }
+      ]
+    }
+  },
+  {
+    "path": "verification-batches/648f7a86-38f2-48b3-a91d-a76ac6ffe5e1/2026-10-10/e75a7378-7281-4953-9d10-128d1e2d790b.json",
+    "data": {
+      "dataset_id": "chen-source500-43511a891ae2516d",
+      "client_id": "648f7a86-38f2-48b3-a91d-a76ac6ffe5e1",
+      "batch_id": "e75a7378-7281-4953-9d10-128d1e2d790b",
+      "created_at": "2026-10-10T05:20:59.375Z",
+      "is_test": true,
+      "entries": [
+        {
+          "source_uid": "round_2/000",
+          "source_sha256": "518ccc5a26df7b67eaccf72b1cde314cc85b04af5832beeb5fffdd1bf461bde8",
+          "versions": [
+            {
+              "key": "old",
+              "native_sha256": "30ce765eb4aaab4d6734b2c60ab569a887fc97a6ffdf4e1d776dd6d8de3817bc"
+            },
+            {
+              "key": "new",
+              "native_sha256": "ea5aaca2c4aa3add832edcbdb0e231d29a8224b87bef35e4ee34d8fccae3e0fa"
+            }
+          ],
+          "choice": "old",
+          "updated_at": "2026-10-10T05:20:59.213Z",
+          "event_id": "6dcf00af-015b-433d-bf39-dec0bf6e6893"
+        },
+        {
+          "source_uid": "round_2/008",
+          "source_sha256": "9017f666790861abf5ef406ef105b570ea46a30a749b70f8e5af086b84099d65",
+          "versions": [
+            {
+              "key": "old",
+              "native_sha256": "dbe2e452607b4bad049e656ec1d072eb8b794ab1aa275e3808d643166d6ea0ee"
+            },
+            {
+              "key": "new",
+              "native_sha256": "8af961474d59331c76cc5fb49eb2eaa35156f1802c2e217f17b3367df2126802"
+            }
+          ],
+          "choice": "old",
+          "updated_at": "2026-10-10T05:20:59.261Z",
+          "event_id": "6024c862-ec35-4903-a7ae-f510ba7d7938"
+        },
+        {
+          "source_uid": "round_2/009",
+          "source_sha256": "cc2e5650b0c9cac90eea9ac49e43363d8343b515892b670f529b196a8b11b22c",
+          "versions": [
+            {
+              "key": "old",
+              "native_sha256": "d367ca11093a37154a35281b336262ff433e4fb6bedd7a76ef04e9055ca32171"
+            },
+            {
+              "key": "new",
+              "native_sha256": "b50b99f681a601642c82b3c05102b6c663ba659a9cbf2f22d86ecfed7a0bac89"
+            }
+          ],
+          "choice": "old",
+          "updated_at": "2026-10-10T05:20:59.294Z",
+          "event_id": "81153c2f-d6d7-4874-8e69-9842543ca38e"
+        },
+        {
+          "source_uid": "round_2/012",
+          "source_sha256": "37792d56e9695aacebb41e63822a743b23a022fe267548a816eee58aac6bc9fa",
+          "versions": [
+            {
+              "key": "old",
+              "native_sha256": "489f96f2b8f7cee4d4959e86431fdb349c825d7a7805e8be5b97147b96cb7be4"
+            },
+            {
+              "key": "new",
+              "native_sha256": "e5f0a0f381dc315b458b1d547cad552def4308c5184c8c8d6c185a9ed16b9e30"
+            }
+          ],
+          "choice": "old",
+          "updated_at": "2026-10-10T05:20:59.327Z",
+          "event_id": "a7c6c443-972c-4ca1-a82f-94d378a470ad"
+        },
+        {
+          "source_uid": "round_2/028",
+          "source_sha256": "5e041a625ace1f91e3d2563cbaf474db5d78c011da97d3ff56dc93c81ee76deb",
+          "versions": [
+            {
+              "key": "old",
+              "native_sha256": "e38dc7a4d1f267849b502f406e31a78c779f109e0971f3c7fb02381461653887"
+            },
+            {
+              "key": "new",
+              "native_sha256": "09b645318c81a31c21eb7ef3651949e2871563bc9eea42ebe125c38d61468e57"
+            }
+          ],
+          "choice": "old",
+          "updated_at": "2026-10-10T05:20:59.360Z",
+          "event_id": "50bc07b0-85f8-4f54-8c5d-f1bd0e0cfcc3"
+        }
+      ]
+    }
+  },
+  {
+    "path": "verification-batches/d2b89083-5695-40b1-bcb6-0e0647f4e14a/2026-10-10/f13ecf64-1a4c-48f7-a737-6a630082bac4.json",
+    "data": {
+      "dataset_id": "chen-source500-43511a891ae2516d",
+      "client_id": "d2b89083-5695-40b1-bcb6-0e0647f4e14a",
+      "batch_id": "f13ecf64-1a4c-48f7-a737-6a630082bac4",
+      "created_at": "2026-10-10T05:26:58.827Z",
+      "is_test": true,
+      "entries": [
+        {
+          "source_uid": "round_2/000",
+          "source_sha256": "518ccc5a26df7b67eaccf72b1cde314cc85b04af5832beeb5fffdd1bf461bde8",
+          "versions": [
+            {
+              "key": "old",
+              "native_sha256": "30ce765eb4aaab4d6734b2c60ab569a887fc97a6ffdf4e1d776dd6d8de3817bc"
+            },
+            {
+              "key": "new",
+              "native_sha256": "ea5aaca2c4aa3add832edcbdb0e231d29a8224b87bef35e4ee34d8fccae3e0fa"
+            }
+          ],
+          "choice": "old",
+          "updated_at": "2026-10-10T05:26:58.647Z",
+          "event_id": "9622e6d5-bf76-4c71-9019-50322f3a3bf2"
+        },
+        {
+          "source_uid": "round_2/008",
+          "source_sha256": "9017f666790861abf5ef406ef105b570ea46a30a749b70f8e5af086b84099d65",
+          "versions": [
+            {
+              "key": "old",
+              "native_sha256": "dbe2e452607b4bad049e656ec1d072eb8b794ab1aa275e3808d643166d6ea0ee"
+            },
+            {
+              "key": "new",
+              "native_sha256": "8af961474d59331c76cc5fb49eb2eaa35156f1802c2e217f17b3367df2126802"
+            }
+          ],
+          "choice": "old",
+          "updated_at": "2026-10-10T05:26:58.695Z",
+          "event_id": "e4166a7b-ffe1-4da0-9fe4-51661132df42"
+        },
+        {
+          "source_uid": "round_2/009",
+          "source_sha256": "cc2e5650b0c9cac90eea9ac49e43363d8343b515892b670f529b196a8b11b22c",
+          "versions": [
+            {
+              "key": "old",
+              "native_sha256": "d367ca11093a37154a35281b336262ff433e4fb6bedd7a76ef04e9055ca32171"
+            },
+            {
+              "key": "new",
+              "native_sha256": "b50b99f681a601642c82b3c05102b6c663ba659a9cbf2f22d86ecfed7a0bac89"
+            }
+          ],
+          "choice": "old",
+          "updated_at": "2026-10-10T05:26:58.729Z",
+          "event_id": "2572dc2c-4bb5-4c8b-baae-4eb500e2b7a5"
+        },
+        {
+          "source_uid": "round_2/012",
+          "source_sha256": "37792d56e9695aacebb41e63822a743b23a022fe267548a816eee58aac6bc9fa",
+          "versions": [
+            {
+              "key": "old",
+              "native_sha256": "489f96f2b8f7cee4d4959e86431fdb349c825d7a7805e8be5b97147b96cb7be4"
+            },
+            {
+              "key": "new",
+              "native_sha256": "e5f0a0f381dc315b458b1d547cad552def4308c5184c8c8d6c185a9ed16b9e30"
+            }
+          ],
+          "choice": "old",
+          "updated_at": "2026-10-10T05:26:58.779Z",
+          "event_id": "195a2480-c5c8-4350-a310-612e337f7ea5"
+        },
+        {
+          "source_uid": "round_2/028",
+          "source_sha256": "5e041a625ace1f91e3d2563cbaf474db5d78c011da97d3ff56dc93c81ee76deb",
+          "versions": [
+            {
+              "key": "old",
+              "native_sha256": "e38dc7a4d1f267849b502f406e31a78c779f109e0971f3c7fb02381461653887"
+            },
+            {
+              "key": "new",
+              "native_sha256": "09b645318c81a31c21eb7ef3651949e2871563bc9eea42ebe125c38d61468e57"
+            }
+          ],
+          "choice": "old",
+          "updated_at": "2026-10-10T05:26:58.811Z",
+          "event_id": "df2974d4-0853-43ae-957c-01777d6a17bd"
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,732 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src data:; connect-src 'none'"><script>if(new URLSearchParams(location.search).get("mode")==="showcase")location.replace("showcase.html?mode=showcase");</script>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f4f3ef">
+<title>卡通图 · 人工选图</title><style>:root{--paper:#f4f3ef;--surface:#fff;--ink:#242824;--muted:#6f756d;--line:#dce0d7;--green:#23593d;--soft:color-mix(in oklch,var(--green) 9%,var(--surface));--font-display:"Iowan Old Style",Charter,Georgia,"Songti SC","Noto Serif CJK SC",serif;--font-body:system-ui,"Microsoft YaHei",sans-serif;--font-mono:ui-monospace,"SF Mono",Consolas,monospace}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.5 var(--font-body);-webkit-font-smoothing:antialiased}button,select,input{font:inherit}button,select,input[type=search]{border:1px solid var(--line);border-radius:9px;background:var(--surface);color:var(--ink);padding:9px 12px}button{cursor:pointer;touch-action:manipulation;transition:background .15s,border-color .15s,transform .15s}button:hover{background:color-mix(in oklch,var(--ink) 4%,var(--surface));border-color:var(--muted)}button:active{transform:translateY(1px)}button:disabled{opacity:.4;cursor:default}button:focus-visible,select:focus-visible,input:focus-visible,summary:focus-visible{outline:3px solid var(--green);outline-offset:3px}a{color:var(--green);text-underline-offset:3px}a:hover{text-decoration-thickness:2px}h1,h2,h3{margin:0;text-wrap:balance}h1{font:600 clamp(20px,2vw,26px)/1.25 var(--font-display);letter-spacing:-.025em}h2{font:600 18px/1.3 var(--font-mono);letter-spacing:-.04em}h3{font:600 15px/1.3 var(--font-body)}
+.page-header,main{max-width:1504px;margin-inline:auto;padding-inline:32px}.page-header{min-height:90px;display:flex;align-items:center;justify-content:space-between;gap:24px;border-bottom:1px solid var(--line)}.header-actions{display:flex;align-items:center;gap:22px}.status-stack{display:flex;flex-direction:column;align-items:flex-end;gap:2px}#progress{font-size:14px;font-weight:600;font-variant-numeric:tabular-nums}#sync-status{color:var(--muted);font-size:12px}#sync-status[data-state=saved],#sync-status.synced{color:var(--green)}.review-menu{position:relative}.review-menu>summary{display:flex;align-items:center;justify-content:center;gap:10px;min-height:42px;padding:8px 14px;border:1px solid var(--line);border-radius:9px;cursor:pointer;background:var(--surface);list-style:none;font-size:14px}.review-menu>summary::-webkit-details-marker{display:none}.review-menu>summary:hover,.review-menu[open]>summary{border-color:var(--muted)}.review-menu[open]>summary>span{transform:rotate(180deg)}.menu-panel{position:absolute;top:calc(100% + 12px);right:0;width:min(470px,calc(100vw - 32px));padding:20px;background:var(--surface);border:1px solid var(--line);border-radius:14px;box-shadow:0 14px 50px color-mix(in oklch,var(--ink) 13%,transparent);z-index:10}
+.toolbar{display:grid;grid-template-columns:1fr 1fr;gap:14px}.toolbar label{display:flex;flex-direction:column;gap:6px;font-size:12px;color:var(--muted)}.toolbar select,.toolbar input[type=search]{width:100%;min-width:0;font-size:14px}.toolbar .search,.toolbar .advance-option{grid-column:1/-1}.toolbar .advance-option{flex-direction:row;align-items:center;gap:7px;font-size:13px;color:var(--ink)}input[type=checkbox]{accent-color:var(--green)}.tools{display:flex;flex-wrap:wrap;gap:7px;padding-top:18px;margin-top:16px;border-top:1px solid var(--line)}.tools button{padding:7px 10px;font-size:12px}#save,.credits,.freshness{color:var(--muted);font-size:12px}#save{margin:12px 0}.credits{padding-block:12px;border-top:1px solid var(--line)}.credits summary{cursor:pointer}.credits p{margin-block:10px}.freshness{margin:0;padding-top:12px;border-top:1px solid var(--line)}
+main{padding-top:22px;padding-bottom:30px}.navigator{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:18px}.navigator>button{min-height:40px;background:transparent;border-color:transparent;padding-inline:10px;color:var(--muted);font-size:13px}.navigator>button:hover{background:var(--surface);border-color:var(--line);color:var(--ink)}.image-counter{display:flex;align-items:baseline;justify-content:center;gap:12px;text-align:center}#position{font:12px/1.3 var(--font-mono);color:var(--muted);white-space:nowrap}.images{display:grid;grid-template-columns:.82fr 1fr 1fr;gap:16px}.figure{position:relative;background:var(--surface);border:2px solid transparent;border-radius:14px;overflow:hidden;box-shadow:0 1px 4px color-mix(in oklch,var(--ink) 5%,transparent);transition:border-color .16s,box-shadow .16s}.figure-heading{display:flex;align-items:center;justify-content:space-between;min-height:48px;gap:8px;padding:10px 14px}.figure-heading .enlarge{border-color:transparent;background:transparent;color:var(--muted);padding:3px 8px;font-size:12px}.figure-heading .enlarge:hover{color:var(--ink);background:var(--paper)}.figure .picture{display:block;width:100%;height:clamp(300px,52vh,550px);border:0;border-radius:0;padding:0;background:var(--surface)}.picture img{display:block;width:100%;height:100%;object-fit:contain}.figure:first-child{background:color-mix(in oklch,var(--surface) 60%,var(--paper))}.figure:first-child .picture{background:transparent}.selectable .picture{cursor:pointer}.selectable:hover{border-color:color-mix(in oklch,var(--green) 50%,var(--line));box-shadow:0 3px 12px color-mix(in oklch,var(--ink) 6%,transparent)}.figure.picked{border-color:var(--green)}.picked .figure-heading{color:var(--green);background:var(--soft)}.pick-hint{display:none}.picked .pick-hint{display:block;position:absolute;bottom:14px;left:50%;transform:translateX(-50%);border-radius:999px;padding:6px 12px;background:var(--green);color:var(--surface);font-size:0;white-space:nowrap}.picked .pick-hint::before{content:"✓ 已选中";font-size:12px;font-weight:600}.placeholder{display:grid;place-content:center;height:clamp(300px,52vh,550px);padding:24px;color:var(--muted);font-size:14px;text-align:center}
+.choices{margin:18px 0 12px}.choices button{width:100%;min-height:60px;padding:14px 20px;border:1px solid var(--line);border-radius:12px;background:transparent;font-size:17px;font-weight:600}.choices button:hover{background:var(--surface);border-color:var(--muted)}.choices button[aria-pressed=true]{background:var(--ink);border-color:var(--ink);color:var(--surface)}kbd{display:inline-block;padding:1px 5px;border:1px solid currentColor;border-radius:4px;font:11px/1.3 var(--font-mono);margin-right:8px;opacity:.55;vertical-align:2px}.selection{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:24px;color:var(--muted);font-size:12px}.keyboard-hint{flex-shrink:0;font-size:11px}#empty{margin-top:20px;padding:56px 20px;text-align:center;background:var(--surface);border-radius:14px;color:var(--muted)}dialog{max-width:96vw;max-height:96vh;border:1px solid var(--line);border-radius:14px;padding:12px;background:var(--surface)}dialog::backdrop{background:color-mix(in oklch,var(--ink) 75%,transparent)}dialog form{text-align:right;margin-bottom:8px}dialog img{display:block;max-height:82vh;max-width:90vw;object-fit:contain}[hidden]{display:none!important}
+@media(max-width:920px){.page-header,main{padding-inline:20px}.images{gap:10px;grid-template-columns:.8fr 1fr 1fr}.figure .picture,.placeholder{height:42vh;min-height:270px}.figure-heading{padding-inline:10px}.keyboard-hint{display:none}}
+@media(max-width:650px){.page-header,main{padding-inline:14px}.page-header{min-height:84px;gap:12px}h1{max-width:8em;font-size:19px}.header-actions{gap:10px}.status-stack{gap:3px}#progress{font-size:12px}#sync-status{max-width:120px;font-size:10px;text-align:right}.review-menu>summary{gap:4px;min-height:38px;padding:7px 10px;font-size:12px}.menu-panel{top:calc(100% + 10px);padding:18px;width:calc(100vw - 28px)}main{padding-top:14px;padding-bottom:20px}.navigator{margin-bottom:12px;gap:4px}.navigator>button{padding:6px 4px;font-size:11px;min-height:36px}.image-counter{gap:3px;flex-direction:column;align-items:center}h2{font-size:15px}#position{font-size:11px}.images{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.figure{border-radius:11px}.figure:first-child{grid-column:1/-1}.figure:first-child .picture{height:168px;min-height:0}.figure:first-child .figure-heading{position:absolute;top:4px;left:4px;min-height:30px;padding:5px 10px;z-index:1;border-radius:7px;background:color-mix(in oklch,var(--surface) 85%,transparent)}.figure .picture,.placeholder{height:clamp(210px,32vh,290px);min-height:0}.figure-heading{min-height:40px;padding:7px 9px}.figure-heading h3{font-size:13px}.figure-heading .enlarge{font-size:11px;padding:3px 5px}.picked .pick-hint{bottom:9px;padding:4px 10px}.picked .pick-hint::before{font-size:11px}.choices{margin-top:12px}.choices button{min-height:56px;font-size:16px;border-radius:10px}kbd{display:none}.selection{font-size:11px}}
+@media(prefers-reduced-motion:reduce){button,.figure{transition:none}}
+
+.connect-button{font-size:13px;white-space:nowrap}.auth-dialog{width:min(520px,94vw);padding:24px}.auth-dialog h2{font-family:inherit;margin:12px 0}.auth-dialog input{display:block;width:100%;padding:12px;margin-top:8px;border:1px solid var(--line);border-radius:6px}.auth-note{font-size:12px;color:var(--muted)}.auth-actions{display:flex;gap:12px}.auth-dialog ol{padding-left:24px}.auth-dialog li{margin:8px 0}
+
+@media(max-width:760px){.page-header{flex-wrap:wrap}.header-actions{gap:10px;width:100%;justify-content:space-between}.status-stack{align-items:flex-start}.connect-button{padding:6px 9px;font-size:12px}}
+
+/* P318: local durability and remote confirmation remain visible separately. */
+#local-status{font-size:12px;color:#315c42}#local-status[data-state="error"]{color:#a02c22;font-weight:700}
+#sync-status[data-state="pending"]{color:#805e23}
+.backup-button{white-space:nowrap}.recovery-status{font-size:14px;color:#805e23;min-height:1em;margin:8px 0}
+.history-panel{margin:20px 0;padding:14px 18px;border:1px solid #d9d6ca;border-radius:12px;background:#faf9f6}
+.history-panel summary{cursor:pointer;font-weight:650}.history-panel ol{padding-left:24px}.history-panel li{margin:12px 0}
+.history-panel code{display:block;font-size:11px;white-space:pre-wrap;overflow-wrap:anywhere;color:#53564e}
+.history-panel p{font-size:13px}.status-stack{max-width:48vw}
+@media(max-width:650px){.status-stack{max-width:100%}.header-actions{flex-wrap:wrap}.backup-button{font-size:12px}}
+
+/* Touch controls and long content */
+button,select{min-height:44px} code,a{overflow-wrap:anywhere} .toolbar>*{min-width:0} img{max-width:100%} .missing-image{padding:1rem;border:1px solid #a44}
+</style>
+</head>
+<body>
+<header class="page-header">
+<h1>选图演示 · 虚构数据</h1>
+<div class="header-actions"><button id="backup-now" class="backup-button">导出备份</button>
+<div class="status-stack"><span id="progress" role="status"></span><span id="local-status" role="status" aria-live="polite">正在读取本机记录</span><span id="sync-status" role="status" aria-live="polite">正在读取同步状态</span></div>
+<details class="review-menu"><summary>更多 <span aria-hidden="true">⌄</span></summary>
+<div class="menu-panel">
+<div class="toolbar">
+<label>范围 <select id="scope"><option value="redo">演示比较清单</option><option value="all">全部2张演示图</option></select></label>
+<label>查看 <select id="filter"><option value="all">全部</option><option value="pending">待选择</option><option value="done">已选择</option></select></label>
+<label class="search">搜索编号 <input id="search" type="search" placeholder="round_2_008"></label>
+<label class="advance-option"><input id="advance" type="checkbox" checked> 选完自动下一张</label>
+</div>
+<div class="tools"><button id="refresh">更新图片</button><button id="import-labels">导入标注（整包检查）</button><input id="labels-file" type="file" accept="application/json" hidden><button id="import">恢复备份（保留异常）</button><input id="file" type="file" accept="application/json" hidden><button id="json">导出 JSON</button><button id="csv">导出 CSV</button><button id="retry-save" hidden>重试本机保存</button></div>
+<p id="save" role="status">选择自动保存在当前浏览器，导出文件可备份。</p>
+<details class="credits"><summary>图片来源与许可</summary><div id="credit"></div><a href="data:application/json,%7B%22source%22:%22synthetic%22%7D" target="_blank" rel="noopener">完整来源与署名清单</a></details>
+<p id="freshness" class="freshness"></p>
+</div></details>
+</div><p><a href="showcase.html?mode=showcase">只读展示与沙盒试标</a></p></header>
+<main><p id="recovery-status" class="recovery-status" role="status"></p>
+<nav class="navigator" aria-label="图片切换"><button id="prev" aria-label="上一张">← 上一张</button><div class="image-counter"><h2 id="id">正在读取图片清单</h2><span id="position"></span></div><button id="next" aria-label="下一张">下一张 →</button></nav>
+<div id="images" class="images"></div>
+<div id="choices" class="choices"><button data-choice="redo"><kbd>3</kbd> 都不行，重做</button></div>
+<div class="selection"><span id="selection"></span><span class="keyboard-hint">1 / 2 选图 · 3 重做 · ← / → 切换</span></div>
+<details id="history-panel" class="history-panel" hidden><summary id="history-count">本图历史</summary><p>旧版记录保留选择、来源哈希及比较版本；当前图片更新后，直接重新选择即可。</p><button id="re-review">重新审核当前图片</button><ol id="history-list"></ol></details>
+<div id="empty" hidden>这组图片已选完，可在“更多”切换范围或导出标注。</div>
+</main>
+<dialog id="zoom"><form method="dialog"><button aria-label="关闭大图">关闭 ×</button></form><img id="zoomImage" alt="图片放大对照"></dialog>
+
+<script>
+const demoData = {"dataset_id": "synthetic-review-test", "source_manifest_sha256": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd", "counts": {"sources": 2, "reruns": 1}, "items": [{"id": "round_2_000", "source_uid": "round_2/000", "source_sha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc", "source_id": "synthetic", "split": "fixture", "license": "CC0", "attribution": "Synthetic test fixture", "source_page": "#fixture", "source_image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22256%22%20height%3D%22256%22%3E%3Crect%20width%3D%22256%22%20height%3D%22256%22%20fill%3D%22%23527d9f%22/%3E%3Ccircle%20cx%3D%22128%22%20cy%3D%22128%22%20r%3D%2270%22%20fill%3D%22white%22/%3E%3C/svg%3E", "in_redo": true, "versions": [{"key": "old", "native_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22256%22%20height%3D%22256%22%3E%3Crect%20width%3D%22256%22%20height%3D%22256%22%20fill%3D%22%2377a18d%22/%3E%3Ccircle%20cx%3D%22128%22%20cy%3D%22128%22%20r%3D%2270%22%20fill%3D%22white%22/%3E%3C/svg%3E", "generation_version": "fixture-1"}, {"key": "new", "native_sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb", "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22256%22%20height%3D%22256%22%3E%3Crect%20width%3D%22256%22%20height%3D%22256%22%20fill%3D%22%23c48658%22/%3E%3Ccircle%20cx%3D%22128%22%20cy%3D%22128%22%20r%3D%2270%22%20fill%3D%22white%22/%3E%3C/svg%3E", "generation_version": "fixture-2"}]}, {"id": "round_2_003", "source_uid": "round_2/003", "source_sha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc", "source_id": "synthetic", "split": "fixture", "license": "CC0", "attribution": "Synthetic test fixture", "source_page": "#fixture", "source_image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22256%22%20height%3D%22256%22%3E%3Crect%20width%3D%22256%22%20height%3D%22256%22%20fill%3D%22%23527d9f%22/%3E%3Ccircle%20cx%3D%22128%22%20cy%3D%22128%22%20r%3D%2270%22%20fill%3D%22white%22/%3E%3C/svg%3E", "in_redo": true, "versions": [{"key": "old", "native_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22256%22%20height%3D%22256%22%3E%3Crect%20width%3D%22256%22%20height%3D%22256%22%20fill%3D%22%2377a18d%22/%3E%3Ccircle%20cx%3D%22128%22%20cy%3D%22128%22%20r%3D%2270%22%20fill%3D%22white%22/%3E%3C/svg%3E", "generation_version": "fixture-1"}]}], "synthetic_display": true};
+window.QWEN_DATA=demoData;
+window.QWEN_REVIEW_CONFIG={isTest:true};
+document.getElementById('sync-status').textContent='虚构演示：仅本机保存，不连接远端';
+window.fetch = async url => {
+  if(String(url).startsWith('data.json'))return {ok:true,json:async()=>demoData};
+  throw Error('演示只读取内嵌虚构清单');
+};
+// No synchronization module or remote configuration is embedded in this demo.
+
+"use strict";
+// Shared source/candidate validation; historical comparisons keep their original identity.
+(function(root,factory){
+  const api=factory();
+  if(typeof module === "object" && module.exports) module.exports=api;
+  else root.reviewValidation=api;
+})(typeof window === "object" ? window : globalThis, function(){
+ function createValidator(){
+  let knownSources = null;
+  const hashPattern = /^[0-9a-f]{64}$/i;
+  function reject(code, message){
+    const error = new Error(message);
+    error.code = "review-validation:" + code;
+    throw error;
+  }
+  function ready(){
+    if(knownSources === null) reject("not-ready", "图片清单尚未完成加载，原记录已保留；请稍后重试或导出诊断");
+  }
+  function configureSources(items){
+    if(!Array.isArray(items)) reject("sources", "来源清单必须是数组");
+    const next = new Map();
+    for(const item of items){
+      if(!item || typeof item.source_uid !== "string" || !hashPattern.test(item.source_sha256 || ""))
+        reject("sources", "来源清单缺少有效身份");
+      if(next.has(item.source_uid) && next.get(item.source_uid) !== item.source_sha256)
+        reject("sources", "同一来源编号存在不同来源哈希");
+      next.set(item.source_uid, item.source_sha256);
+    }
+    knownSources = next;
+  }
+  function validateHistoryEntry(entry){
+    ready();
+    if(entry === null || typeof entry !== "object" || Array.isArray(entry))
+      reject("entry", "标注条目必须是对象");
+    if(typeof entry.source_uid !== "string" || !knownSources.has(entry.source_uid)
+        || entry.source_sha256 !== knownSources.get(entry.source_uid))
+      reject("source", "标注来源编号或来源哈希与已知来源不符");
+    if(!["old", "new", "redo"].includes(entry.choice)) reject("choice", "选择值无效");
+    if(!Array.isArray(entry.versions) || entry.versions.length === 0)
+      reject("versions", "比较候选必须是非空数组");
+    const slots = new Set();
+    const versions = entry.versions.map(version=>{
+      if(version === null || typeof version !== "object" || Array.isArray(version)
+          || !["old", "new"].includes(version.key) || slots.has(version.key)
+          || typeof version.native_sha256 !== "string" || !hashPattern.test(version.native_sha256))
+        reject("versions", "候选槽位必须唯一，并包含格式有效的 native 哈希");
+      slots.add(version.key);
+      return {...version, key:version.key, native_sha256:version.native_sha256};
+    });
+    const selected = entry.choice === "redo" ? null : versions.find(v=>v.key === entry.choice);
+    if(entry.choice !== "redo" && !selected) reject("selected-version", "被选版本不在这次比较候选中");
+    const native = selected?.native_sha256 || null;
+    if(Object.prototype.hasOwnProperty.call(entry, "selected_native_sha256")
+        && entry.selected_native_sha256 !== native)
+      reject("selected-native", "已保存的选中哈希与选择槽位不一致");
+    // Historical native hashes need not equal the current manifest's candidates.
+    // Keep timestamp, generation and other provenance fields as supplied.
+    return {...entry, versions, selected_native_sha256:native};
+  }
+  const snapshot = value=>value === undefined ? null : JSON.parse(JSON.stringify(value));
+  return Object.freeze({configureSources, validateHistoryEntry,
+    ready, isReady:()=>knownSources !== null, snapshot});
+ }
+ return Object.freeze({...createValidator(),createValidator});
+});
+
+/* Qwen review event journal. No DOM, network, timers, or credentials. */
+(function (root, factory) {
+  const api = factory(typeof module === 'object' && module.exports ? require('./review-validation.js') : root.reviewValidation);
+  if (typeof module === 'object' && module.exports) module.exports = api;
+  else root.QwenReviewCore = api;
+})(typeof globalThis === 'object' ? globalThis : this, function (Validation) {
+  'use strict';
+  const SCHEMA = 2;
+  const HASH = /^[a-f0-9]{64}$/i;
+  const choices = new Set(['old', 'new', 'redo']);
+  const object = x => x !== null && typeof x === 'object' && !Array.isArray(x);
+  const clone = x => JSON.parse(JSON.stringify(x));
+  const text = x => typeof x === 'string' && x.length > 0;
+  function stable(value) {
+    if (Array.isArray(value)) return '[' + value.map(stable).join(',') + ']';
+    if (object(value)) return '{' + Object.keys(value).sort().map(k => JSON.stringify(k) + ':' + stable(value[k])).join(',') + '}';
+    return JSON.stringify(value);
+  }
+  // Untrusted imports can place credentials inside quarantine/raw recovery text.
+  // Backups never retain credential fields, including nested damaged queues.
+  function sanitizeBackup(value) {
+    if (Array.isArray(value)) return value.map(sanitizeBackup);
+    if (object(value)) return Object.fromEntries(Object.entries(value)
+      .filter(([key]) => !/^(?:token|access_token|refresh_token|authorization|password|secret|github_token|gh_token)$/i.test(key))
+      .map(([key, entry]) => [key, sanitizeBackup(entry)]));
+    if (typeof value === 'string') {
+      try { const parsed = JSON.parse(value); if (object(parsed) || Array.isArray(parsed)) { const clean = sanitizeBackup(parsed); return stable(clean) === stable(parsed) ? value : JSON.stringify(clean); } } catch {}
+      return value.replace(/(Bearer\s+)[A-Za-z0-9_.\-]+/gi, '$1[REDACTED]')
+        .replace(/((?:["'])?(?:token|password|secret|authorization)(?:["'])?\s*[=:]\s*)(?:"[^"]*"|'[^']*'|[^\s,}\]]+)/gi, '$1"[REDACTED]"');
+    }
+    return value;
+  }
+  function insist(ok, message) { if (!ok) throw new Error(message); }
+  function hash(value, field) {
+    insist(typeof value === 'string' && HASH.test(value), field + ' must be a SHA256 hex string');
+    return value.toLowerCase();
+  }
+  function pathId(value, field) {
+    insist(typeof value === 'string' && /^[A-Za-z0-9_-]+$/.test(value), field + ' must be a single safe path component');
+    return value;
+  }
+  function versions(xs, legacy = false) {
+    insist(Array.isArray(xs) && xs.length >= 1 && xs.length <= 2, 'versions must contain old and optional new');
+    const seen = new Set();
+    const result = xs.map(v => {
+      insist(object(v) && ['old', 'new'].includes(v.key) && !seen.has(v.key), 'invalid or duplicate version key');
+      seen.add(v.key);
+      insist(legacy || text(v.generation_version), 'generation_version is required for a new decision');
+      insist(v.generation_version == null || text(v.generation_version), 'invalid generation_version');
+      return {key: v.key, native_sha256: hash(v.native_sha256, 'native_sha256'),
+        generation_version: v.generation_version ?? null,
+        ...(v.config_sha256 == null ? {} : {config_sha256: hash(v.config_sha256, 'config_sha256')})};
+    });
+    insist(seen.has('old'), 'old version is required');
+    return result.sort((a, b) => a.key.localeCompare(b.key));
+  }
+  // Image content defines a comparison. Generation/config metadata is frozen
+  // on the event; a metadata-only rename does not require another visual review.
+  function comparisonKey(datasetId, source) {
+    return stable([SCHEMA, datasetId, source.source_uid, source.source_sha256.toLowerCase(),
+      versions(source.versions, true).map(v => [v.key, v.native_sha256])]);
+  }
+  function validateDataset(data) {
+    insist(object(data) && text(data.dataset_id) && Array.isArray(data.items), 'invalid dataset envelope');
+    hash(data.source_manifest_sha256, 'source_manifest_sha256');
+    const ids = new Set(), uids = new Set();
+    for (const x of data.items) {
+      insist(object(x) && text(x.id) && !ids.has(x.id) && text(x.source_uid) && !uids.has(x.source_uid), 'duplicate or missing item identity');
+      ids.add(x.id); uids.add(x.source_uid);
+      hash(x.source_sha256, 'source_sha256'); versions(x.versions);
+    }
+    return data;
+  }
+  function createSourceValidator(data) {
+    insist(Validation && typeof Validation.createValidator === 'function', 'shared review validator is unavailable');
+    const validator = Validation.createValidator();
+    validator.configureSources(validateDataset(data).items);
+    return validator;
+  }
+  function timestamp(value) {
+    insist(typeof value === 'string' && /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d{1,9})?(?:Z|[+-]\d{2}:\d{2})$/.test(value), 'updated_at must be an ISO timestamp');
+    const [year, month, day] = value.slice(0, 10).split('-').map(Number);
+    insist(month >= 1 && month <= 12 && day >= 1 && day <= new Date(Date.UTC(year, month, 0)).getUTCDate(), 'invalid calendar date');
+    insist(Number.isFinite(Date.parse(value)), 'invalid updated_at');
+    return new Date(value).toISOString();
+  }
+  function normalizeEvent(raw, data, {legacy = false} = {}) {
+    insist(object(raw), 'record must be an object');
+    insist(legacy || raw.schema_version === SCHEMA, 'invalid event schema_version');
+    insist(raw.is_test == null || typeof raw.is_test === 'boolean', 'is_test must be boolean');
+    insist(raw.dataset_id == null ? legacy : raw.dataset_id === data.dataset_id, 'dataset_id mismatch');
+    insist(text(raw.source_uid), 'missing source_uid');
+    insist(choices.has(raw.choice), 'invalid choice');
+    const vv = versions(raw.versions ?? raw.compared_versions, legacy || raw.legacy === true);
+    insist(raw.choice === 'redo' || vv.some(v => v.key === raw.choice), 'choice has no compared image');
+    const selected = vv.find(v => v.key === raw.choice);
+    if (raw.selected_native_sha256 !== undefined) insist(raw.selected_native_sha256 === (selected?.native_sha256 ?? null), 'selected_native_sha256 contradicts choice');
+    if (raw.selected_generation_version !== undefined && !legacy) insist(raw.selected_generation_version === (selected?.generation_version ?? null), 'selected_generation_version contradicts compared version');
+    const out = {
+      schema_version: SCHEMA, event_id: raw.event_id,
+      dataset_id: data.dataset_id,
+      source_manifest_sha256: raw.source_manifest_sha256 == null && (legacy || raw.legacy === true) ? null : hash(raw.source_manifest_sha256, 'source_manifest_sha256'),
+      source_uid: raw.source_uid, source_sha256: hash(raw.source_sha256, 'source_sha256'),
+      versions: vv, choice: raw.choice, updated_at: timestamp(raw.updated_at),
+      client_id: typeof raw.client_id === 'string' ? raw.client_id : 'legacy-unknown',
+      parents: raw.parents == null && legacy ? [] : raw.parents,
+      selected_native_sha256: selected?.native_sha256 ?? null,
+      selected_generation_version: selected?.generation_version ?? null,
+      is_test: raw.is_test === true, legacy: legacy || raw.legacy === true
+    };
+    insist(text(out.event_id), 'missing event_id');
+    insist(Array.isArray(out.parents) && out.parents.every(text) && !out.parents.includes(out.event_id), 'invalid parents');
+    out.parents = [...new Set(out.parents)].sort();
+    for (const name of ['id', 'source_id', 'split', 'license', 'attribution', 'reviewer_id', 'review_method',
+      'legacy_fingerprint', 'legacy_original_event_id', 'legacy_record_kind', 'evidence_kind']) {
+      if (typeof raw[name] === 'string') out[name] = raw[name];
+    }
+    out.comparison_key = comparisonKey(data.dataset_id, out);
+    if (raw.comparison_key !== undefined) insist(raw.comparison_key === out.comparison_key, 'comparison_key contradicts fields');
+    return out;
+  }
+  function validateBatch(batch, data) {
+    insist(stable(sanitizeBackup(batch)) === stable(batch), 'credential fields cannot enter a sync batch');
+    insist(object(batch) && batch.dataset_id === data.dataset_id, 'invalid batch identity');
+    pathId(batch.client_id, 'client_id'); pathId(batch.batch_id, 'batch_id');
+    timestamp(batch.created_at);
+    insist(batch.is_test == null || typeof batch.is_test === 'boolean', 'batch is_test must be boolean');
+    if (batch.source_manifest_sha256 != null) hash(batch.source_manifest_sha256, 'batch source_manifest_sha256');
+    insist(Array.isArray(batch.entries) && batch.entries.length > 0 && batch.entries.length <= 5, 'batch must have one to five entries');
+    const ids = new Set();
+    for (const entry of batch.entries) {
+      insist(object(entry) && text(entry.event_id) && !ids.has(entry.event_id), 'missing or repeated batch event_id');
+      ids.add(entry.event_id);
+      if (entry.schema_version === SCHEMA) normalizeEvent(entry, data);
+      else normalizeEvent({...entry, dataset_id: entry.dataset_id ?? data.dataset_id, parents: []}, data, {legacy: true});
+    }
+    return batch; // Validation must not alter bytes used by an immutable batch.
+  }
+  function validateQueueEntry(e, data) {
+    insist(stable(sanitizeBackup(e)) === stable(e), 'credential fields cannot enter a sync queue');
+    insist(object(e) && text(e.event_id), 'queue entry has no event_id');
+    if (e.schema_version === SCHEMA) normalizeEvent(e, data);
+    else normalizeEvent({...e, dataset_id: e.dataset_id ?? data.dataset_id,
+      source_manifest_sha256: e.source_manifest_sha256 ?? data.source_manifest_sha256, parents: []}, data, {legacy: true});
+    return e;
+  }
+  function validateQueue(s, data) {
+    insist(object(s) && typeof s.client_id === 'string' && Array.isArray(s.pending) && Array.isArray(s.seen) &&
+      Array.isArray(s.receipts) && Number.isInteger(s.confirmed) && s.confirmed >= 0, 'invalid sync queue');
+    pathId(s.client_id, 'queue client_id');
+    insist(s.is_test == null || typeof s.is_test === 'boolean', 'queue is_test must be boolean');
+    insist(s.seen.every(f => typeof f === 'string'), 'invalid seen fingerprints');
+    s.pending.forEach(e => validateQueueEntry(e, data));
+    s.receipts.forEach(r => { insist(object(r), 'invalid receipt'); if (r.batch) validateBatch(r.batch, data); });
+    if (s.batch) validateBatch(s.batch, data);
+    insist(s.recovered_batches == null || Array.isArray(s.recovered_batches), 'invalid recovered batches');
+    if (s.recovered_batches) s.recovered_batches.forEach(b => validateBatch(b, data));
+    insist(s.recovered_evidence == null || Array.isArray(s.recovered_evidence) &&
+      s.recovered_evidence.every(e => object(e) && typeof e.origin === 'string' && typeof e.raw === 'string'), 'invalid recovered evidence');
+    return {...s, recovered_batches: s.recovered_batches || [], recovered_evidence: s.recovered_evidence || []};
+  }
+  function validateHistoryBinding(entries, history, data) {
+    const authoritative = new Map(history.filter(e => e.schema_version === SCHEMA)
+      .map(e => [e.event_id, normalizeEvent(e, data)]));
+    for (const e of entries) if (e.schema_version === SCHEMA) {
+      insist(authoritative.has(e.event_id) &&
+        stable(authoritative.get(e.event_id)) === stable(normalizeEvent(e, data)), 'recovered-history-conflict');
+    }
+    return entries;
+  }
+  function legacyQueueEntries(queue) {
+    // Derive journal evidence from accepted legacy pending without changing the
+    // immutable queue/batch bytes. A batch's declared manifest is historical
+    // context; the current dataset must never fill it in.
+    const batches = [...(queue.batch ? [queue.batch] : []), ...(queue.recovered_batches || []),
+      ...(queue.receipts || []).filter(r => r?.batch).map(r => r.batch)];
+    const evidence = new Map();
+    for (const entry of queue.pending) if (entry.schema_version !== SCHEMA) {
+      const matched = batches.filter(b => b.entries.some(e => e.event_id === entry.event_id && stable(e) === stable(entry)));
+      const declared = entry.source_manifest_sha256 != null ? [entry.source_manifest_sha256] :
+        matched.map(b => b.source_manifest_sha256).filter(value => value != null);
+      const contexts = declared.length ? [...new Set(declared)].sort() : [null];
+      for (const manifest of contexts) {
+        const derived = {...entry, is_test: queue.is_test === true || entry.is_test === true || matched.some(b => b.is_test === true),
+          ...(manifest == null ? {} : {source_manifest_sha256: manifest})};
+        evidence.set(stable(derived), derived);
+      }
+    }
+    return [...evidence.values()];
+  }
+  function order(a, b) { return a.updated_at.localeCompare(b.updated_at) || a.event_id.localeCompare(b.event_id); }
+  function graphErrors(events) {
+    const index = new Map(events.map(e => [e.event_id, e]));
+    const bad = new Map(), visiting = new Set(), done = new Set();
+    function walk(id, path) {
+      if (visiting.has(id)) { for (const cycleId of path.slice(path.indexOf(id))) bad.set(cycleId, 'cycle in parents'); return; }
+      if (done.has(id)) return;
+      visiting.add(id);
+      const e = index.get(id);
+      for (const parent of e.parents) {
+        const p = index.get(parent);
+        if (!p) continue;
+        if (p.comparison_key !== e.comparison_key) { bad.set(id, 'parent belongs to another comparison'); continue; }
+        walk(parent, [...path, id]);
+      }
+      visiting.delete(id); done.add(id);
+    }
+    for (const id of index.keys()) walk(id, []);
+    return bad;
+  }
+  function project(events) {
+    const groups = new Map();
+    for (const e of events) {
+      if (!groups.has(e.comparison_key)) groups.set(e.comparison_key, []);
+      groups.get(e.comparison_key).push(e);
+    }
+    const result = new Map();
+    for (const [key, history] of groups) {
+      history.sort(order);
+      const indexed = new Map(history.map(e => [e.event_id, e])), closed = new Map();
+      function isClosed(e, path = new Set()) {
+        if (closed.has(e.event_id)) return closed.get(e.event_id);
+        if (path.has(e.event_id)) return false;
+        const next = new Set(path); next.add(e.event_id);
+        const complete = e.parents.every(id => indexed.has(id) && isClosed(indexed.get(id), next));
+        closed.set(e.event_id, complete); return complete;
+      }
+      const eligible = history.filter(e => isClosed(e));
+      const parents = new Set(eligible.flatMap(e => e.parents));
+      const heads = eligible.filter(e => !parents.has(e.event_id));
+      const conflict = new Set(heads.map(e => e.choice)).size > 1;
+      result.set(key, {history, heads, conflict, decision: conflict ? null : heads[heads.length - 1] ?? null,
+        incomplete_event_ids: history.filter(e => !isClosed(e)).map(e => e.event_id),
+        missing_parents: [...new Set(history.flatMap(e => e.parents).filter(id => !indexed.has(id)))]});
+    }
+    return result;
+  }
+  function legacyFingerprint(raw) { return [raw.source_uid, raw.updated_at, raw.choice, ...raw.versions.map(v => v.native_sha256)].join('|'); }
+  async function legacyEvent(raw, data, digest, envelopeManifest = null) {
+    insist(object(raw), 'record must be an object');
+    const vv = versions(raw.versions ?? raw.compared_versions, true);
+    const selected = vv.find(v => v.key === raw.choice);
+    if (selected && text(raw.selected_generation_version)) {
+      insist(selected.generation_version == null || selected.generation_version === raw.selected_generation_version, 'legacy generation evidence disagrees');
+      selected.generation_version = raw.selected_generation_version;
+    }
+    // Legacy drafts and queue entries are evidence records, not reconstructed
+    // clicks. Different surviving provenance is retained without overwriting it.
+    const normalized = normalizeEvent({...raw, source_manifest_sha256: raw.source_manifest_sha256 ?? envelopeManifest,
+      event_id: 'legacy-identity-placeholder', parents: [],
+      legacy_fingerprint: legacyFingerprint({...raw, versions: raw.versions ?? raw.compared_versions}),
+      ...(raw.event_id ? {legacy_original_event_id: raw.event_id} : {}),
+      legacy_record_kind: raw.event_id ? 'queue_event' : 'snapshot',
+      versions: vv, selected_generation_version: selected?.generation_version ?? null}, data, {legacy: true});
+    const identity = {...normalized}; delete identity.event_id;
+    normalized.event_id = 'legacy-' + await digest(stable(identity));
+    return normalized;
+  }
+  async function defaultDigest(value) {
+    const bytes = await globalThis.crypto.subtle.digest('SHA-256', new TextEncoder().encode(value));
+    return Array.from(new Uint8Array(bytes), x => x.toString(16).padStart(2, '0')).join('');
+  }
+  function createStore({dataset, storage, now = () => new Date().toISOString(), id = () => globalThis.crypto.randomUUID(), digest = defaultDigest, isTest = false}) {
+    validateDataset(dataset);
+    const scope = (isTest ? 'test:' : '') + encodeURIComponent(dataset.dataset_id) + ':';
+    const prefix = 'qwen-review:event:v2:' + scope;
+    const quarantinePrefix = 'qwen-review:quarantine:v2:' + scope;
+    const events = new Map(), unsaved = new Set(), quarantine = new Map();
+    let storageError = '', clientId = id();
+    const memoryErrors = new Map();
+    const io = () => typeof storage === 'function' ? storage() : storage;
+    function accept(raw) {
+      const event = normalizeEvent(raw, dataset);
+      insist(isTest || !event.is_test, 'test record is not a production annotation');
+      return event;
+    }
+    function reject(raw, reason, origin, key = id()) {
+      const safeRaw = sanitizeBackup(clone(raw));
+      const duplicate = [...quarantine.values()].find(q => q.reason === reason && stable(q.raw) === stable(safeRaw));
+      if (duplicate) return duplicate;
+      const record = {record_id: key, origin, reason, raw: safeRaw, captured_at: now()};
+      quarantine.set(key, record);
+      try { io().setItem(quarantinePrefix + key, stable(record)); } catch (e) { storageError = e.message; }
+      return record;
+    }
+    function append(event) {
+      const e = accept(event), encoded = stable(e), previous = events.get(e.event_id);
+      if (previous && stable(previous) !== encoded) { reject(e, 'event_id collision', 'append'); return {persisted: false, collision: true}; }
+      const candidateGraph = new Map(events); candidateGraph.set(e.event_id, e);
+      const bad = graphErrors([...candidateGraph.values()]);
+      if (bad.has(e.event_id)) { reject(e, bad.get(e.event_id), 'append'); return {persisted: false, collision: true}; }
+      events.set(e.event_id, e);
+      try {
+        const disk = io().getItem(prefix + e.event_id);
+        if (disk !== null && stable(normalizeEvent(JSON.parse(disk), dataset)) !== encoded) {
+          reject(e, 'event_id collision on disk', 'append');
+          if (previous) { events.set(e.event_id, previous); unsaved.add(e.event_id); }
+          else events.delete(e.event_id);
+          return {persisted: false, collision: true};
+        }
+        io().setItem(prefix + e.event_id, encoded);
+        insist(io().getItem(prefix + e.event_id) === encoded, 'local readback failed');
+        unsaved.delete(e.event_id); storageError = '';
+        return {persisted: true, duplicate: Boolean(previous)};
+      } catch (error) {
+        unsaved.add(e.event_id); storageError = error.message;
+        return {persisted: false, error: error.message};
+      }
+    }
+    function refresh() {
+      try {
+        const persisted = new Set(), disk = io(), keys = [];
+        for (let i = 0; i < disk.length; i++) keys.push(disk.key(i));
+        for (const key of keys) {
+          if (key?.startsWith(prefix)) {
+            const raw = disk.getItem(key);
+            try {
+              const e = accept(JSON.parse(raw));
+              insist(key === prefix + e.event_id, 'event storage key mismatch');
+              const existing = events.get(e.event_id);
+              insist(!existing || stable(existing) === stable(e), 'event_id collision on refresh');
+              events.set(e.event_id, e); persisted.add(e.event_id); unsaved.delete(e.event_id);
+            } catch (error) {
+              const eventId = key.slice(prefix.length);
+              if (events.has(eventId)) unsaved.add(eventId);
+              memoryErrors.set(key, {origin: key, reason: error.message, raw});
+            }
+          } else if (key?.startsWith(quarantinePrefix)) {
+            try { const q = JSON.parse(disk.getItem(key)); if (object(q) && text(q.record_id)) quarantine.set(q.record_id, q); }
+            catch (error) { memoryErrors.set(key, {origin: key, reason: error.message, raw: disk.getItem(key)}); }
+          }
+        }
+        // Do not erase malformed histories. snapshot() derives quarantine and
+        // incomplete chains identically in warm tabs and a fresh browser.
+        for (const eventId of events.keys()) if (!persisted.has(eventId)) unsaved.add(eventId);
+        storageError = '';
+      } catch (error) { storageError = error.message; }
+      return snapshot();
+    }
+    function snapshot() {
+      const graph = graphErrors([...events.values()]);
+      const history = [...events.values()].filter(e => !graph.has(e.event_id)).sort(order);
+      const groups = project(history);
+      const currentKeys = new Set(dataset.items.map(x => comparisonKey(dataset.dataset_id, x)));
+      return {history, groups, unsaved: [...unsaved].filter(id => !graph.has(id)), storage_error: storageError,
+        incomplete_event_ids: [...groups.values()].flatMap(g => g.incomplete_event_ids),
+        quarantine: [...quarantine.values(), ...memoryErrors.values(), ...[...graph].map(([eventId, reason]) => ({origin: prefix + eventId, reason, raw: events.get(eventId)}))],
+        archived: history.filter(e => !currentKeys.has(e.comparison_key)),
+        conflicts: [...groups.entries()].filter(([key, g]) => currentKeys.has(key) && g.conflict).map(([key, g]) => ({comparison_key: key, event_ids: g.heads.map(e => e.event_id)}))};
+    }
+    function choose(item, choice) {
+      const key = comparisonKey(dataset.dataset_id, item);
+      const currentGroup = snapshot().groups.get(key);
+      const e = normalizeEvent({schema_version: SCHEMA, event_id: id(), dataset_id: dataset.dataset_id,
+        source_manifest_sha256: dataset.source_manifest_sha256, ...clone(item), versions: versions(item.versions), choice,
+        updated_at: now(), client_id: clientId, parents: currentGroup?.heads.map(e => e.event_id) ?? [], is_test: isTest,
+        review_method: isTest ? 'automated offline fixture; synthetic display images' : 'human comparison: old/new/both redo'}, dataset);
+      const result = append(e);
+      return {event: e, ...result};
+    }
+    async function importData(data, origin = 'import') {
+      insist(object(data) && data.dataset_id === dataset.dataset_id && Array.isArray(data.history), '请选择本数据集的标注文件（须含 history 数组）');
+      insist([1, 2].includes(data.schema_version), 'unsupported annotation schema_version');
+      const stats = {accepted: 0, duplicates: 0, quarantined: 0, unsaved: 0, archived: 0, conflicts: 0};
+      const candidates = new Map();
+      for (let i = 0; i < data.history.length; i++) {
+        const raw = data.history[i];
+        try {
+          const marked = data.is_test === true && object(raw) ? {...raw, is_test: true} : raw;
+          const normalized = data.schema_version === 1 ? await legacyEvent(marked, dataset, digest, data.source_manifest_sha256 ?? null) : normalizeEvent(marked, dataset);
+          const e = accept(normalized);
+          const existing = candidates.get(e.event_id) ?? events.get(e.event_id);
+          insist(!existing || stable(existing) === stable(e), 'event_id collision');
+          if (existing) stats.duplicates++; else candidates.set(e.event_id, e);
+        } catch (error) { reject(raw, error.message, origin + ':history[' + i + ']'); stats.quarantined++; }
+      }
+      const all = new Map([...events, ...candidates]);
+      const bad = graphErrors([...all.values()]);
+      // Incomplete ancestors do not select an image. A cross-comparison child
+      // becomes inspectable quarantine when its parent arrives, in any order.
+      for (const [eventId, reason] of bad) if (candidates.has(eventId)) {
+        reject(candidates.get(eventId), reason, origin); candidates.delete(eventId); stats.quarantined++;
+      }
+      for (const e of candidates.values()) {
+        const result = append(e);
+        if (result.collision) stats.quarantined++;
+        else { stats.accepted++; if (!result.persisted) stats.unsaved++; }
+      }
+      if (Array.isArray(data.quarantine)) for (const q of data.quarantine) {
+        if (object(q) && text(q.reason)) { reject(q.raw ?? q, q.reason, 'restored:' + (q.origin ?? origin)); stats.quarantined++; }
+      }
+      const state = snapshot(); stats.archived = state.archived.length; stats.conflicts = state.conflicts.length;
+      return stats;
+    }
+    function retrySave() {
+      const results = [];
+      for (const eventId of [...unsaved]) if (events.has(eventId)) results.push({event_id: eventId, ...append(events.get(eventId))});
+      return results;
+    }
+    function exportData(sync) {
+      const state = snapshot(), groups = state.groups;
+      const items = dataset.items.flatMap(item => {
+        const d = groups.get(comparisonKey(dataset.dataset_id, item))?.decision;
+        return d ? [{id: item.id, event_id: d.event_id, source_uid: d.source_uid, source_id: d.source_id ?? item.source_id,
+          source_sha256: d.source_sha256, source_manifest_sha256: d.source_manifest_sha256, split: d.split ?? item.split, license: d.license ?? item.license, attribution: d.attribution ?? item.attribution,
+          choice: d.choice, status: d.choice === 'redo' ? 'redo' : 'pass', selected_native_sha256: d.selected_native_sha256,
+          selected_generation_version: d.selected_generation_version, compared_versions: d.versions, updated_at: d.updated_at,
+          comparison_key: d.comparison_key, legacy: d.legacy}] : [];
+      });
+      return sanitizeBackup({schema_version: SCHEMA, required_reader: 'qwen-review-event-journal-v2', dataset_id: dataset.dataset_id, source_manifest_sha256: dataset.source_manifest_sha256,
+        exported_at: now(), review_method: isTest ? 'offline synthetic-image fixture' : 'human comparison: old/new/both redo',
+        is_test: isTest, items, history: state.history, conflicts: state.conflicts, quarantine: state.quarantine,
+        recovery: {unsaved_event_ids: state.unsaved, incomplete_event_ids: state.incomplete_event_ids,
+          archived_event_ids: state.archived.map(e => e.event_id)}, server_sync: sync ?? null});
+    }
+    refresh();
+    return {prefix, quarantinePrefix, dataset, isTest, append, refresh, choose, snapshot, importData, retrySave, exportData};
+  }
+  return {SCHEMA, stable, sanitizeBackup, pathId, versions, comparisonKey, validateDataset, createSourceValidator, normalizeEvent, validateBatch,
+    validateQueueEntry, validateQueue, validateHistoryBinding, legacyQueueEntries, graphErrors, project, legacyEvent, createStore};
+});
+
+'use strict';
+let dataset,items=[],queue=[],cursor=0,journal,view,recoveryNotice='',legacyDraftRaw=null;
+const $=id=>document.getElementById(id),Core=window.QwenReviewCore;
+const key=x=>Core.comparisonKey(dataset.dataset_id,x);
+const current=()=>queue[cursor];
+function decision(x){return view?.groups.get(key(x))?.decision}
+function refreshView(){view=journal.snapshot()}
+function showSave(prefix=''){
+  refreshView();
+  const saved=view.history.length-view.unsaved.length;
+  const message=view.unsaved.length?`${view.unsaved.length} 条选择仅保留在此页面，尚未写入本机；请导出 JSON 或重试保存`:
+    view.storage_error?'本机存储不可用；导出 JSON 可备份当前页面中的记录':`本机已保存 ${saved} 条选择记录 · 刷新可恢复`;
+  $('save').textContent=prefix+message;
+  $('local-status').textContent=message;
+  $('local-status').dataset.state=view.unsaved.length||view.storage_error?'error':'saved';
+  $('retry-save').hidden=!view.unsaved.length;
+  const notes=recoveryNotice?[recoveryNotice]:[];
+  if(view.conflicts.length)notes.push(`${view.conflicts.length} 组选择有分歧，请重新选一次确认`);
+  if(view.quarantine.length)notes.push(`${view.quarantine.length} 条异常记录已隔离，导出 JSON 可检查原记录`);
+  if(view.incomplete_event_ids.length)notes.push(`${view.incomplete_event_ids.length} 条历史缺少前序记录，未套用为当前选择`);
+  if(view.archived.length)notes.push(`${view.archived.length} 条旧版记录保留在历史中`);
+  $('recovery-status').textContent=notes.join('；');
+}
+function renderHistory(x){
+  const container=$('history-list');container.replaceChildren();
+  const events=view.history.filter(e=>e.source_uid===x.source_uid).slice().reverse();
+  $('history-count').textContent=`本图历史 · ${events.length} 条`;
+  $('history-panel').hidden=!events.length;
+  const names={old:'原版更好',new:'重跑更好',redo:'都重做'};
+  for(const e of events){
+    const row=document.createElement('li'),title=document.createElement('p'),detail=document.createElement('code');
+    const currentVersion=e.comparison_key===key(x);
+    title.textContent=`${e.updated_at} · ${names[e.choice]} · ${currentVersion?'当前比较':'旧版记录'}${e.legacy?' · 旧格式迁入':''}`;
+    detail.textContent=`source ${e.source_sha256}\n`+e.versions.map(v=>`${v.key}: ${v.native_sha256} · ${v.generation_version??'旧文件未记录生成版本'}`).join('\n');
+    row.append(title,detail);container.append(row);
+  }
+  $('re-review').onclick=()=>{document.querySelector('#images [data-choice]')?.focus();$('selection').textContent='请直接选择当前原版、重跑版，或都重做；旧记录继续保留'};
+}
+
+function rebuild(keep,offset=0){const scope=items.filter(x=>$('scope').value==='all'||x.in_redo);const count=scope.filter(x=>decision(x)).length;$('progress').textContent=`已选择 ${count} / ${scope.length}`;queue=scope.filter(x=>($('filter').value==='all'||($('filter').value==='done')===Boolean(decision(x)))&&x.id.toLowerCase().includes($('search').value.toLowerCase().trim()));cursor=Math.min(Math.max(0,queue.length-1),Math.max(0,keep?queue.findIndex(x=>x.id===keep):0)+offset);render()}
+function displayURL(url,contentHash){if(!url)return null;const resolved=new URL(url,location.href);if(['data:','blob:'].includes(resolved.protocol))return resolved.href;resolved.searchParams.set('review_sha256',contentHash);return resolved.href}
+// Decoded display availability is separate from native-byte identity verification.
+function reviewImagesReady(x=current()){
+  if(!x)return false;
+  const images=Array.from($('images').querySelectorAll('img'));
+  return images.length===1+x.versions.length&&images.every(img=>img.complete&&img.naturalWidth>0);
+}
+function updateImageGate(){
+  const x=current(),ready=reviewImagesReady(x);
+  $('images').setAttribute('aria-busy',String(!ready&&!document.querySelector('.missing-image')));
+  document.querySelectorAll('[data-choice]').forEach(button=>{
+    button.disabled=!ready||button.dataset.choice==='new'&&!x?.versions.some(v=>v.key==='new');
+    button.title=ready?'':'等待当前比较的全部图像加载完成';
+  });
+}
+function figure(title,url,choice=null){const box=document.createElement('article');box.className='figure'+(choice&&url?' selectable':'');if(choice)box.dataset.variant=choice;const head=document.createElement('div');head.className='figure-heading';const h=document.createElement('h3');h.textContent=title;head.append(h);const zoom=()=>{$('zoomImage').src=url;$('zoomImage').alt=title;$('zoom').showModal()};if(url&&choice){const enlarge=document.createElement('button');enlarge.className='enlarge';enlarge.textContent='放大';enlarge.setAttribute('aria-label','放大'+title);enlarge.onclick=zoom;head.append(enlarge)}box.append(head);if(url){const button=document.createElement('button');button.className='picture';button.setAttribute('aria-label',choice?'选择'+title:'放大'+title);if(choice)button.dataset.choice=choice;const img=document.createElement('img');img.alt=title;img.decoding='async';img.onload=()=>{if(box.isConnected)updateImageGate()};img.onerror=()=>{if(!box.isConnected)return;box.classList.add('missing-image');img.alt='Native image not included in this package';document.querySelectorAll('[data-choice]').forEach(b=>b.disabled=true);$('selection').textContent='原图像字节未随包提供：已保留历史标签，待导入对应图片后审核。可打开只读展示体验沙盒。';updateImageGate();};img.src=url;button.append(img);button.onclick=choice?()=>choose(choice):zoom;box.append(button);if(choice){const tip=document.createElement('div');tip.className='pick-hint';tip.textContent='点击图片，选择这一版';box.append(tip)}}else{const p=document.createElement('div');p.className='placeholder';p.textContent='重跑队列生成中';box.append(p)}return box}
+function render(){const x=current();$('empty').hidden=Boolean(x);$('images').replaceChildren();$('choices').hidden=!x;$('prev').disabled=cursor<=0;$('next').disabled=cursor>=queue.length-1;if(!x){$('id').textContent='当前筛选已完成';$('position').textContent='';$('selection').textContent='';$('credit').replaceChildren();$('history-panel').hidden=true;return}$('id').textContent=x.id;$('position').textContent=`${cursor+1} / ${queue.length}`;$('images').append(figure('原图',displayURL(x.source_image,x.source_sha256)),figure('原版',displayURL(x.versions.find(v=>v.key==='old').image,x.versions.find(v=>v.key==='old').native_sha256),'old'),figure('重跑',displayURL(x.versions.find(v=>v.key==='new')?.image,x.versions.find(v=>v.key==='new')?.native_sha256),'new'));const selected=decision(x);const names={old:'原版更好',new:'重跑更好',redo:'都重做'};const group=view.groups.get(key(x));const previous=view.history.filter(d=>d.source_uid===x.source_uid).slice().reverse()[0];$('selection').textContent=group?.conflict?'不同标签页或导入记录存在不同选择；重新选一次即可确认':selected?'你的选择：'+names[selected.choice]:group?.incomplete_event_ids.length?'历史缺少前序记录，尚未套用；请重新选一次确认':previous?'已有旧版选择：'+names[previous.choice]+'；请比较当前图片':'请选择一张，或将两版都列入重做';document.querySelectorAll('.figure[data-variant]').forEach(box=>box.classList.toggle('picked',box.dataset.variant===selected?.choice));document.querySelectorAll('[data-choice]').forEach(b=>{b.disabled=b.dataset.choice==='new'&&!x.versions.some(v=>v.key==='new');b.setAttribute('aria-pressed',String(selected?.choice===b.dataset.choice))});$('credit').replaceChildren();const p=document.createElement('p');p.textContent=`作者：${x.attribution} · 许可：${x.license} · 来源编号：${x.source_id}`;const link=document.createElement('a');link.href=x.source_page;link.target='_blank';link.rel='noopener';link.textContent='查看原图来源';$('credit').append(p,link);renderHistory(x);updateImageGate()}
+function choose(choice){
+  const x=current();if(!reviewImagesReady(x)||choice==='new'&&!x.versions.some(v=>v.key==='new'))return;
+  const result=journal.choose(x,choice);showSave();
+  if(result.persisted)window.reviewSync?.enqueue(result.event).catch(()=>{});
+  const oldIndex=cursor;
+  if(result.persisted&&$('advance').checked){
+    if($('filter').value==='pending')rebuild(undefined,oldIndex);
+    else rebuild(x.id,1);
+  }else rebuild(x.id);
+}
+function exportData(){
+  journal.refresh();showSave();
+  const out=journal.exportData(window.reviewSync?.backup());
+  out.diagnostics={stored_root:legacyDraftRaw,rejected_history:out.quarantine,
+    sync:window.reviewSync?.diagnostics?.()||null};
+  return Core.sanitizeBackup(out);
+}
+
+function download(name,text,type){const a=document.createElement('a'),url=URL.createObjectURL(new Blob([text],{type}));a.href=url;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000)}
+$('json').onclick=()=>download('qwen-human-annotations.json',JSON.stringify(exportData(),null,2),'application/json');
+$('csv').onclick=()=>{const rows=exportData().items,cols=['id','source_uid','choice','status','selected_native_sha256','source_sha256','selected_generation_version','split','license','attribution','updated_at'];const cell=v=>{let s=String(v??'');if(/^[=+@\-\t\r]/.test(s))s="'"+s;return '"'+s.replaceAll('"','""')+'"'};download('qwen-human-annotations.csv','\ufeff'+[cols.join(','),...rows.map(r=>cols.map(k=>cell(r[k])).join(','))].join('\r\n'),'text/csv;charset=utf-8')};
+$('import').onclick=()=>$('file').click();
+async function importData(data){
+  const keep=current()?.id;
+  const result=await journal.importData(data,'file import');
+  recoveryNotice='';refreshView();showSave();rebuild(keep);
+  if(data.schema_version===2&&data.server_sync&&(journal.isTest||data.is_test!==true))await window.reviewSync?.restore(data.server_sync,view.history);
+  const restoredLegacy=window.reviewSync?.legacyPending()??[];
+  if(restoredLegacy.length){
+    const recovered=await journal.importData({schema_version:1,dataset_id:journal.dataset.dataset_id,history:restoredLegacy},'restored legacy sync queue');
+    for(const key of ['accepted','duplicates','quarantined','unsaved'])result[key]+=recovered[key];
+    result.archived=recovered.archived;result.conflicts=recovered.conflicts;
+    refreshView();
+  }
+  await window.reviewSync?.seed(view.history.filter(e=>!view.unsaved.includes(e.event_id)));
+  rebuild(keep);
+  showSave(`导入新增 ${result.accepted} 条、重复 ${result.duplicates} 条、异常 ${result.quarantined} 条。`);
+  return result;
+}
+$('file').onchange=async e=>{
+  try{if(!e.target.files[0])return;await importData(JSON.parse(await e.target.files[0].text()))}
+  catch(error){recoveryNotice='导入未完成：'+error.message;showSave()}
+  finally{$('file').value=''}
+};
+// Ordinary annotation import is all-or-nothing validation. Recovery uses importData.
+async function importLabels(data){
+  if(!dataset||!data||data.dataset_id!==dataset.dataset_id||!Array.isArray(data.history))
+    throw Error('请选择本数据集的标注文件（须含 history 数组）');
+  const schema=data.schema_version??1;
+  if(![1,2].includes(schema))throw Error('unsupported annotation schema_version');
+  const validator=Core.createSourceValidator(dataset),staged=[];
+  const digest=async value=>{const bytes=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(value));return Array.from(new Uint8Array(bytes),x=>x.toString(16).padStart(2,'0')).join('')};
+  for(const raw of data.history){
+    const clean=validator.validateHistoryEntry(raw);
+    const marked=data.is_test===true?{...clean,is_test:true}:clean;
+    if(!journal.isTest&&marked.is_test===true)throw Error('test record is not a production annotation');
+    staged.push(schema===1?await Core.legacyEvent(marked,dataset,digest,data.source_manifest_sha256??null):Core.normalizeEvent(marked,dataset));
+  }
+  const incoming=new Map(view.history.map(event=>[event.event_id,event]));
+  for(const event of staged){
+    const known=incoming.get(event.event_id);
+    if(known&&Core.stable(known)!==Core.stable(event))throw Error('event_id collision');
+    incoming.set(event.event_id,event);
+  }
+  const graph=Core.graphErrors([...incoming.values()]);
+  if(staged.some(event=>graph.has(event.event_id)))throw Error('invalid event history graph');
+  // No queue, storage, journal or labels have changed before this point.
+  const result=await journal.importData({schema_version:2,dataset_id:dataset.dataset_id,history:staged},'validated annotation import');
+  refreshView();showSave();rebuild(current()?.id);
+  await window.reviewSync?.seed(staged.filter(event=>!view.unsaved.includes(event.event_id)));
+  return result;
+}
+$('import-labels').onclick=()=>$('labels-file').click();
+$('labels-file').onchange=async e=>{
+  try{if(e.target.files[0])await importLabels(JSON.parse(await e.target.files[0].text()))}
+  catch(error){$('save').textContent='导入未完成，原记录未改动：'+error.message}
+  finally{$('labels-file').value=''}
+};
+
+$('retry-save').onclick=async()=>{journal.retrySave();refreshView();await window.reviewSync?.seed(view.history.filter(e=>!view.unsaved.includes(e.event_id)));showSave();rebuild(current()?.id)};
+$('backup-now').onclick=()=>$('json').click();
+
+$('prev').onclick=()=>{cursor=Math.max(0,cursor-1);render()};$('next').onclick=()=>{cursor=Math.min(queue.length-1,cursor+1);render()};for(const id of ['scope','filter','search'])$(id).addEventListener(id==='search'?'input':'change',()=>rebuild());
+document.addEventListener('keydown',e=>{if(['INPUT','SELECT','TEXTAREA','BUTTON'].includes(e.target.tagName)||$('zoom').open||$('auth-dialog')?.open)return;if(['1','2','3','ArrowLeft','ArrowRight'].includes(e.key))e.preventDefault();if(e.key==='1')choose('old');if(e.key==='2')choose('new');if(e.key==='3')choose('redo');if(e.key==='ArrowLeft')$('prev').click();if(e.key==='ArrowRight')$('next').click()});document.querySelectorAll('[data-choice]').forEach(b=>b.onclick=()=>choose(b.dataset.choice));window.addEventListener('storage',e=>{if(journal&&(e.key===null||e.key.startsWith(journal.prefix)||e.key.startsWith(journal.quarantinePrefix))){journal.refresh();showSave();rebuild(current()?.id)}});
+window.addEventListener('beforeunload',e=>{if(journal?.snapshot().unsaved.length){e.preventDefault();e.returnValue=''}});
+$('refresh').onclick=()=>location.reload();
+(location.protocol==='file:' ? Promise.resolve(window.QWEN_DATA) : fetch('data.json?v='+Date.now(),{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('图片清单无法读取');return r.json()})).then(async d=>{
+  dataset=Core.validateDataset(d);items=d.items;window.reviewValidation.configureSources(items);
+  const isTest=window.QWEN_REVIEW_CONFIG?.isTest===true||d.synthetic_display===true;
+  journal=Core.createStore({dataset,storage:()=>localStorage,isTest});
+  await window.reviewSync?.configure(d,{isTest});
+  if(window.reviewSync?.legacyInfo().error)recoveryNotice='旧同步记录读取异常，请导出备份后检查原记录';
+  const legacyKey='qwen-human-review:'+d.dataset_id;
+  let legacy=null;
+  try{
+    legacy=localStorage.getItem(legacyKey);
+    if(legacy){const parsed=JSON.parse(legacy);if(!parsed||typeof parsed!=='object'||Array.isArray(parsed))throw Error('旧草稿不是标注对象');await journal.importData({schema_version:1,dataset_id:d.dataset_id,is_test:window.reviewSync?.legacyInfo().is_test===true,history:Object.values(parsed)},'legacy browser draft')}
+  }catch(error){
+    if(legacy!==null){legacyDraftRaw=legacy;await journal.importData({schema_version:1,dataset_id:d.dataset_id,history:[legacy]},'legacy browser draft parse failure');}
+    recoveryNotice+=(recoveryNotice?'；':'')+'旧草稿保留原位，恢复提示：'+error.message;
+  }
+  // Legacy queue entries can contain clicks that never reached the old draft.
+  const pending=window.reviewSync?.legacyPending()??[];
+  if(pending.length)await journal.importData({schema_version:1,dataset_id:d.dataset_id,history:pending},'legacy sync queue');
+  refreshView();
+  $('freshness').textContent=`${d.counts.sources} 张来源图 · 重跑 ${d.counts.reruns}/${d.counts.redo_scope} · ${isTest?'离线演示：图片为合成缩略图，选择为测试记录':'点击选择即可标注'}`;
+  $('scope').options[0].textContent=`${d.counts.redo_scope} 张重做清单`;$('scope').options[1].textContent=`全部 ${d.counts.sources} 张`;
+  const q=new URLSearchParams(location.search);if(q.get('scope')==='all')$('scope').value='all';
+  showSave();rebuild(q.get('id'));
+  window.reviewApp={exportData,importData,importLabels,inspect:()=>journal.snapshot(),retrySave:()=>{const results=journal.retrySave();showSave();return results}};
+  window.reviewSync?.seed(view.history.filter(e=>!view.unsaved.includes(e.event_id))).catch(()=>{});
+}).catch(e=>{$('id').textContent='图片清单读取提示';$('save').textContent=e.message;$('local-status').textContent=e.message});
+</script></body></html>
+

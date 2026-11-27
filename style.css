@@ -11,3 +11,16 @@ main{padding-top:22px;padding-bottom:30px}.navigator{display:flex;justify-conten
 .connect-button{font-size:13px;white-space:nowrap}.auth-dialog{width:min(520px,94vw);padding:24px}.auth-dialog h2{font-family:inherit;margin:12px 0}.auth-dialog input{display:block;width:100%;padding:12px;margin-top:8px;border:1px solid var(--line);border-radius:6px}.auth-note{font-size:12px;color:var(--muted)}.auth-actions{display:flex;gap:12px}.auth-dialog ol{padding-left:24px}.auth-dialog li{margin:8px 0}
 
 @media(max-width:760px){.page-header{flex-wrap:wrap}.header-actions{gap:10px;width:100%;justify-content:space-between}.status-stack{align-items:flex-start}.connect-button{padding:6px 9px;font-size:12px}}
+
+/* P318: local durability and remote confirmation remain visible separately. */
+#local-status{font-size:12px;color:#315c42}#local-status[data-state="error"]{color:#a02c22;font-weight:700}
+#sync-status[data-state="pending"]{color:#805e23}
+.backup-button{white-space:nowrap}.recovery-status{font-size:14px;color:#805e23;min-height:1em;margin:8px 0}
+.history-panel{margin:20px 0;padding:14px 18px;border:1px solid #d9d6ca;border-radius:12px;background:#faf9f6}
+.history-panel summary{cursor:pointer;font-weight:650}.history-panel ol{padding-left:24px}.history-panel li{margin:12px 0}
+.history-panel code{display:block;font-size:11px;white-space:pre-wrap;overflow-wrap:anywhere;color:#53564e}
+.history-panel p{font-size:13px}.status-stack{max-width:48vw}
+@media(max-width:650px){.status-stack{max-width:100%}.header-actions{flex-wrap:wrap}.backup-button{font-size:12px}}
+
+/* Touch controls and long content */
+button,select{min-height:44px} code,a{overflow-wrap:anywhere} .toolbar>*{min-width:0} img{max-width:100%} .missing-image{padding:1rem;border:1px solid #a44}

@@ -1,0 +1,536 @@
+{
+  "schema_version": 2,
+  "required_reader": "qwen-review-event-journal-v2",
+  "dataset_id": "chen-source500-43511a891ae2516d",
+  "source_manifest_sha256": "43511a891ae2516ddda0a5819516d93d758adcb18f9b8e94d8c65bef880b99d2",
+  "exported_at": "2026-11-26T05:00:00.000Z",
+  "review_method": "human comparison: old/new/both redo",
+  "is_test": true,
+  "items": [
+    {
+      "id": "round_2_000",
+      "event_id": "legacy-f0525b32b2d1bf29e465305b923d198d7eaac972e795df563d6a1d39ea0a1289",
+      "source_uid": "round_2/000",
+      "source_id": "commons-45265955",
+      "source_sha256": "518ccc5a26df7b67eaccf72b1cde314cc85b04af5832beeb5fffdd1bf461bde8",
+      "source_manifest_sha256": null,
+      "split": "train",
+      "license": "CC0",
+      "attribution": "Counsellin",
+      "choice": "new",
+      "status": "pass",
+      "selected_native_sha256": "ea5aaca2c4aa3add832edcbdb0e231d29a8224b87bef35e4ee34d8fccae3e0fa",
+      "selected_generation_version": null,
+      "compared_versions": [
+        {
+          "key": "new",
+          "native_sha256": "ea5aaca2c4aa3add832edcbdb0e231d29a8224b87bef35e4ee34d8fccae3e0fa",
+          "generation_version": null
+        },
+        {
+          "key": "old",
+          "native_sha256": "30ce765eb4aaab4d6734b2c60ab569a887fc97a6ffdf4e1d776dd6d8de3817bc",
+          "generation_version": null
+        }
+      ],
+      "updated_at": "2026-10-10T06:47:22.238Z",
+      "comparison_key": "[2,\"chen-source500-43511a891ae2516d\",\"round_2/000\",\"518ccc5a26df7b67eaccf72b1cde314cc85b04af5832beeb5fffdd1bf461bde8\",[[\"new\",\"ea5aaca2c4aa3add832edcbdb0e231d29a8224b87bef35e4ee34d8fccae3e0fa\"],[\"old\",\"30ce765eb4aaab4d6734b2c60ab569a887fc97a6ffdf4e1d776dd6d8de3817bc\"]]]",
+      "legacy": true,
+      "is_test": true
+    },
+    {
+      "id": "round_2_008",
+      "event_id": "legacy-d392b929e65af88c67dec51f1dc9fafb78db8081a1e9d6f571841b46fb70206e",
+      "source_uid": "round_2/008",
+      "source_id": "commons-113008463",
+      "source_sha256": "9017f666790861abf5ef406ef105b570ea46a30a749b70f8e5af086b84099d65",
+      "source_manifest_sha256": null,
+      "split": "train",
+      "license": "CC BY-SA 4.0",
+      "attribution": "PPuis",
+      "choice": "new",
+      "status": "pass",
+      "selected_native_sha256": "8af961474d59331c76cc5fb49eb2eaa35156f1802c2e217f17b3367df2126802",
+      "selected_generation_version": null,
+      "compared_versions": [
+        {
+          "key": "new",
+          "native_sha256": "8af961474d59331c76cc5fb49eb2eaa35156f1802c2e217f17b3367df2126802",
+          "generation_version": null
+        },
+        {
+          "key": "old",
+          "native_sha256": "dbe2e452607b4bad049e656ec1d072eb8b794ab1aa275e3808d643166d6ea0ee",
+          "generation_version": null
+        }
+      ],
+      "updated_at": "2026-10-10T06:47:30.716Z",
+      "comparison_key": "[2,\"chen-source500-43511a891ae2516d\",\"round_2/008\",\"9017f666790861abf5ef406ef105b570ea46a30a749b70f8e5af086b84099d65\",[[\"new\",\"8af961474d59331c76cc5fb49eb2eaa35156f1802c2e217f17b3367df2126802\"],[\"old\",\"dbe2e452607b4bad049e656ec1d072eb8b794ab1aa275e3808d643166d6ea0ee\"]]]",
+      "legacy": true,
+      "is_test": true
+    },
+    {
+      "id": "round_2_009",
+      "event_id": "legacy-17cb316995f9ff5e22e8dcf6b9fd0af283d3b471775304ad0c72ce4f8483040d",
+      "source_uid": "round_2/009",
+      "source_id": "commons-154647871",
+      "source_sha256": "cc2e5650b0c9cac90eea9ac49e43363d8343b515892b670f529b196a8b11b22c",
+      "source_manifest_sha256": null,
+      "split": "train",
+      "license": "Public domain",
+      "attribution": "Sève, Jacques de (1715-1795). Dessinateur",
+      "choice": "old",
+      "status": "pass",
+      "selected_native_sha256": "d367ca11093a37154a35281b336262ff433e4fb6bedd7a76ef04e9055ca32171",
+      "selected_generation_version": null,
+      "compared_versions": [
+        {
+          "key": "new",
+          "native_sha256": "b50b99f681a601642c82b3c05102b6c663ba659a9cbf2f22d86ecfed7a0bac89",
+          "generation_version": null
+        },
+        {
+          "key": "old",
+          "native_sha256": "d367ca11093a37154a35281b336262ff433e4fb6bedd7a76ef04e9055ca32171",
+          "generation_version": null
+        }
+      ],
+      "updated_at": "2026-10-10T06:47:51.283Z",
+      "comparison_key": "[2,\"chen-source500-43511a891ae2516d\",\"round_2/009\",\"cc2e5650b0c9cac90eea9ac49e43363d8343b515892b670f529b196a8b11b22c\",[[\"new\",\"b50b99f681a601642c82b3c05102b6c663ba659a9cbf2f22d86ecfed7a0bac89\"],[\"old\",\"d367ca11093a37154a35281b336262ff433e4fb6bedd7a76ef04e9055ca32171\"]]]",
+      "legacy": true,
+      "is_test": true
+    },
+    {
+      "id": "round_2_012",
+      "event_id": "legacy-a8adfc1469c0ecd3656a3161637185e82a60b55387f2a7ed167d664b935ad82d",
+      "source_uid": "round_2/012",
+      "source_id": "commons-27004945",
+      "source_sha256": "37792d56e9695aacebb41e63822a743b23a022fe267548a816eee58aac6bc9fa",
+      "source_manifest_sha256": null,
+      "split": "train",
+      "license": "CC BY-SA 3.0",
+      "attribution": "FASTILY",
+      "choice": "new",
+      "status": "pass",
+      "selected_native_sha256": "e5f0a0f381dc315b458b1d547cad552def4308c5184c8c8d6c185a9ed16b9e30",
+      "selected_generation_version": null,
+      "compared_versions": [
+        {
+          "key": "new",
+          "native_sha256": "e5f0a0f381dc315b458b1d547cad552def4308c5184c8c8d6c185a9ed16b9e30",
+          "generation_version": null
+        },
+        {
+          "key": "old",
+          "native_sha256": "489f96f2b8f7cee4d4959e86431fdb349c825d7a7805e8be5b97147b96cb7be4",
+          "generation_version": null
+        }
+      ],
+      "updated_at": "2026-10-10T06:47:55.583Z",
+      "comparison_key": "[2,\"chen-source500-43511a891ae2516d\",\"round_2/012\",\"37792d56e9695aacebb41e63822a743b23a022fe267548a816eee58aac6bc9fa\",[[\"new\",\"e5f0a0f381dc315b458b1d547cad552def4308c5184c8c8d6c185a9ed16b9e30\"],[\"old\",\"489f96f2b8f7cee4d4959e86431fdb349c825d7a7805e8be5b97147b96cb7be4\"]]]",
+      "legacy": true,
+      "is_test": true
+    },
+    {
+      "id": "round_2_028",
+      "event_id": "legacy-c9cc19394688a1a37937a0221b9e1ee13737707a4c13a6c2924df5e6ec16890f",
+      "source_uid": "round_2/028",
+      "source_id": "commons-36408186",
+      "source_sha256": "5e041a625ace1f91e3d2563cbaf474db5d78c011da97d3ff56dc93c81ee76deb",
+      "source_manifest_sha256": null,
+      "split": "train",
+      "license": "CC BY-SA 2.0",
+      "attribution": "Bob Adams from George, South Africa",
+      "choice": "redo",
+      "status": "redo",
+      "selected_native_sha256": null,
+      "selected_generation_version": null,
+      "compared_versions": [
+        {
+          "key": "new",
+          "native_sha256": "09b645318c81a31c21eb7ef3651949e2871563bc9eea42ebe125c38d61468e57",
+          "generation_version": null
+        },
+        {
+          "key": "old",
+          "native_sha256": "e38dc7a4d1f267849b502f406e31a78c779f109e0971f3c7fb02381461653887",
+          "generation_version": null
+        }
+      ],
+      "updated_at": "2026-10-10T07:03:24.563Z",
+      "comparison_key": "[2,\"chen-source500-43511a891ae2516d\",\"round_2/028\",\"5e041a625ace1f91e3d2563cbaf474db5d78c011da97d3ff56dc93c81ee76deb\",[[\"new\",\"09b645318c81a31c21eb7ef3651949e2871563bc9eea42ebe125c38d61468e57\"],[\"old\",\"e38dc7a4d1f267849b502f406e31a78c779f109e0971f3c7fb02381461653887\"]]]",
+      "legacy": true,
+      "is_test": true
+    },
+    {
+      "id": "round_2_029",
+      "event_id": "legacy-78644f9b288002b64c8eeff0bfc4ffd675021345827e75efe5d6d5f83bcdf4f4",
+      "source_uid": "round_2/029",
+      "source_id": "commons-117553440",
+      "source_sha256": "fafd3db3ca335546a392e428c083b9a99a04e155db2e32f2fbed18c1a6fa6838",
+      "source_manifest_sha256": null,
+      "split": "train",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Hugo Bayet",
+      "choice": "old",
+      "status": "pass",
+      "selected_native_sha256": "937eaf14aab6e0c382b2e227fe1270c2352164dbe98f61ad7a99ecd006b6204b",
+      "selected_generation_version": null,
+      "compared_versions": [
+        {
+          "key": "new",
+          "native_sha256": "e7b1ec223749a06232584e12dc017dc7e708bbe013d4b59571c279b5586c9ebb",
+          "generation_version": null
+        },
+        {
+          "key": "old",
+          "native_sha256": "937eaf14aab6e0c382b2e227fe1270c2352164dbe98f61ad7a99ecd006b6204b",
+          "generation_version": null
+        }
+      ],
+      "updated_at": "2026-10-10T07:03:34.023Z",
+      "comparison_key": "[2,\"chen-source500-43511a891ae2516d\",\"round_2/029\",\"fafd3db3ca335546a392e428c083b9a99a04e155db2e32f2fbed18c1a6fa6838\",[[\"new\",\"e7b1ec223749a06232584e12dc017dc7e708bbe013d4b59571c279b5586c9ebb\"],[\"old\",\"937eaf14aab6e0c382b2e227fe1270c2352164dbe98f61ad7a99ecd006b6204b\"]]]",
+      "legacy": true,
+      "is_test": true
+    },
+    {
+      "id": "round_2_032",
+      "event_id": "legacy-1beeb1932e1794f4bb56a1b4218d1a301439172a2913ae50b1377ddd28b513b7",
+      "source_uid": "round_2/032",
+      "source_id": "commons-6075212",
+      "source_sha256": "13bd8d6c40eb71cc9d5388c47b12622641a8758e36967b58a521ea39fa57eb0d",
+      "source_manifest_sha256": null,
+      "split": "train",
+      "license": "CC BY-SA 3.0",
+      "attribution": "Chatsam",
+      "choice": "new",
+      "status": "pass",
+      "selected_native_sha256": "f32d20d2368790186fd698139dba1101c0eb50d72cc47e2f0141d69e71e01bc6",
+      "selected_generation_version": null,
+      "compared_versions": [
+        {
+          "key": "new",
+          "native_sha256": "f32d20d2368790186fd698139dba1101c0eb50d72cc47e2f0141d69e71e01bc6",
+          "generation_version": null
+        },
+        {
+          "key": "old",
+          "native_sha256": "d38005edc49be333f99b181d704fb936ad83ee96f05d15a959bbaefe9541e4a4",
+          "generation_version": null
+        }
+      ],
+      "updated_at": "2026-10-10T07:07:33.200Z",
+      "comparison_key": "[2,\"chen-source500-43511a891ae2516d\",\"round_2/032\",\"13bd8d6c40eb71cc9d5388c47b12622641a8758e36967b58a521ea39fa57eb0d\",[[\"new\",\"f32d20d2368790186fd698139dba1101c0eb50d72cc47e2f0141d69e71e01bc6\"],[\"old\",\"d38005edc49be333f99b181d704fb936ad83ee96f05d15a959bbaefe9541e4a4\"]]]",
+      "legacy": true,
+      "is_test": true
+    }
+  ],
+  "history": [
+    {
+      "schema_version": 2,
+      "event_id": "legacy-f0525b32b2d1bf29e465305b923d198d7eaac972e795df563d6a1d39ea0a1289",
+      "dataset_id": "chen-source500-43511a891ae2516d",
+      "source_manifest_sha256": null,
+      "source_uid": "round_2/000",
+      "source_sha256": "518ccc5a26df7b67eaccf72b1cde314cc85b04af5832beeb5fffdd1bf461bde8",
+      "versions": [
+        {
+          "key": "new",
+          "native_sha256": "ea5aaca2c4aa3add832edcbdb0e231d29a8224b87bef35e4ee34d8fccae3e0fa",
+          "generation_version": null
+        },
+        {
+          "key": "old",
+          "native_sha256": "30ce765eb4aaab4d6734b2c60ab569a887fc97a6ffdf4e1d776dd6d8de3817bc",
+          "generation_version": null
+        }
+      ],
+      "choice": "new",
+      "updated_at": "2026-10-10T06:47:22.238Z",
+      "client_id": "legacy-unknown",
+      "parents": [],
+      "selected_native_sha256": "ea5aaca2c4aa3add832edcbdb0e231d29a8224b87bef35e4ee34d8fccae3e0fa",
+      "selected_generation_version": null,
+      "is_test": true,
+      "legacy": true,
+      "legacy_fingerprint": "round_2/000|2026-10-10T06:47:22.238Z|new|30ce765eb4aaab4d6734b2c60ab569a887fc97a6ffdf4e1d776dd6d8de3817bc|ea5aaca2c4aa3add832edcbdb0e231d29a8224b87bef35e4ee34d8fccae3e0fa",
+      "legacy_record_kind": "snapshot",
+      "evidence_kind": "browser-export",
+      "comparison_key": "[2,\"chen-source500-43511a891ae2516d\",\"round_2/000\",\"518ccc5a26df7b67eaccf72b1cde314cc85b04af5832beeb5fffdd1bf461bde8\",[[\"new\",\"ea5aaca2c4aa3add832edcbdb0e231d29a8224b87bef35e4ee34d8fccae3e0fa\"],[\"old\",\"30ce765eb4aaab4d6734b2c60ab569a887fc97a6ffdf4e1d776dd6d8de3817bc\"]]]"
+    },
+    {
+      "schema_version": 2,
+      "event_id": "legacy-d392b929e65af88c67dec51f1dc9fafb78db8081a1e9d6f571841b46fb70206e",
+      "dataset_id": "chen-source500-43511a891ae2516d",
+      "source_manifest_sha256": null,
+      "source_uid": "round_2/008",
+      "source_sha256": "9017f666790861abf5ef406ef105b570ea46a30a749b70f8e5af086b84099d65",
+      "versions": [
+        {
+          "key": "new",
+          "native_sha256": "8af961474d59331c76cc5fb49eb2eaa35156f1802c2e217f17b3367df2126802",
+          "generation_version": null
+        },
+        {
+          "key": "old",
+          "native_sha256": "dbe2e452607b4bad049e656ec1d072eb8b794ab1aa275e3808d643166d6ea0ee",
+          "generation_version": null
+        }
+      ],
+      "choice": "new",
+      "updated_at": "2026-10-10T06:47:30.716Z",
+      "client_id": "legacy-unknown",
+      "parents": [],
+      "selected_native_sha256": "8af961474d59331c76cc5fb49eb2eaa35156f1802c2e217f17b3367df2126802",
+      "selected_generation_version": null,
+      "is_test": true,
+      "legacy": true,
+      "legacy_fingerprint": "round_2/008|2026-10-10T06:47:30.716Z|new|dbe2e452607b4bad049e656ec1d072eb8b794ab1aa275e3808d643166d6ea0ee|8af961474d59331c76cc5fb49eb2eaa35156f1802c2e217f17b3367df2126802",
+      "legacy_record_kind": "snapshot",
+      "evidence_kind": "browser-export",
+      "comparison_key": "[2,\"chen-source500-43511a891ae2516d\",\"round_2/008\",\"9017f666790861abf5ef406ef105b570ea46a30a749b70f8e5af086b84099d65\",[[\"new\",\"8af961474d59331c76cc5fb49eb2eaa35156f1802c2e217f17b3367df2126802\"],[\"old\",\"dbe2e452607b4bad049e656ec1d072eb8b794ab1aa275e3808d643166d6ea0ee\"]]]"
+    },
+    {
+      "schema_version": 2,
+      "event_id": "legacy-17cb316995f9ff5e22e8dcf6b9fd0af283d3b471775304ad0c72ce4f8483040d",
+      "dataset_id": "chen-source500-43511a891ae2516d",
+      "source_manifest_sha256": null,
+      "source_uid": "round_2/009",
+      "source_sha256": "cc2e5650b0c9cac90eea9ac49e43363d8343b515892b670f529b196a8b11b22c",
+      "versions": [
+        {
+          "key": "new",
+          "native_sha256": "b50b99f681a601642c82b3c05102b6c663ba659a9cbf2f22d86ecfed7a0bac89",
+          "generation_version": null
+        },
+        {
+          "key": "old",
+          "native_sha256": "d367ca11093a37154a35281b336262ff433e4fb6bedd7a76ef04e9055ca32171",
+          "generation_version": null
+        }
+      ],
+      "choice": "old",
+      "updated_at": "2026-10-10T06:47:51.283Z",
+      "client_id": "legacy-unknown",
+      "parents": [],
+      "selected_native_sha256": "d367ca11093a37154a35281b336262ff433e4fb6bedd7a76ef04e9055ca32171",
+      "selected_generation_version": null,
+      "is_test": true,
+      "legacy": true,
+      "legacy_fingerprint": "round_2/009|2026-10-10T06:47:51.283Z|old|d367ca11093a37154a35281b336262ff433e4fb6bedd7a76ef04e9055ca32171|b50b99f681a601642c82b3c05102b6c663ba659a9cbf2f22d86ecfed7a0bac89",
+      "legacy_record_kind": "snapshot",
+      "evidence_kind": "browser-export",
+      "comparison_key": "[2,\"chen-source500-43511a891ae2516d\",\"round_2/009\",\"cc2e5650b0c9cac90eea9ac49e43363d8343b515892b670f529b196a8b11b22c\",[[\"new\",\"b50b99f681a601642c82b3c05102b6c663ba659a9cbf2f22d86ecfed7a0bac89\"],[\"old\",\"d367ca11093a37154a35281b336262ff433e4fb6bedd7a76ef04e9055ca32171\"]]]"
+    },
+    {
+      "schema_version": 2,
+      "event_id": "legacy-a8adfc1469c0ecd3656a3161637185e82a60b55387f2a7ed167d664b935ad82d",
+      "dataset_id": "chen-source500-43511a891ae2516d",
+      "source_manifest_sha256": null,
+      "source_uid": "round_2/012",
+      "source_sha256": "37792d56e9695aacebb41e63822a743b23a022fe267548a816eee58aac6bc9fa",
+      "versions": [
+        {
+          "key": "new",
+          "native_sha256": "e5f0a0f381dc315b458b1d547cad552def4308c5184c8c8d6c185a9ed16b9e30",
+          "generation_version": null
+        },
+        {
+          "key": "old",
+          "native_sha256": "489f96f2b8f7cee4d4959e86431fdb349c825d7a7805e8be5b97147b96cb7be4",
+          "generation_version": null
+        }
+      ],
+      "choice": "new",
+      "updated_at": "2026-10-10T06:47:55.583Z",
+      "client_id": "legacy-unknown",
+      "parents": [],
+      "selected_native_sha256": "e5f0a0f381dc315b458b1d547cad552def4308c5184c8c8d6c185a9ed16b9e30",
+      "selected_generation_version": null,
+      "is_test": true,
+      "legacy": true,
+      "legacy_fingerprint": "round_2/012|2026-10-10T06:47:55.583Z|new|489f96f2b8f7cee4d4959e86431fdb349c825d7a7805e8be5b97147b96cb7be4|e5f0a0f381dc315b458b1d547cad552def4308c5184c8c8d6c185a9ed16b9e30",
+      "legacy_record_kind": "snapshot",
+      "evidence_kind": "browser-export",
+      "comparison_key": "[2,\"chen-source500-43511a891ae2516d\",\"round_2/012\",\"37792d56e9695aacebb41e63822a743b23a022fe267548a816eee58aac6bc9fa\",[[\"new\",\"e5f0a0f381dc315b458b1d547cad552def4308c5184c8c8d6c185a9ed16b9e30\"],[\"old\",\"489f96f2b8f7cee4d4959e86431fdb349c825d7a7805e8be5b97147b96cb7be4\"]]]"
+    },
+    {
+      "schema_version": 2,
+      "event_id": "legacy-c9cc19394688a1a37937a0221b9e1ee13737707a4c13a6c2924df5e6ec16890f",
+      "dataset_id": "chen-source500-43511a891ae2516d",
+      "source_manifest_sha256": null,
+      "source_uid": "round_2/028",
+      "source_sha256": "5e041a625ace1f91e3d2563cbaf474db5d78c011da97d3ff56dc93c81ee76deb",
+      "versions": [
+        {
+          "key": "new",
+          "native_sha256": "09b645318c81a31c21eb7ef3651949e2871563bc9eea42ebe125c38d61468e57",
+          "generation_version": null
+        },
+        {
+          "key": "old",
+          "native_sha256": "e38dc7a4d1f267849b502f406e31a78c779f109e0971f3c7fb02381461653887",
+          "generation_version": null
+        }
+      ],
+      "choice": "redo",
+      "updated_at": "2026-10-10T07:03:24.563Z",
+      "client_id": "legacy-unknown",
+      "parents": [],
+      "selected_native_sha256": null,
+      "selected_generation_version": null,
+      "is_test": true,
+      "legacy": true,
+      "legacy_fingerprint": "round_2/028|2026-10-10T07:03:24.563Z|redo|e38dc7a4d1f267849b502f406e31a78c779f109e0971f3c7fb02381461653887|09b645318c81a31c21eb7ef3651949e2871563bc9eea42ebe125c38d61468e57",
+      "legacy_record_kind": "snapshot",
+      "evidence_kind": "browser-export",
+      "comparison_key": "[2,\"chen-source500-43511a891ae2516d\",\"round_2/028\",\"5e041a625ace1f91e3d2563cbaf474db5d78c011da97d3ff56dc93c81ee76deb\",[[\"new\",\"09b645318c81a31c21eb7ef3651949e2871563bc9eea42ebe125c38d61468e57\"],[\"old\",\"e38dc7a4d1f267849b502f406e31a78c779f109e0971f3c7fb02381461653887\"]]]"
+    },
+    {
+      "schema_version": 2,
+      "event_id": "legacy-78644f9b288002b64c8eeff0bfc4ffd675021345827e75efe5d6d5f83bcdf4f4",
+      "dataset_id": "chen-source500-43511a891ae2516d",
+      "source_manifest_sha256": null,
+      "source_uid": "round_2/029",
+      "source_sha256": "fafd3db3ca335546a392e428c083b9a99a04e155db2e32f2fbed18c1a6fa6838",
+      "versions": [
+        {
+          "key": "new",
+          "native_sha256": "e7b1ec223749a06232584e12dc017dc7e708bbe013d4b59571c279b5586c9ebb",
+          "generation_version": null
+        },
+        {
+          "key": "old",
+          "native_sha256": "937eaf14aab6e0c382b2e227fe1270c2352164dbe98f61ad7a99ecd006b6204b",
+          "generation_version": null
+        }
+      ],
+      "choice": "old",
+      "updated_at": "2026-10-10T07:03:34.023Z",
+      "client_id": "legacy-unknown",
+      "parents": [],
+      "selected_native_sha256": "937eaf14aab6e0c382b2e227fe1270c2352164dbe98f61ad7a99ecd006b6204b",
+      "selected_generation_version": null,
+      "is_test": true,
+      "legacy": true,
+      "legacy_fingerprint": "round_2/029|2026-10-10T07:03:34.023Z|old|937eaf14aab6e0c382b2e227fe1270c2352164dbe98f61ad7a99ecd006b6204b|e7b1ec223749a06232584e12dc017dc7e708bbe013d4b59571c279b5586c9ebb",
+      "legacy_record_kind": "snapshot",
+      "evidence_kind": "browser-export",
+      "comparison_key": "[2,\"chen-source500-43511a891ae2516d\",\"round_2/029\",\"fafd3db3ca335546a392e428c083b9a99a04e155db2e32f2fbed18c1a6fa6838\",[[\"new\",\"e7b1ec223749a06232584e12dc017dc7e708bbe013d4b59571c279b5586c9ebb\"],[\"old\",\"937eaf14aab6e0c382b2e227fe1270c2352164dbe98f61ad7a99ecd006b6204b\"]]]"
+    },
+    {
+      "schema_version": 2,
+      "event_id": "legacy-1beeb1932e1794f4bb56a1b4218d1a301439172a2913ae50b1377ddd28b513b7",
+      "dataset_id": "chen-source500-43511a891ae2516d",
+      "source_manifest_sha256": null,
+      "source_uid": "round_2/032",
+      "source_sha256": "13bd8d6c40eb71cc9d5388c47b12622641a8758e36967b58a521ea39fa57eb0d",
+      "versions": [
+        {
+          "key": "new",
+          "native_sha256": "f32d20d2368790186fd698139dba1101c0eb50d72cc47e2f0141d69e71e01bc6",
+          "generation_version": null
+        },
+        {
+          "key": "old",
+          "native_sha256": "d38005edc49be333f99b181d704fb936ad83ee96f05d15a959bbaefe9541e4a4",
+          "generation_version": null
+        }
+      ],
+      "choice": "new",
+      "updated_at": "2026-10-10T07:07:33.200Z",
+      "client_id": "legacy-unknown",
+      "parents": [],
+      "selected_native_sha256": "f32d20d2368790186fd698139dba1101c0eb50d72cc47e2f0141d69e71e01bc6",
+      "selected_generation_version": null,
+      "is_test": true,
+      "legacy": true,
+      "legacy_fingerprint": "round_2/032|2026-10-10T07:07:33.200Z|new|d38005edc49be333f99b181d704fb936ad83ee96f05d15a959bbaefe9541e4a4|f32d20d2368790186fd698139dba1101c0eb50d72cc47e2f0141d69e71e01bc6",
+      "legacy_record_kind": "snapshot",
+      "evidence_kind": "browser-export",
+      "comparison_key": "[2,\"chen-source500-43511a891ae2516d\",\"round_2/032\",\"13bd8d6c40eb71cc9d5388c47b12622641a8758e36967b58a521ea39fa57eb0d\",[[\"new\",\"f32d20d2368790186fd698139dba1101c0eb50d72cc47e2f0141d69e71e01bc6\"],[\"old\",\"d38005edc49be333f99b181d704fb936ad83ee96f05d15a959bbaefe9541e4a4\"]]]"
+    }
+  ],
+  "conflicts": [],
+  "quarantine": [],
+  "recovery": {
+    "unsaved_event_ids": [],
+    "incomplete_event_ids": [],
+    "archived_event_ids": []
+  },
+  "server_sync": {
+    "schema_version": 2,
+    "dataset_id": "chen-source500-43511a891ae2516d",
+    "queue": {
+      "schema_version": 2,
+      "client_id": "P318-real-legacy-control",
+      "pending": [
+        {
+          "schema_version": 2,
+          "event_id": "legacy-f0525b32b2d1bf29e465305b923d198d7eaac972e795df563d6a1d39ea0a1289",
+          "dataset_id": "chen-source500-43511a891ae2516d",
+          "source_manifest_sha256": null,
+          "source_uid": "round_2/000",
+          "source_sha256": "518ccc5a26df7b67eaccf72b1cde314cc85b04af5832beeb5fffdd1bf461bde8",
+          "versions": [
+            {
+              "key": "new",
+              "native_sha256": "ea5aaca2c4aa3add832edcbdb0e231d29a8224b87bef35e4ee34d8fccae3e0fa",
+              "generation_version": null
+            },
+            {
+              "key": "old",
+              "native_sha256": "30ce765eb4aaab4d6734b2c60ab569a887fc97a6ffdf4e1d776dd6d8de3817bc",
+              "generation_version": null
+            }
+          ],
+          "choice": "new",
+          "updated_at": "2026-10-10T06:47:22.238Z",
+          "client_id": "legacy-unknown",
+          "parents": [],
+          "selected_native_sha256": "ea5aaca2c4aa3add832edcbdb0e231d29a8224b87bef35e4ee34d8fccae3e0fa",
+          "selected_generation_version": null,
+          "is_test": true,
+          "legacy": true,
+          "legacy_fingerprint": "round_2/000|2026-10-10T06:47:22.238Z|new|30ce765eb4aaab4d6734b2c60ab569a887fc97a6ffdf4e1d776dd6d8de3817bc|ea5aaca2c4aa3add832edcbdb0e231d29a8224b87bef35e4ee34d8fccae3e0fa",
+          "legacy_record_kind": "snapshot",
+          "evidence_kind": "browser-export",
+          "comparison_key": "[2,\"chen-source500-43511a891ae2516d\",\"round_2/000\",\"518ccc5a26df7b67eaccf72b1cde314cc85b04af5832beeb5fffdd1bf461bde8\",[[\"new\",\"ea5aaca2c4aa3add832edcbdb0e231d29a8224b87bef35e4ee34d8fccae3e0fa\"],[\"old\",\"30ce765eb4aaab4d6734b2c60ab569a887fc97a6ffdf4e1d776dd6d8de3817bc\"]]]"
+        }
+      ],
+      "seen": [],
+      "confirmed": 0,
+      "receipts": [],
+      "recovered_batches": [],
+      "recovered_evidence": [],
+      "is_test": true
+    }
+  },
+  "P318_test_derivation": {
+    "is_test": true,
+    "synthetic_pending": true,
+    "method": "Test-only derivative of seven real migrated history records. Only test markers are changed in the historical records. One matching pending entry is synthetically copied from history[0]; no new image-quality decision or historical upload is asserted.",
+    "source_file": "evidence/P318-real-seven-cli/P318-merged-annotations.json",
+    "source_file_sha256": "63b373768aa95e6d38d17dab5cdc15ac498a4533aac42d273a99d77bcb05a9e5",
+    "source_history_pointer": "/history",
+    "source_history_canonical_sha256": "2f29183e8e68c7981f18a1c8cefc4e3fe0ad36a9fabcab1750b281ad6278f616",
+    "original_history_is_test": false,
+    "original_reconstruction_file": "evidence/P318-real-history-reconstruction.json",
+    "original_reconstruction_sha256": "16cfc24ea405c185ecf34afe367954ada215adefb53a62965b471eecc0600ccc",
+    "original_human_choice_pointers": [
+      "/items/500/human_choice",
+      "/items/508/human_choice",
+      "/items/509/human_choice",
+      "/items/512/human_choice",
+      "/items/528/human_choice",
+      "/items/529/human_choice",
+      "/items/532/human_choice"
+    ],
+    "changed_historical_fields": [
+      "/is_test",
+      "/history/*/is_test",
+      "/items/*/is_test"
+    ],
+    "synthetic_pending_source": "/history/0"
+  }
+}

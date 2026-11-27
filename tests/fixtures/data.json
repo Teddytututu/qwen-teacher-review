@@ -1,0 +1,56 @@
+{
+  "dataset_id": "synthetic-review-test",
+  "source_manifest_sha256": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+  "counts": {
+    "sources": 2,
+    "reruns": 1
+  },
+  "items": [
+    {
+      "id": "round_2_000",
+      "source_uid": "round_2/000",
+      "source_sha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+      "source_id": "synthetic",
+      "split": "fixture",
+      "license": "CC0",
+      "attribution": "Synthetic test fixture",
+      "source_page": "#fixture",
+      "source_image": "fixture.svg",
+      "in_redo": true,
+      "versions": [
+        {
+          "key": "old",
+          "native_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "image": "fixture.svg",
+          "generation_version": "fixture-1"
+        },
+        {
+          "key": "new",
+          "native_sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+          "image": "fixture.svg",
+          "generation_version": "fixture-2"
+        }
+      ]
+    },
+    {
+      "id": "round_2_003",
+      "source_uid": "round_2/003",
+      "source_sha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+      "source_id": "synthetic",
+      "split": "fixture",
+      "license": "CC0",
+      "attribution": "Synthetic test fixture",
+      "source_page": "#fixture",
+      "source_image": "fixture.svg",
+      "in_redo": true,
+      "versions": [
+        {
+          "key": "old",
+          "native_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "image": "fixture.svg",
+          "generation_version": "fixture-1"
+        }
+      ]
+    }
+  ]
+}

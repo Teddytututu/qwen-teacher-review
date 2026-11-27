@@ -1,0 +1,87 @@
+{
+  "schema_version": 2,
+  "dataset_id": "chen-source500-43511a891ae2516d",
+  "is_test": true,
+  "synthetic_display": true,
+  "source_manifest_sha256": "43511a891ae2516ddda0a5819516d93d758adcb18f9b8e94d8c65bef880b99d2",
+  "history": [
+    {
+      "schema_version": 2,
+      "event_id": "31800000-0000-4000-8000-000000000001",
+      "dataset_id": "chen-source500-43511a891ae2516d",
+      "source_manifest_sha256": "43511a891ae2516ddda0a5819516d93d758adcb18f9b8e94d8c65bef880b99d2",
+      "source_uid": "round_2/000",
+      "source_sha256": "518ccc5a26df7b67eaccf72b1cde314cc85b04af5832beeb5fffdd1bf461bde8",
+      "versions": [
+        {
+          "key": "new",
+          "native_sha256": "ea5aaca2c4aa3add832edcbdb0e231d29a8224b87bef35e4ee34d8fccae3e0fa",
+          "generation_version": "redo-v5-20261010",
+          "config_sha256": "81f8e0571ff60b7826b95f6d8e5148290fa99f9ee7da193b81a05a35b40d967c"
+        },
+        {
+          "key": "old",
+          "native_sha256": "30ce765eb4aaab4d6734b2c60ab569a887fc97a6ffdf4e1d776dd6d8de3817bc",
+          "generation_version": "original-500",
+          "config_sha256": "35d37ef6616b7eedd94e9089c1ce96b4229be60d0b5835de0d0520e3cc0094f4"
+        }
+      ],
+      "choice": "old",
+      "updated_at": "2026-11-26T06:00:00.000Z",
+      "client_id": "31800000-0000-4000-8000-000000000002",
+      "parents": [],
+      "selected_native_sha256": "30ce765eb4aaab4d6734b2c60ab569a887fc97a6ffdf4e1d776dd6d8de3817bc",
+      "selected_generation_version": "original-500",
+      "is_test": true,
+      "legacy": false,
+      "comparison_key": "[2,\"chen-source500-43511a891ae2516d\",\"round_2/000\",\"518ccc5a26df7b67eaccf72b1cde314cc85b04af5832beeb5fffdd1bf461bde8\",[[\"new\",\"ea5aaca2c4aa3add832edcbdb0e231d29a8224b87bef35e4ee34d8fccae3e0fa\"],[\"old\",\"30ce765eb4aaab4d6734b2c60ab569a887fc97a6ffdf4e1d776dd6d8de3817bc\"]]]"
+    }
+  ],
+  "items": [],
+  "server_sync": {
+    "schema_version": 2,
+    "dataset_id": "chen-source500-43511a891ae2516d",
+    "queue": {
+      "schema_version": 2,
+      "client_id": "31800000-0000-4000-8000-000000000003",
+      "pending": [
+        {
+          "schema_version": 2,
+          "event_id": "31800000-0000-4000-8000-000000000001",
+          "dataset_id": "chen-source500-43511a891ae2516d",
+          "source_manifest_sha256": "43511a891ae2516ddda0a5819516d93d758adcb18f9b8e94d8c65bef880b99d2",
+          "source_uid": "round_2/000",
+          "source_sha256": "518ccc5a26df7b67eaccf72b1cde314cc85b04af5832beeb5fffdd1bf461bde8",
+          "versions": [
+            {
+              "key": "new",
+              "native_sha256": "ea5aaca2c4aa3add832edcbdb0e231d29a8224b87bef35e4ee34d8fccae3e0fa",
+              "generation_version": "redo-v5-20261010",
+              "config_sha256": "81f8e0571ff60b7826b95f6d8e5148290fa99f9ee7da193b81a05a35b40d967c"
+            },
+            {
+              "key": "old",
+              "native_sha256": "30ce765eb4aaab4d6734b2c60ab569a887fc97a6ffdf4e1d776dd6d8de3817bc",
+              "generation_version": "original-500",
+              "config_sha256": "35d37ef6616b7eedd94e9089c1ce96b4229be60d0b5835de0d0520e3cc0094f4"
+            }
+          ],
+          "choice": "new",
+          "updated_at": "2026-11-26T06:00:00.000Z",
+          "client_id": "31800000-0000-4000-8000-000000000002",
+          "parents": [],
+          "selected_native_sha256": "ea5aaca2c4aa3add832edcbdb0e231d29a8224b87bef35e4ee34d8fccae3e0fa",
+          "selected_generation_version": "redo-v5-20261010",
+          "is_test": true,
+          "legacy": false,
+          "comparison_key": "[2,\"chen-source500-43511a891ae2516d\",\"round_2/000\",\"518ccc5a26df7b67eaccf72b1cde314cc85b04af5832beeb5fffdd1bf461bde8\",[[\"new\",\"ea5aaca2c4aa3add832edcbdb0e231d29a8224b87bef35e4ee34d8fccae3e0fa\"],[\"old\",\"30ce765eb4aaab4d6734b2c60ab569a887fc97a6ffdf4e1d776dd6d8de3817bc\"]]]"
+        }
+      ],
+      "seen": [],
+      "confirmed": 0,
+      "receipts": [],
+      "recovered_batches": [],
+      "is_test": true
+    }
+  }
+}

@@ -1,0 +1,341 @@
+{
+  "schema_version": 1,
+  "dataset_id": "chen-source500-43511a891ae2516d",
+  "exported_at": "2026-11-25T21:14:24.802428+00:00",
+  "review_method": "P318 reconstruction of preserved browser-export histories; no new visual review",
+  "items": [],
+  "history": [
+    {
+      "source_uid": "round_2/000",
+      "source_sha256": "518ccc5a26df7b67eaccf72b1cde314cc85b04af5832beeb5fffdd1bf461bde8",
+      "versions": [
+        {
+          "key": "old",
+          "native_sha256": "30ce765eb4aaab4d6734b2c60ab569a887fc97a6ffdf4e1d776dd6d8de3817bc"
+        },
+        {
+          "key": "new",
+          "native_sha256": "ea5aaca2c4aa3add832edcbdb0e231d29a8224b87bef35e4ee34d8fccae3e0fa"
+        }
+      ],
+      "choice": "new",
+      "updated_at": "2026-10-10T06:47:22.238Z",
+      "evidence_kind": "browser-export"
+    },
+    {
+      "source_uid": "round_2/008",
+      "source_sha256": "9017f666790861abf5ef406ef105b570ea46a30a749b70f8e5af086b84099d65",
+      "versions": [
+        {
+          "key": "old",
+          "native_sha256": "dbe2e452607b4bad049e656ec1d072eb8b794ab1aa275e3808d643166d6ea0ee"
+        },
+        {
+          "key": "new",
+          "native_sha256": "8af961474d59331c76cc5fb49eb2eaa35156f1802c2e217f17b3367df2126802"
+        }
+      ],
+      "choice": "new",
+      "updated_at": "2026-10-10T06:47:30.716Z",
+      "evidence_kind": "browser-export"
+    },
+    {
+      "source_uid": "round_2/009",
+      "source_sha256": "cc2e5650b0c9cac90eea9ac49e43363d8343b515892b670f529b196a8b11b22c",
+      "versions": [
+        {
+          "key": "old",
+          "native_sha256": "d367ca11093a37154a35281b336262ff433e4fb6bedd7a76ef04e9055ca32171"
+        },
+        {
+          "key": "new",
+          "native_sha256": "b50b99f681a601642c82b3c05102b6c663ba659a9cbf2f22d86ecfed7a0bac89"
+        }
+      ],
+      "choice": "old",
+      "updated_at": "2026-10-10T06:47:51.283Z",
+      "evidence_kind": "browser-export"
+    },
+    {
+      "source_uid": "round_2/012",
+      "source_sha256": "37792d56e9695aacebb41e63822a743b23a022fe267548a816eee58aac6bc9fa",
+      "versions": [
+        {
+          "key": "old",
+          "native_sha256": "489f96f2b8f7cee4d4959e86431fdb349c825d7a7805e8be5b97147b96cb7be4"
+        },
+        {
+          "key": "new",
+          "native_sha256": "e5f0a0f381dc315b458b1d547cad552def4308c5184c8c8d6c185a9ed16b9e30"
+        }
+      ],
+      "choice": "new",
+      "updated_at": "2026-10-10T06:47:55.583Z",
+      "evidence_kind": "browser-export"
+    },
+    {
+      "source_uid": "round_2/028",
+      "source_sha256": "5e041a625ace1f91e3d2563cbaf474db5d78c011da97d3ff56dc93c81ee76deb",
+      "versions": [
+        {
+          "key": "old",
+          "native_sha256": "e38dc7a4d1f267849b502f406e31a78c779f109e0971f3c7fb02381461653887"
+        },
+        {
+          "key": "new",
+          "native_sha256": "09b645318c81a31c21eb7ef3651949e2871563bc9eea42ebe125c38d61468e57"
+        }
+      ],
+      "choice": "redo",
+      "updated_at": "2026-10-10T07:03:24.563Z",
+      "evidence_kind": "browser-export"
+    },
+    {
+      "source_uid": "round_2/029",
+      "source_sha256": "fafd3db3ca335546a392e428c083b9a99a04e155db2e32f2fbed18c1a6fa6838",
+      "versions": [
+        {
+          "key": "old",
+          "native_sha256": "937eaf14aab6e0c382b2e227fe1270c2352164dbe98f61ad7a99ecd006b6204b"
+        },
+        {
+          "key": "new",
+          "native_sha256": "e7b1ec223749a06232584e12dc017dc7e708bbe013d4b59571c279b5586c9ebb"
+        }
+      ],
+      "choice": "old",
+      "updated_at": "2026-10-10T07:03:34.023Z",
+      "evidence_kind": "browser-export"
+    },
+    {
+      "source_uid": "round_2/032",
+      "source_sha256": "13bd8d6c40eb71cc9d5388c47b12622641a8758e36967b58a521ea39fa57eb0d",
+      "versions": [
+        {
+          "key": "old",
+          "native_sha256": "d38005edc49be333f99b181d704fb936ad83ee96f05d15a959bbaefe9541e4a4"
+        },
+        {
+          "key": "new",
+          "native_sha256": "f32d20d2368790186fd698139dba1101c0eb50d72cc47e2f0141d69e71e01bc6"
+        }
+      ],
+      "choice": "new",
+      "updated_at": "2026-10-10T07:07:33.200Z",
+      "evidence_kind": "browser-export"
+    }
+  ],
+  "reconstruction": {
+    "kind": "reconstructed_legacy_history_envelope",
+    "history_copied_verbatim_as_json_objects": true,
+    "items_note": "No current-items projection invented; the importer restores from history.",
+    "archive_url": "https://github.com/Teddytututu/Perler_Generator/releases/download/qwen-teachers-1162-20261013/Qwen-Chen-qualified-additional-8-20261013.zip",
+    "archive_sha256": "64728f7bf3ae8e6809ab87d2f85cd19e2e37fc3099f6b92bf3ce240ffede1c8e",
+    "member": "provenance/final-parent-annotations-1250.json",
+    "member_sha256": "143363d3ca707febacac4fa69d1860a7723bc0154267c731d18399456b3162d7",
+    "page_snapshot_sha256": "368f771e7574dd12e944bd2369e198adc4d4554f95f5d50b45cdf399aa2411ad",
+    "generation_metadata_note": "Candidate generation/configuration labels below come from the matching page manifest; they are not added to the original history entries.",
+    "row_bindings": [
+      {
+        "source_json_pointer": "/items/500/human_choice",
+        "source_uid": "round_2/000",
+        "choice": "new",
+        "updated_at": "2026-10-10T06:47:22.238Z",
+        "source_hash_matches_page": true,
+        "compared_hashes_match_page": true,
+        "selected_native_sha256": "ea5aaca2c4aa3add832edcbdb0e231d29a8224b87bef35e4ee34d8fccae3e0fa",
+        "selected_hash_preserved_in_final": true,
+        "final_native_sha256": "ea5aaca2c4aa3add832edcbdb0e231d29a8224b87bef35e4ee34d8fccae3e0fa",
+        "final_reviewer": "用户人工选择",
+        "final_status": "pass",
+        "final_generation_version": "redo-v5-20261010",
+        "candidate_version_metadata_from_page_snapshot": [
+          {
+            "key": "old",
+            "native_sha256": "30ce765eb4aaab4d6734b2c60ab569a887fc97a6ffdf4e1d776dd6d8de3817bc",
+            "generation_version": "original-500",
+            "config_sha256": "35d37ef6616b7eedd94e9089c1ce96b4229be60d0b5835de0d0520e3cc0094f4"
+          },
+          {
+            "key": "new",
+            "native_sha256": "ea5aaca2c4aa3add832edcbdb0e231d29a8224b87bef35e4ee34d8fccae3e0fa",
+            "generation_version": "redo-v5-20261010",
+            "config_sha256": "81f8e0571ff60b7826b95f6d8e5148290fa99f9ee7da193b81a05a35b40d967c"
+          }
+        ]
+      },
+      {
+        "source_json_pointer": "/items/508/human_choice",
+        "source_uid": "round_2/008",
+        "choice": "new",
+        "updated_at": "2026-10-10T06:47:30.716Z",
+        "source_hash_matches_page": true,
+        "compared_hashes_match_page": true,
+        "selected_native_sha256": "8af961474d59331c76cc5fb49eb2eaa35156f1802c2e217f17b3367df2126802",
+        "selected_hash_preserved_in_final": true,
+        "final_native_sha256": "8af961474d59331c76cc5fb49eb2eaa35156f1802c2e217f17b3367df2126802",
+        "final_reviewer": "用户人工选择",
+        "final_status": "pass",
+        "final_generation_version": "redo-v5-20261010",
+        "candidate_version_metadata_from_page_snapshot": [
+          {
+            "key": "old",
+            "native_sha256": "dbe2e452607b4bad049e656ec1d072eb8b794ab1aa275e3808d643166d6ea0ee",
+            "generation_version": "original-500",
+            "config_sha256": "35d37ef6616b7eedd94e9089c1ce96b4229be60d0b5835de0d0520e3cc0094f4"
+          },
+          {
+            "key": "new",
+            "native_sha256": "8af961474d59331c76cc5fb49eb2eaa35156f1802c2e217f17b3367df2126802",
+            "generation_version": "redo-v5-20261010",
+            "config_sha256": "cbb40422155e5b0cba67724c364dc77df0ae8543f2ee93cba5c6198406ac324b"
+          }
+        ]
+      },
+      {
+        "source_json_pointer": "/items/509/human_choice",
+        "source_uid": "round_2/009",
+        "choice": "old",
+        "updated_at": "2026-10-10T06:47:51.283Z",
+        "source_hash_matches_page": true,
+        "compared_hashes_match_page": true,
+        "selected_native_sha256": "d367ca11093a37154a35281b336262ff433e4fb6bedd7a76ef04e9055ca32171",
+        "selected_hash_preserved_in_final": true,
+        "final_native_sha256": "d367ca11093a37154a35281b336262ff433e4fb6bedd7a76ef04e9055ca32171",
+        "final_reviewer": "用户人工选择",
+        "final_status": "pass",
+        "final_generation_version": "original-500",
+        "candidate_version_metadata_from_page_snapshot": [
+          {
+            "key": "old",
+            "native_sha256": "d367ca11093a37154a35281b336262ff433e4fb6bedd7a76ef04e9055ca32171",
+            "generation_version": "original-500",
+            "config_sha256": "35d37ef6616b7eedd94e9089c1ce96b4229be60d0b5835de0d0520e3cc0094f4"
+          },
+          {
+            "key": "new",
+            "native_sha256": "b50b99f681a601642c82b3c05102b6c663ba659a9cbf2f22d86ecfed7a0bac89",
+            "generation_version": "redo-v5-20261010",
+            "config_sha256": "81f8e0571ff60b7826b95f6d8e5148290fa99f9ee7da193b81a05a35b40d967c"
+          }
+        ]
+      },
+      {
+        "source_json_pointer": "/items/512/human_choice",
+        "source_uid": "round_2/012",
+        "choice": "new",
+        "updated_at": "2026-10-10T06:47:55.583Z",
+        "source_hash_matches_page": true,
+        "compared_hashes_match_page": true,
+        "selected_native_sha256": "e5f0a0f381dc315b458b1d547cad552def4308c5184c8c8d6c185a9ed16b9e30",
+        "selected_hash_preserved_in_final": true,
+        "final_native_sha256": "e5f0a0f381dc315b458b1d547cad552def4308c5184c8c8d6c185a9ed16b9e30",
+        "final_reviewer": "用户人工选择",
+        "final_status": "pass",
+        "final_generation_version": "redo-v5-20261010",
+        "candidate_version_metadata_from_page_snapshot": [
+          {
+            "key": "old",
+            "native_sha256": "489f96f2b8f7cee4d4959e86431fdb349c825d7a7805e8be5b97147b96cb7be4",
+            "generation_version": "original-500",
+            "config_sha256": "35d37ef6616b7eedd94e9089c1ce96b4229be60d0b5835de0d0520e3cc0094f4"
+          },
+          {
+            "key": "new",
+            "native_sha256": "e5f0a0f381dc315b458b1d547cad552def4308c5184c8c8d6c185a9ed16b9e30",
+            "generation_version": "redo-v5-20261010",
+            "config_sha256": "cbb40422155e5b0cba67724c364dc77df0ae8543f2ee93cba5c6198406ac324b"
+          }
+        ]
+      },
+      {
+        "source_json_pointer": "/items/528/human_choice",
+        "source_uid": "round_2/028",
+        "choice": "redo",
+        "updated_at": "2026-10-10T07:03:24.563Z",
+        "source_hash_matches_page": true,
+        "compared_hashes_match_page": true,
+        "selected_native_sha256": null,
+        "selected_hash_preserved_in_final": null,
+        "final_native_sha256": "3ff9fc52a94779cb205ff8265d3944a16604ced85382bf5a2b699c75b4fe7946",
+        "final_reviewer": "Codex逐图视觉审核",
+        "final_status": "pass",
+        "final_generation_version": "iterate-round02-source-traced-20261011",
+        "candidate_version_metadata_from_page_snapshot": [
+          {
+            "key": "old",
+            "native_sha256": "e38dc7a4d1f267849b502f406e31a78c779f109e0971f3c7fb02381461653887",
+            "generation_version": "original-500",
+            "config_sha256": "35d37ef6616b7eedd94e9089c1ce96b4229be60d0b5835de0d0520e3cc0094f4"
+          },
+          {
+            "key": "new",
+            "native_sha256": "09b645318c81a31c21eb7ef3651949e2871563bc9eea42ebe125c38d61468e57",
+            "generation_version": "redo-v5-20261010",
+            "config_sha256": "81f8e0571ff60b7826b95f6d8e5148290fa99f9ee7da193b81a05a35b40d967c"
+          }
+        ]
+      },
+      {
+        "source_json_pointer": "/items/529/human_choice",
+        "source_uid": "round_2/029",
+        "choice": "old",
+        "updated_at": "2026-10-10T07:03:34.023Z",
+        "source_hash_matches_page": true,
+        "compared_hashes_match_page": true,
+        "selected_native_sha256": "937eaf14aab6e0c382b2e227fe1270c2352164dbe98f61ad7a99ecd006b6204b",
+        "selected_hash_preserved_in_final": true,
+        "final_native_sha256": "937eaf14aab6e0c382b2e227fe1270c2352164dbe98f61ad7a99ecd006b6204b",
+        "final_reviewer": "用户人工选择",
+        "final_status": "pass",
+        "final_generation_version": "original-500",
+        "candidate_version_metadata_from_page_snapshot": [
+          {
+            "key": "old",
+            "native_sha256": "937eaf14aab6e0c382b2e227fe1270c2352164dbe98f61ad7a99ecd006b6204b",
+            "generation_version": "original-500",
+            "config_sha256": "35d37ef6616b7eedd94e9089c1ce96b4229be60d0b5835de0d0520e3cc0094f4"
+          },
+          {
+            "key": "new",
+            "native_sha256": "e7b1ec223749a06232584e12dc017dc7e708bbe013d4b59571c279b5586c9ebb",
+            "generation_version": "redo-v5-20261010",
+            "config_sha256": "cbb40422155e5b0cba67724c364dc77df0ae8543f2ee93cba5c6198406ac324b"
+          }
+        ]
+      },
+      {
+        "source_json_pointer": "/items/532/human_choice",
+        "source_uid": "round_2/032",
+        "choice": "new",
+        "updated_at": "2026-10-10T07:07:33.200Z",
+        "source_hash_matches_page": true,
+        "compared_hashes_match_page": true,
+        "selected_native_sha256": "f32d20d2368790186fd698139dba1101c0eb50d72cc47e2f0141d69e71e01bc6",
+        "selected_hash_preserved_in_final": true,
+        "final_native_sha256": "f32d20d2368790186fd698139dba1101c0eb50d72cc47e2f0141d69e71e01bc6",
+        "final_reviewer": "用户人工选择",
+        "final_status": "pass",
+        "final_generation_version": "redo-v5-20261010",
+        "candidate_version_metadata_from_page_snapshot": [
+          {
+            "key": "old",
+            "native_sha256": "d38005edc49be333f99b181d704fb936ad83ee96f05d15a959bbaefe9541e4a4",
+            "generation_version": "original-500",
+            "config_sha256": "35d37ef6616b7eedd94e9089c1ce96b4229be60d0b5835de0d0520e3cc0094f4"
+          },
+          {
+            "key": "new",
+            "native_sha256": "f32d20d2368790186fd698139dba1101c0eb50d72cc47e2f0141d69e71e01bc6",
+            "generation_version": "redo-v5-20261010",
+            "config_sha256": "81f8e0571ff60b7826b95f6d8e5148290fa99f9ee7da193b81a05a35b40d967c"
+          }
+        ]
+      }
+    ],
+    "matched_page_source_manifest_sha256": "43511a891ae2516ddda0a5819516d93d758adcb18f9b8e94d8c65bef880b99d2",
+    "original_browser_envelope_recovered": false,
+    "dataset_id_origin_note": "Required import context reconstructed from the matching page dataset; all seven source and candidate hash pairs were checked.",
+    "source_manifest_origin_note": "The original browser export envelope was not recovered. The matching page manifest hash is context only; it is not asserted as historical event provenance."
+  }
+}

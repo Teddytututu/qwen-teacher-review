@@ -1,0 +1,56 @@
+{
+  "schema_version": 2,
+  "required_reader": "qwen-review-event-journal-v2",
+  "dataset_id": "chen-source500-43511a891ae2516d",
+  "source_manifest_sha256": "43511a891ae2516ddda0a5819516d93d758adcb18f9b8e94d8c65bef880b99d2",
+  "exported_at": "2026-11-26T06:30:00.000Z",
+  "review_method": "offline synthetic-image fixture",
+  "is_test": true,
+  "items": [],
+  "history": [],
+  "conflicts": [],
+  "quarantine": [
+    {
+      "captured_at": "2026-11-26T06:30:00.000Z",
+      "origin": "legacy browser draft parse failure:history[0]",
+      "raw": "{\"P318-broken-draft\": [\"原始草稿字符仍未闭合",
+      "reason": "record must be an object",
+      "record_id": "P318-corrupt-probe-1-3"
+    }
+  ],
+  "recovery": {
+    "unsaved_event_ids": [],
+    "incomplete_event_ids": [],
+    "archived_event_ids": []
+  },
+  "server_sync": {
+    "schema_version": 2,
+    "dataset_id": "chen-source500-43511a891ae2516d",
+    "summary": {
+      "provider": "github",
+      "confirmed_events": 0,
+      "pending_events": 0,
+      "unqueued_events": 0,
+      "recovered_evidence_records": 0,
+      "error": null,
+      "receipts": []
+    },
+    "queue": {
+      "schema_version": 2,
+      "client_id": "P318-corrupt-probe-1-2",
+      "pending": [],
+      "seen": [],
+      "confirmed": 0,
+      "receipts": [],
+      "recovered_batches": [],
+      "recovered_evidence": [],
+      "is_test": true
+    },
+    "corrupt_queue_raw": null,
+    "legacy_queue": {
+      "present": true,
+      "error": "Unterminated string in JSON at position 55 (line 1 column 56)",
+      "raw": "{\"client_id\":\"P318-broken-queue\",\"pending\":[\"原始队列字符仍未闭合"
+    }
+  }
+}
